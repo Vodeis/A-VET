@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="libraries/bootstrap.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="libraries/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      defer
+    ></script>
+    <!-- <script src="libraries/bootstrap.min.js" defer></script> -->
+    <script src="js/main.js" defer></script>
+    <title>АВЕТ</title>
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <h1 class="header__title">Працюємо 24/7</h1>
+        <div class="header__bg">
+          <div class="container header__container">
+            <a class="header__logo col-3" href="index.html">
+              <img src="img/logo.png" alt="A-BET" />
+            </a>
+            <address class="header__adress col-6">
+              <p>м.Київ, пр. Героїв Сталінграду 8, к. 8.</p>
+              <a href="tel:+380965371000">+38 (096) 537-10-00</a>
+            </address>
+            <div class="header__burger-menu col-3">
+              <div class="burger-line"></div>
+              <div class="burger-line--s"></div>
+              <div class="burger-line"></div>
+              <div class="burger-line--s"></div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul class="header__nav__container">
+            <li>
+              <a
+                href="index.html"
+                class="header__nav__item header__nav__item--active"
+                >Головна</a
+              >
+            </li>
+            <li>
+              <a href="html/about_us.html" class="header__nav__item">Про нас</a>
+            </li>
+            <li>
+              <a href="html/services.html" class="header__nav__item">Послуги</a>
+            </li>
+            <li>
+              <a href="html/prices.html" class="header__nav__item">Ціни</a>
+            </li>
+            <li>
+              <a href="html/sales.html" class="header__nav__item">Акції</a>
+            </li>
+            <li><a href="html/blog.html" class="header__nav__item">Блог</a></li>
+            <li>
+              <a href="html/contacts.html" class="header__nav__item"
+                >Контакти</a
+              >
+            </li>
+            <li class="languages">
+              <a href="index.html" class="header__nav__item lang--active">UA</a>
+              <a href="#" class="header__nav__item">RU</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section__top-slider">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <a href="#" class="carousel-item active">
+                <img src="img/Sale1--sz.png" class="d-block w-100" alt="..." />
+              </a>
+              <a href="#" class="carousel-item">
+                <img src="img/Sale1--sz.png" class="d-block w-100" alt="..." />
+              </a>
+              <a href="#" class="carousel-item">
+                <img src="img/Sale1--sz.png" class="d-block w-100" alt="..." />
+              </a>
+            </div>
+            <!-- <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Следующий</span>
+            </button> -->
+          </div>
+        </section>
+        <section class="appointment container">
+            <h1 class="appointment__title">Записатись на прийом</h1>
+            <div class="appointment-container">
+          <img
+            src="img/appointment--sz.png"
+            alt="appointment"
+            class="appointment__img"
+          />
+          <form
+            class="cl_form"
+            action="/ajax/feedback/"
+            method="POST"
+            data-target="contact"
+          >
+            <div class="cl_contact_form">
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="full_name"
+                  placeholder="ПІП"
+                  required=""
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phone"
+                  placeholder="Ваш телефон"
+                  required=""
+                />
+              </div>
+              <div class="btn_submit">
+                <input type="submit" value="Записатись" />
+              </div>
+            </div>
+          </form>
+        </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
