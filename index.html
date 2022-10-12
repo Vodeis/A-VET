@@ -18,7 +18,7 @@
     ></script>
     <!-- <script src="libraries/bootstrap.min.js" defer></script> -->
     <script src="js/main.js" defer></script>
-    <title>АВЕТ</title>
+    <title>А-ВЕТ</title>
   </head>
   <body>
     <div class="body-container">
@@ -142,44 +142,50 @@
           </div>
         </section>
         <section class="appointment container">
-            <h1 class="appointment__title">Записатись на прийом</h1>
-            <div class="appointment-container">
-          <img
-            src="img/appointment--sz.png"
-            alt="appointment"
-            class="appointment__img"
-          />
-          <form
-            class="cl_form"
-            action="/ajax/feedback/"
-            method="POST"
-            data-target="contact"
-          >
-            <div class="cl_contact_form">
-              <div>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="full_name"
-                  placeholder="ПІП"
-                  required=""
-                />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="phone"
-                  placeholder="Ваш телефон"
-                  required=""
-                />
-              </div>
-              <div class="btn_submit">
-                <input type="submit" value="Записатись" />
-              </div>
+          <h1 class="appointment__title">Записатись на прийом</h1>
+          <div class="appointment-container">
+            <div class="appointment__img-container col-5">
+              <img
+                src="img/appointment.png"
+                alt="appointment"
+                class="appointment__img"
+              />
             </div>
-          </form>
-        </div>
+            <form
+              class="cl_form col-7"
+              action="/ajax/feedback/"
+              method="POST"
+              data-target="contact"
+            >
+              <div class="cl_contact_form">
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="full_name"
+                    placeholder="ПІП"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="phone"
+                    placeholder="Ваш телефон"
+                    required=""
+                  />
+                </div>
+                <div class="btn_submit">
+                  <input type="submit" value="Записатись" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="our-services container">
+          <h1 class="our-services__title">Наші послуги</h1>
+          
         </section>
       </main>
       <footer></footer>

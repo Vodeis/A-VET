@@ -163,6 +163,9 @@ header {
 .appointment-container {
   display: flex;
 }
+.appointment__img {
+  max-width: 100%;
+}
 .appointment__title {
   font-family: "Gilroy";
   font-style: normal;
@@ -184,8 +187,11 @@ header {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #4A5F74;
-
+  padding: 10px 0;
 }
+.form-control:focus {
+  border-color: #5db53b;
+box-shadow: none;}
 .btn_submit {
     margin-top: 21px;
     display: flex;
@@ -203,4 +209,18 @@ header {
   border-radius: 10px;
   padding: 5px 11px;
   border: none;
+}
+
+/* section our-services */
+.our-services {
+  margin-top: 42px;
+}
+.our-services__title {
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 138.8%;
+color: #2E3A50;
+text-align: center;
 }
