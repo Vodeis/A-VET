@@ -2,8 +2,24 @@
   font-family: "Gilroy";
   src: url(../fonts/Gilroy-Regular.ttf);
 }
+
+/* titles */
+.appointment__title,
+.our-services__title,
+.vetclinik__title,
+.vetclinik__sub-title,
+.our-team__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 117.9%;
+  color: #2e3a50;
+}
+
 .body-container {
   min-width: 320px;
+  overflow: hidden;
 }
 .header__title {
   font-family: "Gilroy";
@@ -158,8 +174,21 @@ header {
   position: relative;
   top: -1px;
 }
+.promotion--lz {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .promotion-sz {
+    display: none !important;
+  }
+  .promotion--lz {
+    display: block !important;
+  }
+}
 
 /* section schedule an appointment form */
+
 .appointment-container {
   display: flex;
 }
@@ -167,12 +196,6 @@ header {
   max-width: 100%;
 }
 .appointment__title {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 117.9%;
-  color: #2e3a50;
   margin-bottom: 21px;
   text-align: end;
 }
@@ -186,16 +209,20 @@ header {
   outline: none;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid #4A5F74;
+  border-bottom: 1px solid #4a5f74;
   padding: 10px 0;
+}
+.form-control::placeholder {
+  color: #4a5f74;
 }
 .form-control:focus {
   border-color: #5db53b;
-box-shadow: none;}
+  box-shadow: none;
+}
 .btn_submit {
-    margin-top: 21px;
-    display: flex;
-    justify-content: end;
+  margin-top: 21px;
+  display: flex;
+  justify-content: end;
 }
 .btn_submit input {
   font-family: "Gilroy";
@@ -212,15 +239,316 @@ box-shadow: none;}
 }
 
 /* section our-services */
+
 .our-services {
-  margin-top: 42px;
+  margin-top: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .our-services__title {
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 138.8%;
-color: #2E3A50;
-text-align: center;
+  text-align: center;
+  margin-bottom: 41px;
+}
+.our-services__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.our-services__item.col-6 {
+  width: calc(50% - 10px);
+}
+/* .our-services__item {
+  padding: 14px 0 90px 14px;
+} */
+.our-services__item a {
+  display: block;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 119.3%;
+  color: #ffffff;
+  padding: 14px 9px 90px 14px;
+}
+.btn__all-services {
+  display: flex;
+  background: #5db53b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 5px 4px 15px;
+  margin-top: 39px;
+  margin-bottom: 33px;
+}
+.all-services__text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 117.9%;
+  letter-spacing: 0.035em;
+  color: #ffffff;
+}
+
+/* our-services bg */
+
+@media (max-width: 346px) {
+  .consultation a {
+    padding-bottom: 75px;
+  }
+}
+.consultation {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/consultation.png);
+}
+.reproductology {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/reproductology.png);
+}
+.ophthalmology {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/ophthalmology.png);
+}
+.x-ray {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/x-ray.png);
+}
+.laboratory {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/laboratory.png);
+}
+.dentistry {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/dentistry.png);
+}
+.oncology {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/oncology.png);
+}
+.hospital {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/hospital.png);
+}
+.grooming {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/grooming.png);
+}
+.neurosurgery {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/neurosurgery.png);
+}
+.therapy {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/therapy.png);
+}
+.hotel {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/hotel.png);
+}
+.chipping {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/chipping.png);
+}
+.surgery {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/surgery.png);
+}
+.ultrasound {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/ultrasound.png);
+}
+.vaccination {
+  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+    url(../img/our-services-sz/vaccination.png);
+}
+
+.consultation,
+.reproductology,
+.ophthalmology,
+.x-ray,
+.laboratory,
+.dentistry,
+.oncology,
+.hospital,
+.grooming,
+.neurosurgery,
+.therapy,
+.hotel,
+.chipping,
+.surgery,
+.ultrasound,
+.vaccination {
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* section vetclinik */
+
+.vetclinik__img {
+  margin-bottom: 6px;
+}
+.vetclinik__img img {
+  width: 100%;
+}
+.vetclinik__title {
+  margin-bottom: 19px;
+}
+.vetclinik__text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 193.8%;
+  color: #4a5f74;
+  margin-bottom: 22px;
+}
+.vetclinik__link {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 138.8%;
+  color: #5db53b;
+}
+.vetclinik__sub-title {
+  margin-top: 41px;
+  margin-bottom: 43px;
+}
+.vetclinik__main-areas__item {
+  background: #4a5f74;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 31px 29px;
+  border-radius: 19px;
+  margin-bottom: 17px;
+}
+.vetclinik__main-areas__item__title {
+  margin-top: 9px;
+  margin-bottom: 4px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 138.8%;
+  color: #f8fbff;
+}
+.vetclinik__main-areas__item__text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 138.8%;
+  color: #ecf5ff;
+}
+.vetclinik__img--bottom {
+  margin-top: 41px;
+}
+.vetclinik__img--bottom img {
+  width: 100%;
+}
+
+/* section our-team */
+
+.our-team__title {
+  margin-bottom: 44px;
+}
+.carousel-inner {
+  overflow: visible;
+}
+.carousel-caption {
+  bottom: -84px;
+}
+.our-team .carousel-indicators {
+  bottom: -119px;
+}
+.our-team .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='green'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+.our-team .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='green'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.our-team .carousel-caption h5 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 138.8%;
+  text-align: center;
+  color: #4a5f74;
+  margin-bottom: 6px;
+}
+.our-team .carousel-caption p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 138.8%;
+  text-align: center;
+  color: #2e3a50;
+}
+/* .our-team .carousel-item {
+  display: flex;
+  width: calc(50% - 5.5px)
+}
+.our-team__doctor {
+  margin-left: 11px;
+} */
+
+/* section appointment-footer */
+
+.appointment-footer {
+  padding-top: 30px;
+  padding-bottom: 42px;
+  margin-top: 150px;
+  background-color: #4a5f74;
+  position: relative;
+}
+.appointment-footer__title {
+  margin-bottom: 15px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130.3%;
+  color: #5db53b;
+  text-align: center;
+}
+.appointment-footer__sub-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 117.9%;
+  color: #ffffff;
+  margin-left: 33px;
+  margin-bottom: 7px;
+}
+.appointment-footer form {
+  padding: 0 52px 0 33px;
+}
+.appointment-footer .form-control::placeholder {
+  color: #c5c5c5;
+}
+.appointment-footer .form-control {
+  border-bottom: 1px solid #ffffff;
+  background-color: #4a5f74;
+  color: #c5c5c5;
+}
+.appointment-footer .form-control:focus {
+border-color: #5db53b;
+}
+
+.appointment-footer .btn_submit {
+  margin-top: 33px;
+  justify-content: flex-start;
+}
+.appointment-footer__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
 }
