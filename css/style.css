@@ -8,7 +8,8 @@
 .our-services__title,
 .vetclinik__title,
 .vetclinik__sub-title,
-.our-team__title {
+.our-team__title,
+.contacts__title {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
@@ -539,7 +540,7 @@ header {
   color: #c5c5c5;
 }
 .appointment-footer .form-control:focus {
-border-color: #5db53b;
+  border-color: #5db53b;
 }
 
 .appointment-footer .btn_submit {
@@ -551,4 +552,143 @@ border-color: #5db53b;
   bottom: 0;
   right: 0;
   display: block;
+}
+
+/* section contacts */
+.contacts__map {
+  margin-top: 33px;
+}
+.contacts__map iframe {
+  height: 177px;
+}
+@media (min-width: 450px) {
+  .contacts__map iframe {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__map iframe {
+    height: 402px;
+  }
+}
+.contacts__title {
+  margin-top: 20px;
+  margin-bottom: 21px;
+  text-align: center;
+}
+.contacts__adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__adress p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 117.9%;
+  text-align: center;
+  color: #2e3a50;
+  margin-bottom: 35px;
+}
+.contacts__adress a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 117.9%;
+  letter-spacing: 0.035em;
+  color: #5db53b;
+  border-bottom: 2px solid #5db53b;
+}
+.contacts__hours-of-work {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 138.9%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2e3a50;
+  background-color: #bad7f9;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  margin-top: 29px;
+  margin-bottom: 29px;
+}
+
+/* footer */
+.footer {
+  background: #2e3a50;
+  padding-top: 9px;
+  padding-bottom: 24px;
+  display: flex;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo img {
+  width: 55%;
+}
+.footer__number {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 117.9%;
+  color: #5db53b;
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+.footer__adress {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140.4%;
+  color: #bad7f9;
+  margin-bottom: 17px;
+}
+.footer__social {
+  display: flex;
+  gap: 16.42px;
+}
+.footer__social-link a {
+  position: relative;
+}
+.footer__social img {
+  position: absolute;
+  top: 2px;
+}
+.footer__copyright {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 117.9%;
+  color: #95acc7;
+  margin-top: 28px;
+}
+.footer__copyright > svg {
+  margin: 0 5px 0 7px;
+}
+.footer__nav > p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 117.9%;
+  color: #5db53b;
+}
+.footer__nav-item a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 117.9%;
+  color: #bad7f9;
+}
+.footer__nav {
+  align-self: center;
 }
