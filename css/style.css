@@ -2,6 +2,9 @@
   font-family: "Gilroy";
   src: url(../fonts/Gilroy-Regular.ttf);
 }
+/* .container {
+  max-width: 1140px;
+} */
 
 /* titles */
 .appointment__title,
@@ -13,20 +16,31 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: calc(24px + 26 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #2e3a50;
+}
+@media (min-width: 768px) {
+  .appointment__title,
+  .our-services__title,
+  .vetclinik__title,
+  .vetclinik__sub-title,
+  .our-team__title,
+  .contacts__title {
+    font-weight: 700;
+  }
 }
 
 .body-container {
   min-width: 320px;
   overflow: hidden;
+  background: #eff7ff;
 }
 .header__title {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #2e3a50;
   padding: 4px 0;
@@ -36,7 +50,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   background: #2e3a50;
-  margin-bottom: 21px;
 }
 .header__adress {
   display: flex;
@@ -47,7 +60,7 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: calc(12px + 6 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #bad7f9;
   text-align: center;
@@ -61,7 +74,7 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #5db53b;
   text-decoration: none;
@@ -101,22 +114,27 @@
   width: 20.42px;
 }
 .header__nav__container {
+  overflow: hidden;
   position: absolute;
   z-index: 999;
-  top: 86px;
-  right: 0;
+  /* top: 86px; */
+  right: -999px;
   background-color: #2e3a50;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 16px 31px 16px 16px;
   width: max-content;
+  transition: 0.5s;
+}
+.header__nav__container--active {
+  right: 0;
 }
 .header__nav__item {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: calc(15px + 3 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #bad7f9;
 }
@@ -125,7 +143,7 @@
 }
 .languages .header__nav__item {
   font-weight: 600;
-  font-size: 11px;
+  font-size: calc(11px + 7 * ((100vw - 320px) / (1140 - 320)));
   text-transform: uppercase;
 }
 .languages .header__nav__item:first-child {
@@ -142,20 +160,142 @@ header {
   color: #5db53b;
 }
 
+/* header--md */
+
+.header--md {
+  background: #2e3a50;
+  padding: 30px 0 18px 0;
+  display: none;
+}
+.header--md__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header--md__logo img {
+  max-width: 100%;
+}
+.header--md__right-container,
+.header--md__top,
+.header--md__nav__container {
+  display: flex;
+}
+.header--md__right-container {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header--md__top {
+  justify-content: space-between;
+}
+.header--md__nav__container {
+  justify-content: space-evenly;
+}
+.header--md__hours {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(15px + 3 * ((100vw - 320px) / (1140 - 320)));
+  line-height: 117.9%;
+  color: #5db53b;
+}
+.header--md__adress {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(15px + 3 * ((100vw - 320px) / (1140 - 320)));
+  line-height: 117.9%;
+  color: #bad7f9;
+}
+.header--md__phone {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(14px + 6 * ((100vw - 320px) / (1140 - 320)));
+  line-height: 117.9%;
+  color: #5db53b;
+}
+.header--md__nav__item {
+  /* margin-left: 35px; */
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(15px + 3 * ((100vw - 320px) / (1140 - 320)));
+  line-height: 117.9%;
+  text-transform: uppercase;
+  color: #bad7f9;
+}
+.header--md__languages {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+.header--md__languages
+  .header--md__nav__item:not(.header--md__nav__item.lang--active) {
+  position: absolute;
+  top: 20px;
+  display: none;
+}
+.header--md__languages .header--md__nav__item svg {
+  margin-left: 9px;
+}
+.header--md__nav__item.lang--active {
+  display: block;
+}
+
+.header--md__nav__item--active {
+  color: #5db53b;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #5db53b;
+}
+.header--md__input-container {
+  position: relative;
+}
+.header--md__input-container input {
+  border: none;
+  border-radius: 5px;
+}
+.header--md__input-container input:focus {
+  color: #4a5f74;
+  border: none;
+  outline: none;
+}
+.header--md__input-container > button {
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+}
+@media (min-width: 1200px) {
+  .header--sd {
+    display: none;
+  }
+  .header--md {
+    display: block;
+  }
+}
 /* header hovers */
 
 .header__nav__item:hover,
-.header__nav__item:active {
+.header__nav__item:active,
+.header--md__nav__item:hover:not(.header--md__languages
+    .header--md__nav__item) {
   color: #5db53b;
+  padding-bottom: 11px;
   border-bottom: 1px solid #5db53b;
 }
+.header--md__languages .header--md__nav__item,
 .languages .header__nav__item:hover {
+  color: #5db53b;
   border-bottom: none;
 }
 
 /* section__top-slider */
 
 .section__top-slider {
+  margin-top: 21px;
   margin-bottom: 51px;
 }
 
@@ -204,7 +344,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 11px;
+  font-size: calc(11px + 7 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #4a5f74;
   outline: none;
@@ -229,7 +369,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: calc(13px + 5 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #ffffff;
   background: #5db53b;
@@ -238,7 +378,46 @@ header {
   padding: 5px 11px;
   border: none;
 }
+@media (min-width: 768px) {
+  .appointment {
+    position: relative;
+  }
+  .appointment__title {
+    position: absolute;
+    top: 0;
+    left: 33.33333333%;
+  }
+  .appointment .cl_form {
+    align-items: center;
+    display: flex;
+  }
+  .appointment .cl_contact_form {
+    display: flex;
+    gap: 92px;
+    align-items: center;
+    position: relative;
+    width: 100%;
 
+  }
+  .appointment .btn_submit {
+    position: absolute;
+    margin-top: 35px;
+    bottom: -95px;
+    right: 20px;
+  }
+  /* .appointment {
+    display: grid;
+  }
+  .appointment__title {
+    grid-area: appointment__title;
+  }
+  .appointment__img-container {
+    grid-area: appointment__img-container;
+  }
+  .appointment .cl_form {
+    grid-area: .appointment__cl-form;
+  } */
+}
 /* section our-services */
 
 .our-services {
@@ -256,18 +435,19 @@ header {
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .our-services__item.col-6 {
   width: calc(50% - 10px);
 }
-/* .our-services__item {
-  padding: 14px 0 90px 14px;
-} */
+.our-services__item--hide {
+  display: none;
+}
 .our-services__item a {
   display: block;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: calc(15px + 12 * ((100vw - 320px) / (1140 - 320)));
   line-height: 119.3%;
   color: #ffffff;
   padding: 14px 9px 90px 14px;
@@ -283,14 +463,61 @@ header {
   margin-top: 39px;
   margin-bottom: 33px;
 }
+.all-services__arrow-up,
+.all-services__arrow-down {
+  display: none;
+}
+.all-services__arrow-down--active,
+.all-services__arrow-up--active {
+  display: block;
+}
 .all-services__text {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
+  font-size: calc(13px + 15 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   letter-spacing: 0.035em;
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .our-services__container {
+    gap: 30px;
+  }
+  .our-services__title {
+    text-align: left;
+    align-self: flex-start;
+    margin-bottom: 93px;
+  }
+  .our-services__item a {
+    padding: 63px 30px 203px 30px;
+  }
+  .our-services__item.col-md-3 {
+    width: calc(25% - 30px);
+  }
+  .our-services__item.col-md-4 {
+    width: calc(33.33333333% - 15px);
+  }
+  .our-services__item.col-md-5 {
+    width: calc(41.66666667% - 15px);
+  }
+  .our-services__item.col-md-6 {
+    width: calc(50% - 15px);
+  }
+  .our-services__item.col-md-8 {
+    width: calc(66.66666667% - 15px);
+  }
+  .our-services__item.col-md-3--gap {
+    width: calc(25% - 15px);
+  }
+  .our-services__item.col-md-4--gap {
+    width: calc(33.33333333% - 30px);
+  }
+  .btn__all-services {
+    margin-top: 80px;
+    margin-bottom: 213px;
+  }
 }
 
 /* our-services bg */
@@ -402,7 +629,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: calc(15px + 3 * ((100vw - 320px) / (1140 - 320)));
   line-height: 193.8%;
   color: #4a5f74;
   margin-bottom: 22px;
@@ -411,7 +638,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: calc(15px + 13 * ((100vw - 320px) / (1140 - 320)));
   line-height: 138.8%;
   color: #5db53b;
 }
@@ -432,7 +659,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: calc(20px + 10 * ((100vw - 320px) / (1140 - 320)));
   line-height: 138.8%;
   color: #f8fbff;
 }
@@ -440,7 +667,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: calc(15px + 3 * ((100vw - 320px) / (1140 - 320)));
   line-height: 138.8%;
   color: #ecf5ff;
 }
@@ -450,7 +677,34 @@ header {
 .vetclinik__img--bottom img {
   width: 100%;
 }
-
+@media (min-width: 768px) {
+  .vetclinik__main-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .vetclinik__main-areas__item {
+    width: calc(50% - 15px);
+    margin-bottom: 0;
+    padding: 31px 29px 50px 29px;
+  }
+  .vetclinik__img--bottom img {
+    max-width: 45%;
+  }
+  .vetclinik {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 105px;
+  }
+  .vetclinik .col-md-6 {
+    width: calc(50% - 52.5px);
+  }
+}
+@media (min-width: 1200px) {
+  .vetclinik__main-areas__item {
+    width: calc(33.333333% - 20px);
+  }
+}
 /* section our-team */
 
 .our-team__title {
@@ -486,7 +740,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: calc(16px + 4 * ((100vw - 320px) / (1140 - 320)));
   line-height: 138.8%;
   text-align: center;
   color: #2e3a50;
@@ -513,7 +767,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: calc(22px + 28 * ((100vw - 320px) / (1140 - 320)));
   line-height: 130.3%;
   color: #5db53b;
   text-align: center;
@@ -522,10 +776,9 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: calc(20px + 15 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #ffffff;
-  margin-left: 33px;
   margin-bottom: 7px;
 }
 .appointment-footer form {
@@ -534,9 +787,12 @@ header {
 .appointment-footer .form-control::placeholder {
   color: #c5c5c5;
 }
+.form-control {
+  background: transparent;
+}
 .appointment-footer .form-control {
   border-bottom: 1px solid #ffffff;
-  background-color: #4a5f74;
+  background-color: transparent;
   color: #c5c5c5;
 }
 .appointment-footer .form-control:focus {
@@ -554,11 +810,70 @@ header {
   display: block;
 }
 
+@media (min-width: 768px) {
+  .appointment-footer {
+    background: transparent;
+  }
+  .appointment-footer--md {
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "appointment-footer__title cl_form"
+      "appointment-footer__img cl_form";
+  }
+  .appointment-footer__title {
+    grid-area: appointment-footer__title;
+    color: #4a5f74;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    position: relative;
+    top: -17px;
+  }
+  .appointment-footer--md .cl_form {
+    grid-area: cl_form;
+  }
+  .appointment-footer form {
+    padding-left: 100px;
+  }
+  .appointment-footer__img {
+    grid-area: appointment-footer__img;
+    position: static;
+    margin-left: 68px;
+    width: 75%;
+  }
+  .appointment-footer__sub-title {
+    color: #2e3a50;
+    font-weight: 600;
+    line-height: 130.3%;
+    margin-bottom: 42px;
+  }
+  .appointment-footer .form-control {
+    background-color: transparent;
+    color: #4a5f74;
+    border-color: #4a5f74;
+    margin-bottom: 29px;
+  }
+  .appointment-footer .form-control::placeholder {
+    color: #4a5f74;
+  }
+  .appointment-footer .btn_submit {
+    justify-content: flex-end;
+    margin-top: 44px;
+    padding-bottom: 64px;
+  }
+  .btn_submit input {
+    padding: 20px 29px;
+  }
+}
+
 /* section contacts */
 .contacts__map {
   margin-top: 33px;
 }
 .contacts__map iframe {
+  width: 100%;
   height: 177px;
 }
 @media (min-width: 450px) {
@@ -571,6 +886,13 @@ header {
     height: 402px;
   }
 }
+@media (max-width: 767px) {
+  .contacts__map.container {
+    max-width: 100%;
+    --bs-gutter-x: 0;
+  }
+}
+
 .contacts__title {
   margin-top: 20px;
   margin-bottom: 21px;
@@ -581,11 +903,11 @@ header {
   flex-direction: column;
   align-items: center;
 }
-.contacts__adress p {
+.contacts__adress p:first-child {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: calc(16px + 2 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   text-align: center;
   color: #2e3a50;
@@ -616,17 +938,63 @@ header {
   margin-top: 29px;
   margin-bottom: 29px;
 }
+@media (min-width: 992px) {
+  .contacts__title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117.9%;
+    letter-spacing: 0.035em;
+    color: #2e3a50;
+    text-align: start;
+    margin-bottom: 45px;
+    margin-top: 47px;
+  }
+  .contacts__adress {
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1.1fr 1.2fr 0.6fr;
+    grid-template-areas: " adress hours tel";
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 62px;
+  }
+  .contacts__adress p:first-child {
+    font-weight: 600;
+
+    margin-bottom: 0;
+    grid-area: adress;
+    justify-self: flex-start;
+  }
+  .contacts__adress a {
+    grid-area: tel;
+    justify-self: end;
+  }
+  .contacts__hours-of-work {
+    font-weight: 600;
+    margin: 0;
+    grid-area: hours;
+    background: transparent;
+    text-transform: none;
+    padding: 0;
+  }
+}
 
 /* footer */
-.footer {
+
+.footer-bg {
   background: #2e3a50;
   padding-top: 9px;
-  padding-bottom: 24px;
+}
+.footer {
   display: flex;
+  position: relative;
 }
 .footer__container {
   display: flex;
   flex-direction: column;
+  padding-right: 20px;
 }
 .footer__logo img {
   width: 55%;
@@ -635,7 +1003,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #5db53b;
   margin-top: 22px;
@@ -645,7 +1013,7 @@ header {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: calc(12px + 6 * ((100vw - 320px) / (1140 - 320)));
   line-height: 140.4%;
   color: #bad7f9;
   margin-bottom: 17px;
@@ -653,6 +1021,7 @@ header {
 .footer__social {
   display: flex;
   gap: 16.42px;
+  margin-bottom: 28px;
 }
 .footer__social-link a {
   position: relative;
@@ -661,34 +1030,115 @@ header {
   position: absolute;
   top: 2px;
 }
+.footer__nav > p,
+.footer__services__item--title a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(16px + 6 * ((100vw - 320px) / (1140 - 320)));
+  line-height: 117.9%;
+  color: #5db53b;
+}
+.footer__nav-item a,
+.footer__services__item a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(14px + 3 * ((100vw - 320px) / (1140 - 320)));
+  line-height: 117.9%;
+  color: #bad7f9;
+}
+.footer__nav-item {
+  margin: 7px 0;
+}
+.footer__services__item {
+  margin: 10px 0;
+}
+.footer__nav {
+  align-self: center;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .footer__nav {
+    align-self: flex-start;
+    justify-self: flex-end;
+    margin-top: 0;
+  }
+}
+.footer__services {
+  display: none;
+}
+@media (min-width: 768px) {
+  .footer__services {
+    display: block;
+  }
+}
 .footer__copyright {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 11px;
+  font-size: calc(11px + 5 * ((100vw - 320px) / (1140 - 320)));
   line-height: 117.9%;
   color: #95acc7;
-  margin-top: 28px;
 }
 .footer__copyright > svg {
   margin: 0 5px 0 7px;
 }
-.footer__nav > p {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 117.9%;
-  color: #5db53b;
+.footer__copyright-bg {
+  background: #2e3a50;
+  padding-bottom: 24px;
 }
-.footer__nav-item a {
+.footer__copyright-md {
+  display: none;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 117.9%;
-  color: #bad7f9;
+  color: #4a5f74;
+  text-align: center;
 }
-.footer__nav {
-  align-self: center;
+.footer__copyright-md svg {
+  margin: 0 9px 0 8px;
+}
+.footer__copyright-md span {
+  margin-right: 12px;
+}
+
+.footer__dog {
+  display: none;
+  position: absolute;
+  bottom: -72px;
+  right: 0;
+  justify-content: flex-end;
+}
+.footer__dog img {
+  max-width: 80%;
+}
+
+@media (min-width: 1140px) {
+  .footer__dog img {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1920px) {
+  .footer__dog img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .footer__copyright {
+    display: none;
+  }
+  .footer__copyright-md {
+    display: block;
+  }
+  .footer__copyright-bg {
+    background: #fff;
+    padding-top: 32px;
+    padding-bottom: 15px;
+  }
+  .footer__dog {
+    display: flex;
+  }
 }

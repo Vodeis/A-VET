@@ -1,0 +1,9 @@
+p {
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+line-height: 155.3%;
+color: #2E3A50;
+font-size: calc(11px + 5 * ((100vw - 320px) / (1140 - 320)));
+
+}
