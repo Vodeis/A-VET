@@ -16,7 +16,8 @@
 .our-team__title,
 .contacts__title,
 .page-about-us__title,
-.page-contacts__title {
+.page-contacts__title,
+.page-sales__promotion__title {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
@@ -33,7 +34,8 @@
   .our-team__title,
   .contacts__title,
   .page-about-us__title,
-  .page-contacts__title {
+  .page-contacts__title,
+  .page-sales__promotion__title {
     font-weight: 700;
     font-size: 50px;
   }
@@ -1444,7 +1446,7 @@ header {
   font-weight: 600;
   font-size: 11px;
   line-height: 117.9%;
-  color: #4A5F74;
+  color: #4a5f74;
   margin-top: 21px;
 }
 .page-about-us__path span,
@@ -1490,8 +1492,8 @@ header {
   max-width: 100%;
 }
 
-.page-about-us__content-container .page-about-us__subtitle.col-8 {
-  margin-top: 100px;
+.page-about-us__content-container .page-about-us__subtitle.col-6 {
+  margin-top: 70px;
 }
 .page-about-us__subtitle {
   grid-area: page-about-us__subtitle;
@@ -1513,7 +1515,7 @@ header {
 }
 .page-about-us__img--absolute--bottom {
   position: absolute;
-  right: 0;
+  right: -5%;
   top: 15px;
 }
 
@@ -1590,6 +1592,15 @@ header {
 .page-about-us__wishes .page-about-us__text span {
   text-align: center;
   line-height: 142.3%;
+}
+@media (min-width: 450px) and (max-width: 768px) {
+  .page-about-us__img--absolute--bottom {
+    top: -10px;
+    right: -10%;
+  }
+  .page-about-us__img--absolute--bottom img {
+    max-width: 50%;
+  }
 }
 @media (max-width: 768px) {
   .page-about-us__img--top {
@@ -1728,6 +1739,7 @@ header {
 /* PAGE CONTACTS */
 .page-contacts__container {
   overflow: hidden;
+  background: #f3f7fc;
 }
 .page-contacts__title {
   margin-top: 44px;
@@ -1736,14 +1748,233 @@ header {
 .page-contacts__img-container {
   margin-top: 41px;
   margin-bottom: 100px;
+  display: none;
 }
-.page-contacts__img-container  .item-inner-wrapper {
+.page-contacts__img-container .item-inner-wrapper {
   display: flex;
   gap: 31px;
 }
-.page-contacts__img-container  .carousel-indicators {
+.page-contacts__img-container .carousel-indicators {
   bottom: -60px;
 }
-.page-contacts__img-container  .item-inner-wrapper .item {
+.page-contacts__img-container .item-inner-wrapper .item {
   max-width: calc(25% - 23.5px);
+}
+.page-contacts__img-container .item-inner-wrapper .item img {
+  max-width: 100%;
+}
+.page-contacts__our-adress__section {
+  margin-top: 25px;
+}
+.page-contacts__our-adress__section,
+.page-contacts__our-adress__section a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 117.9%;
+  text-align: center;
+  color: #2e3a50;
+}
+.page-contacts__our-adress__section .adress-container__title,
+.page-contacts__our-adress__section .adress-container__phone {
+  font-weight: 600;
+  font-size: 17px;
+}
+.page-contacts__our-adress__section p {
+  font-weight: 500;
+  margin-top: 9px;
+  margin-bottom: 4px;
+}
+.page-contacts__our-adress__section .adress-container__adress {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 26px;
+  margin-top: 22px;
+}
+.page-contacts__our-adress__section .adress-container__phone-numder {
+  font-weight: 700;
+  font-size: 20px;
+  color: #5db53b;
+  margin-bottom: 26px;
+  margin-top: 22px;
+  display: block;
+}
+.social-container__viber img {
+  width: 38px;
+  height: 38px;
+}
+.page-conacts__hour-of-works {
+  background: #4a5f74;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.page-conacts__hour-of-works p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 142.3%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f3f7fc;
+  padding: 29px 0 30px 0;
+}
+.page-conacts__hour-of-works p span {
+  color: #3bd300;
+}
+@media (min-width: 768px) {
+  .page-contacts__img-container {
+    display: block;
+  }
+  .page-contacts__our-adress__section {
+    margin-top: 62px;
+    display: flex;
+    gap: 92px;
+  }
+  .page-contacts__our-adress__section .adress-container__title {
+    font-size: 18px;
+  }
+  .page-contacts__our-adress__section .adress-container__adress {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 38px;
+  }
+  .page-contacts__our-adress__section .adress-container__phone-numder {
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .page-contacts__our-adress__section p {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .page-contacts__our-adress__section,
+  .page-contacts__our-adress__section a {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .social-container__viber,
+  .social-container__facebook,
+  .social-container__instagram {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 26px;
+  }
+  .page-conacts__hour-of-works {
+    border-radius: 10px;
+    width: 60%;
+    margin: 84px auto 64px auto;
+  }
+  .page-conacts__hour-of-works p {
+    font-weight: 700;
+    font-size: 40px;
+  }
+}
+/* PAGE SALES */
+
+.page-sales__container {
+  overflow: hidden;
+  background: #f3f7fc;
+}
+.page-sales__promotion__title {
+  margin-top: 12px;
+  text-align: center;
+}
+.promotion--sz {
+  margin-top: 25px;
+  margin-bottom: 49px;
+}
+.promotion--md {
+  margin-top: 30px;
+  margin-bottom: 41px;
+  display: none;
+}
+.promotion--sz a:not(a:last-child) {
+  display: block;
+  margin-bottom: 25px;
+}
+.promotion--sz a img {
+  width: 100%;
+}
+.promotion--md a:not(a:last-child) {
+  display: block;
+  margin-bottom: 34px;
+}
+.promotion--md a img {
+  width: 100%;
+}
+.page-sales__container .appointment-container {
+  flex-direction: row-reverse;
+}
+.page-sales__container .btn_submit {
+  justify-content: flex-start;
+}
+.page-sales__container .appointment__img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.page-sales__container .appointment__title {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .page-sales__promotion__title {
+    margin-top: 52px;
+    color: #4a5f74;
+    text-align: left;
+  }
+  .promotion--sz {
+    display: none;
+  }
+  .promotion--md {
+    display: block;
+  }
+  .page-sales__container .appointment-container {
+    flex-direction: row;
+  }
+  .page-sales__container .appointment__img {
+    transform: scaleX(-1);
+  }
+}
+
+@media (min-width: 768px) {
+  .page-sales__container .btn_submit input {
+    padding: 20px 44px;
+  }
+  .page-sales__container .col-md-5 {
+    width: 44%;
+  }
+  .page-sales__container .appointment__img-container img {
+    width: 60%;
+  }
+  .page-sales__container .appointment__img-container {
+    justify-content: flex-start;
+  }
+  
+  .page-sales__container .appointment {
+    position: relative;
+  }
+  .page-sales__container .appointment__title {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    font-size: 35px;
+  }
+  .page-sales__container .appointment .cl_form {
+    align-items: center;
+    display: flex;
+  }
+  .page-sales__container .appointment .cl_contact_form {
+    display: flex;
+    gap: 92px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  .page-sales__container .appointment .btn_submit {
+    position: absolute;
+    margin-top: 35px;
+    bottom: -95px;
+    right: 20px;
+  }
 }
