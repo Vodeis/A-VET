@@ -1,18 +1,768 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/pages/about_us.css">
-    <title>Document</title>
-</head>
-<body>
-    
-<p>example</p>
-<p>example</p>
-<p>example</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script src="../js/main.js" defer></script>
+    <title>About Us</title>
+  </head>
+  <body>
+    <div class="page-about-us__container">
+      <header>
+        <div class="header--sd">
+          <h1 class="header__title">Працюємо 24/7</h1>
+          <div class="header__bg">
+            <div class="container header__container">
+                <a class="header__logo col-3" href="../index.html">
+                  <img src="../img/logo-bs.png" alt="A-BET" />
+                </a>
+              <address class="header__adress col-6">
+                <p>м.Київ, пр. Героїв Сталінграду 8, к. 8.</p>
+                <a href="tel:+380965371000">+38 (096) 537-10-00</a>
+              </address>
+              <div class="header__burger-menu col-3">
+                <div class="burger-line"></div>
+                <div class="burger-line--s"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line--s"></div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <ul class="header__nav__container">
+              <li>
+                <a
+                  href="../index.html"
+                  class="header__nav__item"
+                  >Головна</a
+                >
+              </li>
+              <li>
+                <a href="about_us.html" class="header__nav__item header__nav__item--active">Про нас</a>
+              </li>
+              <li>
+                <a href="services.html" class="header__nav__item">Послуги</a>
+              </li>
+              <li>
+                <a href="prices.html" class="header__nav__item">Ціни</a>
+              </li>
+              <li>
+                <a href="sales.html" class="header__nav__item">Акції</a>
+              </li>
+              <li>
+                <a href="blog.html" class="header__nav__item">Блог</a>
+              </li>
+              <li>
+                <a href="contacts.html" class="header__nav__item">Контакти</a>
+              </li>
+              <li class="languages">
+                <a href="../index.html" class="header__nav__item lang--active"
+                  >UA</a
+                >
+                <a href="#" class="header__nav__item">RU</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header--md">
+          <div class="header--md__container container">
+            <div class="header--md__logo col-2">
+              <a href="../index.html">
+                <img src="../img/logo-bs.png" alt="logo" />
+              </a>
+            </div>
+            <div class="header--md__right-container col-10">
+              <div class="header--md__top">
+                <p class="header--md__hours">Працюємо 24/7</p>
+                <p class="header--md__adress">
+                  м.Київ, пр. Героїв Сталінграду 8, к. 8.
+                </p>
+                <a class="header--md__phone" href="tel:+380965371000"
+                  >+38 (096) 537-10-00</a
+                >
+                <form class="header--md__input-container">
+                  <input type="text" /><button type="submit">
+                    <svg
+                      class="header--md__loop"
+                      width="19"
+                      height="19"
+                      viewBox="0 0 19 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.70833 15.0417C12.2061 15.0417 15.0417 12.2061 15.0417 8.70833C15.0417 5.21053 12.2061 2.375 8.70833 2.375C5.21053 2.375 2.375 5.21053 2.375 8.70833C2.375 12.2061 5.21053 15.0417 8.70833 15.0417Z"
+                        stroke="#00B700"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.6234 16.6234L13.1797 13.1797"
+                        stroke="#00B700"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <nav>
+                <ul class="header--md__nav__container">
+                  <li>
+                    <a
+                      href="../index.html"
+                      class="header--md__nav__item"
+                      >Головна</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about_us.html" class="header--md__nav__item header--md__nav__item--active"
+                      >Про нас</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html" class="header--md__nav__item"
+                      >Послуги</a
+                    >
+                  </li>
+                  <li>
+                    <a href="prices.html" class="header--md__nav__item">Ціни</a>
+                  </li>
+                  <li>
+                    <a href="sales.html" class="header--md__nav__item">Акції</a>
+                  </li>
+                  <li>
+                    <a href="blog.html" class="header--md__nav__item">Блог</a>
+                  </li>
+                  <li>
+                    <a href="contacts.html" class="header--md__nav__item"
+                      >Контакти</a
+                    >
+                  </li>
+                  <li class="header--md__languages">
+                    <a
+                      href="../index.html"
+                      class="header--md__nav__item lang--active"
+                      >UA
+                      <svg
+                        width="9"
+                        height="5"
+                        viewBox="0 0 9 5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z"
+                          fill="#5DB53B"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" class="header--md__nav__item"
+                      >RU
+                      <svg
+                        width="9"
+                        height="5"
+                        viewBox="0 0 9 5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z"
+                          fill="#5DB53B"
+                        /></svg                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
 
-        
-</body>
+      <main>
+        <div class="page-about-us__path container">
+          <p>Головна<span>/</span>Про нас</p>
+        </div>
+        <section class="page-about-us container">
+          <div class="page-about-us__container">
+            <div class="page-about-us__content-container">
+              <!-- <div class="page-about-us__top-container"> -->
+                <div class="page-about-us__titles col-5 col-md-12">
+                  <h1 class="page-about-us__title">Про нас</h1>
+                  <h2 class="fs--title page-about-us__subtitle">
+                    Дорогі друзі! Ми раді вітати вас в нашому центрі!
+                  </h2>
+                </div>
+                <div class="page-about-us__img col-7 col-md-10 page-about-us__img--top">
+                  <img
+                    
+                    src="../img/page_about-us/dearFriends_logo.png"
+                    alt="logo"
+                  />
+                  <img class="page-about-us__img--absolute"
+                    src="../img/page_about-us/dearFriends_photo.png"
+                    alt="photo"
+                  />
+                <!-- </div> -->
+              </div>
+              <p class="page-about-us__text">
+                <span
+                  >Наша ветеринарна клініка надає цілодобову ветеринарну
+                  допомогу.</span
+                ><br />
+                Наші проффесіонали Авет нададуть допомогу в будь-який час доби,
+                навіть вночі, і навіть якщо біда з вашим улюбленцем трапилася у
+                вихідні дні або святкові.
+              </p>
+            </div>
+
+            <div class="page-about-us__content-container page-about-us__content-container--reverse">
+              <h2 class="page-about-us__subtitle col-7 col-md-10">
+                Наша ветеринарна клініка представлена ​​лікарями різних
+                спеціалізацій.
+              </h2>
+              <div class="page-about-us__img col-5 col-md-12">
+                <img
+                  class="hide-substract"
+                  src="../img/page_about-us/Subtract.svg"
+                  alt="logo"
+                />
+                <img 
+                class="page-about-us__img--absolute--middle"
+                  src="../img/page_about-us/ourClinic_photo.png"
+                  alt="logo"
+                />
+              </div>
+              <p class="page-about-us__text col-md-10">
+                Ветеринарний центр "Авет" має всі види спеціалізації: лікування
+                собак, кішок. Наші професіонали «Авет» допоможуть у будь-який
+                час доби, навіть уночі, і навіть, якщо лихо з вашим вихованцем
+                трапилося у вихідні дні чи свята.<br />
+                <span
+                  >До Ваших послуг: терапія, хірургія, лабораторна діагностика,
+                  УЗД, ендоскопія, травматологія..</span
+                >
+              </p>
+            </div>
+
+            <div class="page-about-us__content-container">
+              <h2 class="page-about-us__subtitle col-8 col-md-12">
+                Лабораторна діагностика представлена ​​широким спектром
+                досліджень.
+              </h2>
+              <div class="page-about-us__img col-7 page-about-us__img--absolute--bottom col-md-12">
+                <img src="../img/page_about-us/laboratories.png" alt="logo" />
+              </div>
+              <p class="page-about-us__text">
+                Вакцинація тварин здійснюється із застосуванням вакцин
+                імпортного та вітчизняного виробництва з обов'язковою
+                реєстрацією.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="page-about-us__farmacy">
+          <div class="page-about-us__farmacy-container container">
+            <p class="col-8 col-md-12">
+              Аптека для тварин має широкий вибір лікарських засобів, витратних
+              матеріалів та зоотоварів.
+            </p>
+          </div>
+        </section>
+        <section class="our-team container">
+          <h2 class="our-team__title">Наша команда</h2>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="item-inner-wrapper">
+                  <div class="item">
+                    <img
+                      src="../img/our-team/doctor_1.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="../img/our-team/doctor_2.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="../img/our-team/doctor_3.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="../img/our-team/doctor_4.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="item-inner-wrapper">
+                  <div class="item">
+                    <img
+                      src="../img/our-team/doctor_1.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5 id="qwe">Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="../img/our-team/doctor_2.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="../img/our-team/doctor_3.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="../img/our-team/doctor_4.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="item-inner-wrapper">
+                  <div class="item">
+                    <img
+                      src="../img/our-team/doctor_1.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5 id="qwe">Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="../img/our-team/doctor_2.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="../img/our-team/doctor_3.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="../img/our-team/doctor_4.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="item-inner-wrapper">
+                  <div class="item">
+                    <img
+                      src="../img/our-team/doctor_1.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5 id="qwe">Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="../img/our-team/doctor_2.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="../img/our-team/doctor_3.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="../img/our-team/doctor_4.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <section class="appointment container">
+          <h1 class="appointment__title">Записатись на прийом</h1>
+          <div class="appointment-container">
+            <div class="appointment__img-container col-5 col-md-6">
+              <img src="../img/appointment--sz.png" alt="appointment" class="appointment__img--sz">
+              <img
+                src="../img/page_about-us/appointment.png"
+                alt="appointment"
+                class="appointment__img"
+              />
+            </div>
+            <form
+              class="cl_form col-7 col-md-5"
+              action="/ajax/feedback/"
+              method="POST"
+              data-target="contact"
+            >
+              <div class="cl_contact_form">
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="full_name"
+                    placeholder="ПІП"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="phone"
+                    placeholder="Ваш телефон"
+                    required=""
+                  />
+                </div>
+                <div class="btn_submit">
+                  <input type="submit" value="Записатись" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="page-about-us__wishes container">
+            <h2>
+              Кожному хвостатому, четверолапому або крилатому ми бажаємо здоровя
+              та безтурботного довголіття та робимо все, щоб надати правильну та
+              своєчасну допомогу.
+            </h2>
+            <div>
+              <img src="../img/page_about-us/wishes.png" alt="wishes" />
+
+            </div>
+            <p class="page-about-us__text">
+              У нашому ветеринарному центрі працюють кваліфіковані спеціалісти з
+              багаторічним досвідом. Наші лікарі займаються вирішенням проблем
+              всіх органів і систем тварини. Вони підберуть кращий варіант
+              лікування для вашого вихованця.<br />
+              <span
+                >Ціни на лікування домашніх тварин ми стараємся тримати
+                адекватними,щоб кожному домашньому улюбленцю була надана
+                адекватна ветеринарна допомога.</span
+              >
+            </p>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-bg">
+          <div class="footer container">
+            <div class="footer__container col-9 col-md-4">
+              <a class="footer__logo" href="../index.html">
+                <img src="../img/logo-bs.png" alt="A-BET" />
+              </a>
+              <a href="tel:+380965371000" class="footer__number"
+                >+38(096) 537-10-00</a
+              >
+              <p class="footer__adress">
+                м. Київ, пр. Героїв Сталінграду 8, корпус 8
+              </p>
+              <ul class="footer__social">
+                <li class="footer__social-link">
+                  <a href="#"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12" cy="12" r="12" fill="#5DB53B" />
+                      <path
+                        d="M15.1583 6H13.2636C12.426 6 11.6228 6.30985 11.0306 6.86139C10.4384 7.41293 10.1057 8.16097 10.1057 8.94097V10.7055H8.21094V13.0583H10.1057V17.7639H12.632V13.0583H14.5267L15.1583 10.7055H12.632V8.94097C12.632 8.78497 12.6985 8.63536 12.817 8.52505C12.9354 8.41474 13.0961 8.35277 13.2636 8.35277H15.1583V6Z"
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-link">
+                  <a href="#"
+                    ><svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12.4209" cy="12" r="12" fill="#5DB53B" />
+                      <g clip-path="url(#clip0_401_3772)">
+                        <path
+                          d="M15.317 6.21094H9.52755C7.92883 6.21094 6.63281 7.50696 6.63281 9.10567V14.8951C6.63281 16.4939 7.92883 17.7899 9.52755 17.7899H15.317C16.9157 17.7899 18.2118 16.4939 18.2118 14.8951V9.10567C18.2118 7.50696 16.9157 6.21094 15.317 6.21094Z"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M14.7354 11.6324C14.8069 12.1142 14.7246 12.6063 14.5002 13.0386C14.2759 13.471 13.9209 13.8216 13.4859 14.0406C13.0508 14.2596 12.5577 14.3358 12.0768 14.2584C11.5959 14.181 11.1516 13.954 10.8072 13.6096C10.4628 13.2651 10.2357 12.8209 10.1583 12.34C10.0809 11.859 10.1572 11.366 10.3762 10.9309C10.5951 10.4958 10.9458 10.1408 11.3781 9.91649C11.8105 9.69215 12.3026 9.60985 12.7844 9.6813C13.2759 9.75418 13.7309 9.9832 14.0822 10.3345C14.4335 10.6859 14.6626 11.1409 14.7354 11.6324Z"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15.6035 8.8125H15.6098"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_401_3772">
+                          <rect
+                            width="13.8947"
+                            height="13.8947"
+                            fill="white"
+                            transform="translate(5.47363 5.05078)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-link">
+                  <a href="#"><img src="../img/viber.png" alt="viber" /> </a>
+                </li>
+              </ul>
+            </div>
+            <nav class="footer__nav col-3 col-md-3">
+              <p>Меню:</p>
+              <ul class="footer__nav-menu">
+                <li class="footer__nav-item">
+                  <a href="about_us.html">Про нас</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="services.html">Послуги</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="sales.html">Акції</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="blog.html">Блог</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="contacts.html">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="footer__services col-md-3">
+              <li class="footer__services__item--title">
+                <a href="services.html">Послуги:</a>
+              </li>
+              <li class="footer__services__item">
+                <a href="#">Консультація</a>
+              </li>
+              <li class="footer__services__item"><a href="#">Аналізи</a></li>
+              <li class="footer__services__item"><a href="#">УЗД</a></li>
+              <li class="footer__services__item"><a href="#">Ренген</a></li>
+              <li class="footer__services__item"><a href="#">Чіпування</a></li>
+              <li class="footer__services__item"><a href="#">Вакцинація</a></li>
+            </ul>
+            <div class="footer__dog">
+              <img src="../img/footer-dog.png" alt="dog" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright-bg">
+          <p class="footer__copyright container">
+            All Right Reserved
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="5" cy="5" r="5" fill="#95ACC7" />
+              <path
+                d="M4.861 8.182C3.88167 8.182 3.06267 7.85267 2.404 7.194C1.754 6.53533 1.429 5.72067 1.429 4.75C1.429 3.77933 1.754 2.96467 2.404 2.306C3.06267 1.64733 3.88167 1.318 4.861 1.318C5.49367 1.318 6.07 1.46967 6.59 1.773C7.11 2.07633 7.50433 2.48367 7.773 2.995L6.33 3.84C6.2 3.57133 6.00067 3.359 5.732 3.203C5.472 3.047 5.17733 2.969 4.848 2.969C4.34533 2.969 3.92933 3.138 3.6 3.476C3.27067 3.80533 3.106 4.23 3.106 4.75C3.106 5.26133 3.27067 5.686 3.6 6.024C3.92933 6.35333 4.34533 6.518 4.848 6.518C5.186 6.518 5.485 6.44433 5.745 6.297C6.01367 6.141 6.213 5.92867 6.343 5.66L7.799 6.492C7.513 7.00333 7.11 7.415 6.59 7.727C6.07 8.03033 5.49367 8.182 4.861 8.182Z"
+                fill="#2E3A50"
+              />
+            </svg>
+            2015-2022
+          </p>
+          <p class="footer__copyright-md">
+            Ветеринарна клініка
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="5" cy="5" r="5" fill="#4A5F74" />
+              <path
+                d="M4.939 8.156C3.95967 8.156 3.145 7.831 2.495 7.181C1.845 6.52233 1.52 5.712 1.52 4.75C1.52 3.788 1.845 2.982 2.495 2.332C3.145 1.67333 3.95967 1.344 4.939 1.344C5.58033 1.344 6.15667 1.5 6.668 1.812C7.17933 2.11533 7.552 2.527 7.786 3.047L7.084 3.45C6.91067 3.06 6.629 2.75233 6.239 2.527C5.85767 2.293 5.42433 2.176 4.939 2.176C4.21967 2.176 3.613 2.42733 3.119 2.93C2.625 3.424 2.378 4.03067 2.378 4.75C2.378 5.46933 2.625 6.08033 3.119 6.583C3.613 7.077 4.21967 7.324 4.939 7.324C5.42433 7.324 5.85767 7.21133 6.239 6.986C6.62033 6.752 6.91933 6.44 7.136 6.05L7.851 6.466C7.58233 6.986 7.188 7.39767 6.668 7.701C6.148 8.00433 5.57167 8.156 4.939 8.156Z"
+                fill="white"
+              />
+            </svg>
+            <span>2015-2022</span>
+            All Right Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

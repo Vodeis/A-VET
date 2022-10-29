@@ -16,5 +16,10 @@ document.querySelector('.btn__all-services').addEventListener('click', e => {
 document.querySelector('.header--md__languages').addEventListener('click', (e) => {
     e.preventDefault()
     document.querySelectorAll('.header--md__languages .header--md__nav__item').forEach(e => e.classList.toggle('lang--active'))
-    console.log(1)
 })
+// document.querySelector('.header--md__nav__container').addEventListener('click', (e)=> {
+//     if (e.target.tagName === 'A') {
+//         document.querySelector('.header--md__nav__item.header--md__nav__item--active').classList.remove('header--md__nav__item--active');
+//         e.target.classList.add('header--md__nav__item--active');    
+//     }
+// })

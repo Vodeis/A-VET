@@ -1,0 +1,152 @@
+.page-about-us__path,
+.languages .header__nav__item,
+.form-control,
+.footer__copyright,
+.page-about-us__path {
+  font-size: 11px;
+}
+.header__adress > p,
+.footer__adress {
+  font-size: 12px;
+}
+.btn_submit input,
+.all-services__text {
+  font-size: 13px;
+}
+.header__title,
+.header__adress > a,
+.header--md__phone,
+.our-team .carousel-caption h5,
+.footer__number,
+.footer__nav-item a,
+.footer__services__item a,
+.page-about-us__farmacy-container p {
+  font-size: 14px;
+}
+.header__nav__item,
+.header--md__hours,
+.header--md__adress,
+.header--md__nav__item,
+.our-services__item a:first-child,
+.vetclinik__text,
+.vetclinik__link,
+.vetclinik__main-areas__item__text,
+.page-about-us__text {
+  font-size: 15px;
+}
+.our-team .carousel-caption p,
+.contacts__adress p:first-child,
+.footer__nav > p,
+.footer__services__item--title a,
+.page-about-us__text span,
+.page-about-us__wishes h2 {
+  font-size: 16px;
+}
+.page-about-us__content-container h2,
+.page-about-us__container .appointment__title {
+  font-size: 17px;
+}
+.our-services__item__details {
+  font-size: 18px;
+}
+.vetclinik__main-areas__item__title,
+.appointment-footer__sub-title,
+.contacts__adress a {
+  font-size: 20px;
+}
+.appointment__title,
+.our-services__title,
+.vetclinik__title,
+.vetclinik__sub-title,
+.our-team__title,
+.contacts__title,
+.page-about-us__title,
+.appointment-footer__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1200px) {
+  .page-about-us__path {
+    font-size: 15px;
+  }
+  .footer__copyright {
+    font-size: 16px;
+  }
+  .footer__nav-item a,
+  .footer__services__item a {
+    font-size: 17px;
+  }
+  .header__title,
+  .header__adress > p,
+  .header__nav__item,
+  .languages .header__nav__item,
+  .header--md__hours,
+  .header--md__adress,
+  .header--md__nav__item,
+  .form-control,
+  .btn_submit input,
+  .all-services__text,
+  .vetclinik__text,
+  .vetclinik__link,
+  .vetclinik__main-areas__item__text,
+  .contacts__adress p:first-child,
+  .footer__adress,
+  .page-about-us__text,
+  .page-about-us__text span {
+    font-size: 18px;
+  }
+  .header__adress > a,
+  .header--md__phone,
+  .our-team .carousel-caption p,
+  .footer__number {
+    font-size: 20px;
+  }
+  .footer__nav > p,
+  .footer__services__item--title a,
+  .page-about-us__farmacy-container p,
+  .page-about-us__wishes h2 {
+    font-size: 22px;
+  }
+  .our-services__item a:first-child {
+    font-size: 27px;
+  }
+  .vetclinik__main-areas__item__title {
+    font-size: 30px;
+  }
+  .page-about-us__content-container h2 {
+    font-size: 32px;
+  }
+  .appointment-footer__sub-title,
+  .page-about-us__container .appointment__title {
+    font-size: 35px;
+  }
+  .appointment__title,
+  .our-services__title,
+  .vetclinik__title,
+  .vetclinik__sub-title,
+  .our-team__title,
+  .contacts__title,
+  .page-about-us__title,
+  .fs--title,
+  .appointment-footer__title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-about-us__path {
+    font-size: 13px;
+  }
+  .page-about-us__content-container h2 {
+    font-size: 25px;
+  }
+  .appointment__title,
+  .our-services__title,
+  .vetclinik__title,
+  .vetclinik__sub-title,
+  .our-team__title,
+  .contacts__title,
+  .page-about-us__title {
+    font-size: 35px;
+  }
+}

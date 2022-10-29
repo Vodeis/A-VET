@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="libraries/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="../css/fonts.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     />
-    <!-- <link rel="stylesheet" href="libraries/font-awesome.min.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       defer
     ></script>
-    <!-- <script src="libraries/bootstrap.min.js" defer></script> -->
     <script src="js/main.js" defer></script>
     <title>А-ВЕТ</title>
   </head>
@@ -169,14 +167,33 @@
                     <a
                       href="index.html"
                       class="header--md__nav__item lang--active"
-                      >UA <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z" fill="#5DB53B"/>
-                        </svg>
-                        </a
-                    >
-                    <a href="#" class="header--md__nav__item">RU <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z" fill="#5DB53B"/>
-                      </svg></a>
+                      >UA
+                      <svg
+                        width="9"
+                        height="5"
+                        viewBox="0 0 9 5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z"
+                          fill="#5DB53B"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" class="header--md__nav__item"
+                      >RU
+                      <svg
+                        width="9"
+                        height="5"
+                        viewBox="0 0 9 5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z"
+                          fill="#5DB53B"
+                        /></svg></a>
                   </li>
                 </ul>
               </nav>
@@ -216,65 +233,41 @@
             <div class="carousel-inner">
               <a href="#" class="carousel-item active">
                 <img
-                  src="img/promotion--sz.png"
+                  src="img/promotion/promotion--sz.png"
                   class="d-block w-100 promotion-sz"
                   alt="promotion"
                 />
                 <img
-                  src="img/promotion.png"
+                  src="img/promotion/promotion.png"
                   class="d-block w-100 promotion--lz"
                   alt="promotion"
                 />
               </a>
               <a href="#" class="carousel-item">
                 <img
-                  src="img/promotion--sz.png"
+                  src="img/promotion/promotion2--sz.png"
                   class="d-block w-100 promotion-sz"
                   alt="promotion"
                 />
                 <img
-                  src="img/promotion.png"
+                  src="img/promotion/promotion2.png"
                   class="d-block w-100 promotion--lz"
                   alt="promotion"
                 />
               </a>
               <a href="#" class="carousel-item">
                 <img
-                  src="img/promotion--sz.png"
+                  src="img/promotion/promotion3--sz.png"
                   class="d-block w-100 promotion-sz"
                   alt="promotion"
                 />
                 <img
-                  src="img/promotion.png"
+                  src="img/promotion/promotion3.png"
                   class="d-block w-100 promotion--lz"
                   alt="promotion"
                 />
               </a>
             </div>
-            <!-- <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Предыдущий</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Следующий</span>
-            </button> -->
           </div>
         </section>
         <section class="appointment container">
@@ -294,7 +287,7 @@
               data-target="contact"
             >
               <div class="cl_contact_form">
-                <div>
+                <div class="col-5">
                   <input
                     type="text"
                     class="form-control"
@@ -303,7 +296,7 @@
                     required=""
                   />
                 </div>
-                <div>
+                <div class="col-5">
                   <input
                     type="text"
                     class="form-control"
@@ -324,73 +317,89 @@
           <ul class="our-services__container">
             <li class="our-services__item consultation col-6 col-md-6">
               <a href="#">Консультація лікаря</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li class="our-services__item reproductology col-6 col-md-6">
               <a href="#">Репродуктологія</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li class="our-services__item ophthalmology col-6 col-md-5">
               <a href="#">Офтальмологія</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li class="our-services__item x-ray col-6 col-md-3">
               <a href="#">Ренген</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li class="our-services__item laboratory col-12 col-md-4">
               <a href="#">Лабораторія</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide dentistry col-6 col-md-8"
             >
               <a href="#">Стоматологія</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide oncology col-6 col-md-4"
             >
               <a href="#">Онкологія</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide hospital col-6 col-md-4"
             >
               <a href="#">Стаціонар</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide grooming col-6 col-md-5"
             >
               <a href="#">Грумінг</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide neurosurgery col-12 col-md-3"
             >
               <a href="#">Нейрохірургія</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide therapy col-6 col-md-3"
             >
               <a href="#">Терапія</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide hotel col-6 col-md-3--gap"
             >
               <a href="#">Готель</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide chipping col-12 col-md-6"
             >
               <a href="#">Чіпування</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide surgery col-6 col-md-4"
             >
               <a href="#">Хірургія</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide ultrasound col-6 col-md-4--gap"
             >
               <a href="#">УЗД</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
             <li
               class="our-services__item our-services__item--hide vaccination col-12 col-md-4"
             >
               <a href="#">Вакцинація</a>
+              <a href="#" class="our-services__item__details">Детальніше</a>
             </li>
           </ul>
           <div class="btn__all-services">
@@ -448,19 +457,19 @@
             <img src="img/vetclinik/vetclinik.png" alt="vetclinik" />
           </div>
           <div class="vetclinik__container col-md-6">
-          <h1 class="vetclinik__title">Ветклініка А-ВЕТ</h1>
-          <p class="vetclinik__text">
-            Ми щиро бажаємо їм здоров'я та довголіття, а отже, надамо
-            максимально правильне та компетентне лікування. У нас кваліфіковані
-            лікарі (ми зібрали одну з найкращих команд у Києві) та адекватні
-            ціни. Стрес для тварин є дуже небезпечним, тому ми створили для
-            ваших улюбленців максимально комфортні умови перебування в нашій
-            клініці.
-          </p>
-          <a class="vetclinik__link" href="html/about_us.html"
-            >Дізнатися більше</a
-          >
-        </div>
+            <h1 class="vetclinik__title">Ветклініка А-ВЕТ</h1>
+            <p class="vetclinik__text">
+              Ми щиро бажаємо їм здоров'я та довголіття, а отже, надамо
+              максимально правильне та компетентне лікування. У нас
+              кваліфіковані лікарі (ми зібрали одну з найкращих команд у Києві)
+              та адекватні ціни. Стрес для тварин є дуже небезпечним, тому ми
+              створили для ваших улюбленців максимально комфортні умови
+              перебування в нашій клініці.
+            </p>
+            <a class="vetclinik__link" href="html/about_us.html"
+              >Дізнатися більше</a
+            >
+          </div>
         </section>
         <section class="container">
           <h1 class="vetclinik__sub-title">Основні напрямки</h1>
@@ -547,10 +556,7 @@
             </li>
           </ul>
           <div class="vetclinik__img--bottom">
-            <img
-              src="img/vetclinik/dog.png"
-              alt="img"
-            />
+            <img src="img/vetclinik/dog.png" alt="img" />
           </div>
         </section>
         <section class="our-team container">
@@ -590,48 +596,196 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  src="img/our-team/doctor_1.png"
-                  class="d-block w-100"
-                  alt="doctor"
-                />
-                <!-- <img src="img/our-team/doctor_2.png" class="d-block w-50 our-team__doctor" alt="doctor"> -->
-                <div class="carousel-caption d-block">
-                  <h5 id="qwe">Головний хірург</h5>
-                  <p>Кирило</p>
+                <div class="item-inner-wrapper">
+                  <div class="item">
+                    <img
+                      src="img/our-team/doctor_1.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5 id="qwe">Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="img/our-team/doctor_2.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="img/our-team/doctor_3.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="img/our-team/doctor_4.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img
-                  src="img/our-team/doctor_2.png"
-                  class="d-block w-100"
-                  alt="doctor"
-                />
-                <div class="carousel-caption d-block">
-                  <h5>Головний хірург</h5>
-                  <p>Кирило</p>
+                <div class="item-inner-wrapper">
+                  <div class="item">
+                    <img
+                      src="img/our-team/doctor_1.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5 id="qwe">Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="img/our-team/doctor_2.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="img/our-team/doctor_3.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="img/our-team/doctor_4.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="item-inner-wrapper">
+                  <div class="item">
+                    <img
+                      src="img/our-team/doctor_1.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5 id="qwe">Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="img/our-team/doctor_2.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="img/our-team/doctor_3.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="img/our-team/doctor_4.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img
-                  src="img/our-team/doctor_3.png"
-                  class="d-block w-100"
-                  alt="doctor"
-                />
-                <div class="carousel-caption d-block">
-                  <h5>Головний хірург</h5>
-                  <p>Кирило</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="img/our-team/doctor_4.png"
-                  class="d-block w-100"
-                  alt="doctor"
-                />
-                <div class="carousel-caption d-block">
-                  <h5>Головний хірург</h5>
-                  <p>Кирило</p>
+                <div class="item-inner-wrapper">
+                  <div class="item">
+                    <img
+                      src="img/our-team/doctor_1.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5 id="qwe">Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="img/our-team/doctor_2.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="img/our-team/doctor_3.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
+                  <div class="item item--hide">
+                    <img
+                      src="img/our-team/doctor_4.png"
+                      class="d-block w-100"
+                      alt="doctor"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h5>Головний хірург</h5>
+                      <p>Кирило</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -672,7 +826,7 @@
               method="POST"
               data-target="contact"
             >
-            <p class="appointment-footer__sub-title">Записатись на прийом</p>
+              <p class="appointment-footer__sub-title">Записатись на прийом</p>
               <div class="cl_contact_form">
                 <div>
                   <input
@@ -698,9 +852,10 @@
               </div>
             </form>
             <img
-            src="img/footer-appointment.png"
-            alt="cat"
-            class="appointment-footer__img col-6"/>
+              src="img/footer-appointment.png"
+              alt="cat"
+              class="appointment-footer__img col-6"
+            />
           </div>
         </section>
         <section class="contacts">
@@ -721,7 +876,6 @@
               Клініка працює цілодобово та без вихідних
             </p>
           </div>
-          
         </section>
       </main>
       <footer>
@@ -845,7 +999,7 @@
           </div>
         </div>
         <div class="footer__copyright-bg">
-          <p class="footer__copyright">
+          <p class="footer__copyright container">
             All Right Reserved
             <svg
               width="10"
