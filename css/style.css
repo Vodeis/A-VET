@@ -1407,7 +1407,7 @@ header {
   max-width: 80%;
 }
 
-@media (min-width: 1140px) {
+/* @media (min-width: 1140px) {
   .footer__dog img {
     max-width: 90%;
   }
@@ -1416,7 +1416,7 @@ header {
   .footer__dog img {
     max-width: 100%;
   }
-}
+} */
 @media (min-width: 768px) {
   .footer__copyright {
     display: none;
@@ -1938,32 +1938,38 @@ header {
 }
 
 @media (min-width: 768px) {
+  .page-services__container .btn_submit input,
   .page-sales__container .btn_submit input {
     padding: 20px 44px;
   }
+  .page-services__container .col-md-5,
   .page-sales__container .col-md-5 {
     width: 44%;
   }
   .page-sales__container .appointment__img-container img {
     width: 60%;
   }
+  .page-services__container .appointment__img-container,
   .page-sales__container .appointment__img-container {
     justify-content: flex-start;
   }
-  
+  .page-services__container .appointment,
   .page-sales__container .appointment {
     position: relative;
   }
+  .page-services__container .appointment__title,
   .page-sales__container .appointment__title {
     position: absolute;
     top: 0;
     left: 25%;
     font-size: 35px;
   }
+  .page-services__container .appointment .cl_form,
   .page-sales__container .appointment .cl_form {
     align-items: center;
     display: flex;
   }
+  .page-services__container .appointment .cl_contact_form,
   .page-sales__container .appointment .cl_contact_form {
     display: flex;
     gap: 92px;
@@ -1971,10 +1977,291 @@ header {
     position: relative;
     width: 100%;
   }
+  .page-services__container .appointment .btn_submit,
   .page-sales__container .appointment .btn_submit {
     position: absolute;
     margin-top: 35px;
     bottom: -95px;
     right: 20px;
+  }
+}
+
+/* PAGE SERVICES */
+.page-services__container *,
+.page-services__container p,
+.page-services__container a {
+  font-family: "Gilroy";
+  font-style: normal;
+}
+.page-services__container {
+  overflow: hidden;
+  background: #f3f7fc;
+}
+.chipping--top {
+  background: url(../img/page_services/chiping--sz.png) no-repeat;
+  background-size: cover;
+  margin-top: 11px;
+  margin-bottom: 30px;
+  display: flex;
+  padding: 23px 0 40px 0;
+}
+.chipping--top__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 113.3%;
+  color: #2e3a50;
+}
+.chipping--top__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 123.8%;
+  color: #2e3a50;
+  margin-top: 15px;
+  margin-bottom: 33px;
+  width: 50%;
+}
+.chipping--top__btn-appointment {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 117.9%;
+  color: #ffffff;
+  padding: 10px 15px;
+  background: #5db53b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.chipping--top__img {
+  display: none;
+}
+.chipping--top__img {
+  width: 100%;
+}
+.chip {
+  margin-bottom: 52px;
+}
+.chip__left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chip__left-container__title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 138.8%;
+  text-align: center;
+  color: #2e3a50;
+}
+.chip__left-container__chip-number {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 138.8%;
+  color: #4a5f74;
+  padding: 8px 52px;
+  border: 2px solid #058209;
+  border-radius: 6px;
+  margin-top: 25px;
+}
+.chip__right-container__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 155.3%;
+  color: #5db53b;
+  margin-top: 236px;
+}
+.chip__right-container__text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 162.3%;
+  color: #4a5f74;
+  margin: 15px auto;
+}
+.chip__right-container__show-more {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 138.8%;
+  color: #5db53b;
+}
+.page-services__price-section {
+  background: linear-gradient(rgba(12, 23, 41, 0.54), rgba(12, 23, 41, 0.54)),
+    url(../img/page_services/amount--sz.png) no-repeat;
+  background-size: cover;
+  padding-bottom: 70px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.price-section__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 113.3%;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.price-section__table-container {
+  border: 2px solid #f4f4f4;
+  border-radius: 15px 15px 0 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+.price-section__table {
+  border-radius: 8px 0px 0px 0px;
+  border-collapse: collapse;
+}
+.price-section__table tr:first-child {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 138.8%;
+  color: #4a5f74;
+  background: #eff7ff;
+}
+.price-section__table-container .price-section__table tr:last-child td {
+  border-bottom: none;
+}
+.price-section__table tr:first-child td:first-child {
+  padding: 10px 18px;
+  border-radius: 8px 0px 0px 0px;
+  border-right: 2px solid #b6b6b6;
+}
+.price-section__table tr:first-child td:last-child {
+  padding: 10px 14px;
+  border-radius: 0px 8px 0px 0px;
+}
+.price-section__table tr:not(tr:first-child) {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 138.8%;
+  color: #ffffff;
+}
+.price-section__table tr:first-child td:last-child {
+  border-left: none;
+}
+
+.price-section__table tr:not(tr:first-child) td {
+  border: 2px solid #f4f4f4;
+  padding: 12px 18px;
+}
+.price-section__table tr:not(tr:first-child) td:first-child {
+  border-left: none;
+}
+.price-section__table tr:not(tr:first-child) td:last-child {
+  font-size: 25px;
+  padding: 10px 31px;
+  color: #5db53b;
+  border-right: none;
+}
+.page-services__container .appointment__title {
+  text-align: left;
+}
+.page-services__container .appointment-container {
+  flex-direction: row-reverse;
+}
+.page-services__container .appointment__img--md {
+  display: none;
+}
+.page-services__container .appointment {
+  margin-top: 46px;
+}
+
+@media (min-width: 768px) {
+  .chipping--top {
+    background: transparent;
+    margin-top: 9px;
+    margin-bottom: 105px;
+  }
+  .chipping--top__title {
+    font-size: 50px;
+  }
+  .chipping--top__text {
+    font-size: 22px;
+    line-height: 138.8%;
+    color: #4a5f74;
+    margin-top: 27px;
+    margin-bottom: 47px;
+  }
+  .chipping--top__img {
+    display: block;
+  }
+  .chipping--top__btn-appointment {
+    font-size: 17px;
+    padding: 20px 23px;
+  }
+  .chip {
+    display: flex;
+  }
+  .chip__left-container {
+    align-items: flex-start;
+    margin-right: 179px;
+  }
+  .chip__right-container {
+    width: 38%;
+  }
+  .chip__left-container__title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .chip__left-container__chip-number {
+    font-size: 35px;
+    padding: 9px 81px;
+    border: 3px solid #058209;
+  }
+  .chip__right-container__title {
+    margin-top: 0;
+    font-size: 32px;
+  }
+  .chip__right-container__text {
+    font-size: 18px;
+    line-height: 147.8%;
+    margin: 21px auto;
+  }
+  .chip__right-container__show-more {
+    font-size: 18px;
+  }
+  .page-services__price-section {
+    background: linear-gradient(rgba(12, 23, 41, 0.54), rgba(12, 23, 41, 0.54)),
+      url(../img/page_services/amount.png) no-repeat;
+    background-size: cover;
+  }
+  .price-section__title {
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .price-section__table tr {
+    font-size: 25px;
+  }
+  .price-section__table tr:first-child td:first-child {
+    padding: 7px 28px;
+  }
+  .price-section__table tr:first-child td:last-child {
+    padding: 7px 30px;
+  }
+  .price-section__table tr:not(tr:first-child) td {
+    padding: 14px 57px 14px 28px;
+  }
+  .price-section__table tr:not(tr:first-child) td:last-child {
+    padding: 15px 100px 15px 31px;
+    font-size: 32px;
+  }
+  .page-services__container .appointment {
+    margin-top: 0;
+  }
+  .page-services__container .appointment-container {
+    flex-direction: row;
+  }
+  
+  .page-services__container .appointment__img--sz {
+    display: none;
+  }
+  .page-services__container .appointment__img--md {
+    display: block;
+  }  
+  .page-services__container .appointment__title {
+    left: 34%;
+    top: 20%;
+  }
+  .page-services__container .appointment .btn_submit {
+    right: 30%;
   }
 }
