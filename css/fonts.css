@@ -118,7 +118,8 @@
     font-size: 32px;
   }
   .appointment-footer__sub-title,
-  .page-about-us__container .appointment__title {
+  .page-about-us__container .appointment__title,
+  .chip__left-container__chip-number {
     font-size: 35px;
   }
   .appointment__title,

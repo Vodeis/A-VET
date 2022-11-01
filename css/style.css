@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Gilroy";
   src: url(../fonts/Gilroy-Regular.ttf);
@@ -913,7 +912,7 @@ header {
   }
   .vetclinik__text,
   .vetclinik__link,
-  .vetclinik__main-areas__item__text  {
+  .vetclinik__main-areas__item__text {
     font-size: 18px;
   }
 }
@@ -1463,7 +1462,7 @@ header {
   font-weight: 500;
   font-size: 15px;
   line-height: 117.9%;
-  color: #4A5F74;
+  color: #4a5f74;
   margin-top: 21px;
 }
 .page-about-us__path span,
@@ -2060,6 +2059,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .chip__left-container__title {
   font-weight: 600;
@@ -2347,7 +2347,7 @@ header {
     font-size: 22px;
   }
   .chip__left-container__chip-number {
-    font-size: 35px;
+    font-size: 30px;
     padding: 9px 81px;
     border: 3px solid #058209;
   }
@@ -2435,10 +2435,10 @@ header {
   }
   .about-chip__title {
     font-weight: 700;
-font-size: 30px;
-margin-bottom: 27px;
-padding-left: 45px;
-}
+    font-size: 30px;
+    margin-bottom: 27px;
+    padding-left: 45px;
+  }
   .about-chip__section--hide .about-chip__text--17px {
     font-size: 22px;
     padding-left: 45px;
@@ -2451,7 +2451,7 @@ padding-left: 45px;
   }
   .about-chip__subsection--another.bg--blue li {
     font-weight: 600;
-font-size: 18px;
+    font-size: 18px;
   }
   .about-chip__section--hide .about-chip__subsection .subtitle--green {
     font-size: 30px;
@@ -2460,8 +2460,188 @@ font-size: 18px;
     font-size: 32px;
   }
 }
+/* chipping absolute section */
+
+.country p,
+.country-global p,
+.region p,
+.number p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130.3%;
+  color: #4a5f74;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.32);
+  border-radius: 5px;
+  width: fit-content;
+}
+.country p {
+  padding: 15px 3px;
+}
+.country-global p {
+  padding: 15px 9px 24px 9px;
+}
+.region p {
+  padding: 21px 7px 19px 8px;
+}
+.number p {
+  padding: 14px 3px 25px 9px;
+}
+
+.country,
+.country-global,
+.region,
+.number {
+  position: absolute;
+}
+.country svg:nth-child(2),
+.country-global svg:nth-child(2),
+.region svg:nth-child(2),
+.number svg:nth-child(2) {
+  display: none;
+}
+.country svg,
+.country-global svg,
+.region svg,
+.number svg {
+  position: absolute;
+}
+
+.country {
+  top: 145px;
+  left: 1%;
+}
+.country svg {
+  top: -40px;
+  left: 40px;
+}
+.country-global {
+  top: 172px;
+  left: 24%;
+}
+.country-global svg {
+  top: -68px;
+  left: 24px;
+}
+.region {
+  top: 114px;
+  left: 44%;
+}
+.region svg {
+  top: -15px;
+  left: 15px;
+}
+.number {
+  top: 97px;
+  left: 68%;
+}
+.number svg {
+  top: -3px;
+  left: 26px;
+}
+
+@media (min-width: 340px) and (max-width: 470px) {
+  .region {
+    top: 145px;
+    left: 44%;
+  }
+  .region svg {
+    top: -38px;
+    left: 20px;
+  }
+}
+@media (min-width: 768px)  {
+  .country svg:first-child,
+  .country-global svg:first-child,
+  .region svg:first-child,
+  .number svg:first-child {
+    display: none;
+  }
+  .country svg:nth-child(2),
+  .country-global svg:nth-child(2),
+  .region svg:nth-child(2),
+  .number svg:nth-child(2) {
+      display: block;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 1055px) {
+  .country {
+    top: 208px;
+    left: 1%;
+  }
+  .country svg {
+    top: -40px;
+    left: 40px;
+  }
+  .country-global {
+    top: 208px;
+    left: 22%;
+  }
+  .country-global svg {
+    top: -40px;
+    left: 24px;
+  }
+  .region {
+    top: 208px;
+    left: 48%;
+  }
+  .region svg {
+    top: -40px;
+    left: 15px;
+  }
+  .number {
+    top: 208px;
+    left: 74%;
+  }
+  .number svg {
+    top: -40px;
+    left: 26px;
+  }
+}
+@media (min-width: 1055px) {
+  .country p,
+  .country-global p,
+  .region p,
+  .number p {
+    font-size: 14px;
+  }
+  .country {
+    top: 175px;
+    left: 1%;
+  }
+  .country svg {
+    top: -40px;
+    left: 40px;
+  }
+  .country-global {
+    top: 175px;
+    left: 22%;
+  }
+  .country-global svg {
+    top: -40px;
+    left: 24px;
+  }
+  .region {
+    top: 175px;
+    left: 48%;
+  }
+  .region svg {
+    top: -40px;
+    left: 15px;
+  }
+  .number {
+    top: 175px;
+    left: 74%;
+  }
+  .number svg {
+    top: -40px;
+    left: 26px;
+  }
+}
+
 
 /* PAGE BLOG */
-
-
 
