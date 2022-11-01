@@ -1,4 +1,3 @@
-@import url(fonts.css);
 
 @font-face {
   font-family: "Gilroy";
@@ -325,6 +324,12 @@ header {
   .header--md {
     display: block;
   }
+  .header__nav__item:hover,
+  .header__nav__item:active,
+  .header--md__nav__item:hover:not(.header--md__languages
+      .header--md__nav__item) {
+    padding-bottom: 11px;
+  }
 }
 /* header hovers */
 .header__nav__item:hover,
@@ -332,7 +337,6 @@ header {
 .header--md__nav__item:hover:not(.header--md__languages
     .header--md__nav__item) {
   color: #5db53b;
-  padding-bottom: 11px;
   border-bottom: 1px solid #5db53b;
 }
 
@@ -381,6 +385,7 @@ header {
     display: block !important;
   }
 }
+
 /* section schedule an appointment form */
 .appointment-container {
   display: flex;
@@ -495,7 +500,6 @@ header {
 
 .our-services__item {
   position: relative;
-  transition: 0.5s;
 }
 
 .our-services__item.col-6 {
@@ -573,6 +577,7 @@ header {
 @media (min-width: 768px) {
   .our-services__container {
     gap: 30px;
+    width: 100%;
   }
   .our-services__title {
     text-align: left;
@@ -580,6 +585,8 @@ header {
     margin-bottom: 93px;
   }
   .our-services__item a:first-child {
+    font-size: 27px;
+    line-height: 138.8%;
     padding: 63px 30px 203px 30px;
   }
   .our-services__item.col-md-3 {
@@ -773,6 +780,12 @@ header {
     /* scale: 1.2; */
     background-size: 120%;
   }
+  .our-services__item.neurosurgery:hover {
+    background-size: 200%;
+  }
+  .our-services__item.hotel:hover {
+    background-size: 150%;
+  }
 }
 .consultation,
 .reproductology,
@@ -897,6 +910,11 @@ header {
   }
   .vetclinik .col-md-6 {
     width: calc(50% - 52.5px);
+  }
+  .vetclinik__text,
+  .vetclinik__link,
+  .vetclinik__main-areas__item__text  {
+    font-size: 18px;
   }
 }
 @media (min-width: 1200px) {
@@ -1440,13 +1458,12 @@ header {
   background-color: #eff7ff;
 }
 .page-about-us__path,
-.page-contacts__path {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
+.page-contacts__path,
+.page-about-us__path a {
+  font-weight: 500;
+  font-size: 15px;
   line-height: 117.9%;
-  color: #4a5f74;
+  color: #4A5F74;
   margin-top: 21px;
 }
 .page-about-us__path span,
@@ -2164,7 +2181,134 @@ header {
   margin-top: 46px;
 }
 
+.about-chip__section--hide *,
+.about-chip__section--hide p,
+.about-chip__section--hide a {
+  font-family: "Gilroy";
+  font-style: normal;
+}
+.about-chip__section--hide {
+  display: none;
+}
+.about-chip__section--hide ol,
+.about-chip__section--hide li {
+  padding: revert;
+  list-style-type: decimal;
+}
+.about-chip__section--hide li {
+  margin-top: 14px;
+}
+.about-chip__subsection {
+  margin-top: 40px;
+}
+.about-chip__subsection .bg--blue {
+  background: #4a5f74;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 155.3%;
+  color: #bad7f9;
+  margin-bottom: 13px;
+  padding: 15px 0 15px 0;
+}
+.about-chip__subsection--another.bg--blue {
+  background: #4a5f74;
+  padding-top: 32px;
+  padding-bottom: 46px;
+}
+.about-chip__subsection--another.bg--blue li {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  color: #feffff;
+}
+.about-chip__subsection--another.bg--blue p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  color: #ffffff;
+}
+.about-chip__section--hide .about-chip__subsection .subtitle--green {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 113.3%;
+  color: #5db53b;
+}
+.about-chip__subsection.about-chip__subsection--another.bg--aqua {
+  background: #d3e7ff;
+  padding-top: 32px;
+  padding-bottom: 43px;
+}
+.about-chip__subsection--another.bg--aqua .subtitle--blue {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 155.3%;
+  color: #2e3a50;
+  margin-bottom: 30px;
+}
+
+.about-chip__subsection .bg--blue p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 155.3%;
+  color: #bad7f9;
+}
+.about-chip__subsection p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160.3%;
+  color: #4a5f74;
+}
+.about-chip__subsection p:not(p.container):not(div p:last-child) {
+  margin-bottom: 25px;
+}
+.about-chip__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 113.3%;
+  color: #2e3a50;
+  margin-bottom: 20px;
+}
+.about-chip__section--hide .about-chip__text--17px {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 147.8%;
+  color: #4a5f74;
+}
+.about-chip__section--hide ol li {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 180.8%;
+  color: #4a5f74;
+}
+.about-chip__section--hide .btn-hide {
+  display: flex;
+  justify-content: center;
+}
+.about-chip__section--hide .btn-hide__container {
+  margin-top: 59px;
+  margin-bottom: 47px;
+  padding: 8px 11px;
+  background: #5db53b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-chip__section--hide .btn-hide__container p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 117.9%;
+  letter-spacing: 0.035em;
+  color: #ffffff;
+}
+.mb-25px {
+  margin-bottom: 25px;
+}
 @media (min-width: 768px) {
+  .chip {
+    margin-bottom: 116px;
+  }
   .chipping--top {
     background: transparent;
     margin-top: 9px;
@@ -2250,13 +2394,13 @@ header {
   .page-services__container .appointment-container {
     flex-direction: row;
   }
-  
+
   .page-services__container .appointment__img--sz {
     display: none;
   }
   .page-services__container .appointment__img--md {
     display: block;
-  }  
+  }
   .page-services__container .appointment__title {
     left: 34%;
     top: 20%;
@@ -2264,4 +2408,60 @@ header {
   .page-services__container .appointment .btn_submit {
     right: 30%;
   }
+  .about-chip__section--hide * :not(.bg--aqua),
+  .about-chip__section--hide * :not(.bg--blue) {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-chip__subsection .bg--blue {
+    margin-bottom: 25px;
+    /* display: block; */
+  }
+  .about-chip__subsection--another .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-chip__subsection .bg--blue {
+    background: transparent;
+  }
+  .about-chip__subsection .bg--blue p {
+    font-weight: 700;
+    font-size: 32px;
+    background: #4a5f74;
+    display: inline;
+    padding: 2px 26px;
+    margin-left: 26px !important;
+  }
+  .about-chip__title {
+    font-weight: 700;
+font-size: 30px;
+margin-bottom: 27px;
+padding-left: 45px;
 }
+  .about-chip__section--hide .about-chip__text--17px {
+    font-size: 22px;
+    padding-left: 45px;
+  }
+  .about-chip__subsection p {
+    font-size: 18px;
+  }
+  .about-chip__section--hide ol li {
+    font-size: 18px;
+  }
+  .about-chip__subsection--another.bg--blue li {
+    font-weight: 600;
+font-size: 18px;
+  }
+  .about-chip__section--hide .about-chip__subsection .subtitle--green {
+    font-size: 30px;
+  }
+  .about-chip__subsection--another.bg--aqua .subtitle--blue {
+    font-size: 32px;
+  }
+}
+
+/* PAGE BLOG */
+
+
+
