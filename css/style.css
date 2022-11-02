@@ -474,6 +474,7 @@ header {
   }
 }
 /* section our-services */
+@media (max-width:1199px) {
 .our-services {
   margin-top: 41px;
   display: flex;
@@ -802,7 +803,7 @@ header {
   background-size: cover;
   background-position: center;
 }
-
+}
 /* section vetclinik */
 .vetclinik__img {
   margin-bottom: 6px;
@@ -2303,6 +2304,9 @@ header {
 .mb-25px {
   margin-bottom: 25px;
 }
+.about-chip__section--hide .btn-hide__container:hover {
+  cursor: pointer;
+}
 @media (min-width: 768px) {
   .chip {
     margin-bottom: 116px;
@@ -2310,7 +2314,7 @@ header {
   .chipping--top {
     background: transparent;
     margin-top: 9px;
-    margin-bottom: 105px;
+    margin-bottom: 50px;
   }
   .chipping--top__title {
     font-size: 50px;
@@ -2816,4 +2820,156 @@ header {
       justify-content: space-between;
     }
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.our-services--md {
+  display: none;
+}
+@media (min-width:1200px) {
+  .our-services {
+    display: none;
+  }
+  .our-services--md {
+    display: block;
+  }
+
+  .our-services--md *,
+.our-services--md a {
+  font-family: "Gilroy";
+  font-style: normal;
+}
+.our-services--md {
+  overflow: hidden;
+  max-width: 1170px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-services__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 138.8%;
+  color: #2e3a50;
+  margin-bottom: 92px;
+}
+.our-services__items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.our-services__item--hide {
+    display: none;
+  }
+.our-services__item__img-container {
+  position: relative;
+  overflow: hidden;
+}
+.our-services__item__img {
+  max-width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+.our-services__item__img-bg {
+  background: rgba(31, 43, 66, 0.66);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.our-services__item__dots {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+.our-services__item__details {
+  display: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 138.8%;
+  background: #5db53b;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 6px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.our-services__item {
+  position: relative;
+}
+.our-services__item__description {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 138.8%;
+  color: #fdfeff;
+  position: absolute;
+  top: 63px;
+  left: 30px;
+}
+.btn__all-services__container {
+  display: flex;
+  justify-content: center;
+}
+.btn__all-services {
+  display: flex;
+  background: #5db53b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 26px;
+  margin-top: 80px;
+  margin-bottom: 213px;
+}
+
+.all-services__arrow-up,
+.all-services__arrow-down {
+  display: none;
+}
+
+.all-services__arrow-down--active,
+.all-services__arrow-up--active {
+  display: block;
+}
+
+.btn__all-services:hover {
+  cursor: pointer;
+}
+.all-services__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 117.9%;
+  letter-spacing: 0.035em;
+  color: #ffffff;
+}
+.our-services__item:hover .our-services__item__img-bg {
+  background: rgba(46, 58, 80, 0.42);
+}
+.our-services__item:hover .our-services__item__dots {
+  display: none;
+}
+.our-services__item:hover .our-services__item__details {
+  display: block;
+}
+.our-services__item:hover .our-services__item__img {
+  scale: 1.2;
+}
+.our-services__item:hover .our-services__item__description {
+  display: none;
+}
 }

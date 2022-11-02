@@ -20,6 +20,19 @@ if (document.querySelector('.btn__all-services')) {
         })
     })
 }
+if (document.querySelector('.our-services--md .btn__all-services')) {
+    document.querySelector('.our-services--md .btn__all-services').addEventListener('click', e => {
+        document.querySelector('.our-services--md .all-services__arrow-down').classList.toggle('all-services__arrow-down--active');
+        document.querySelector('.our-services--md .all-services__arrow-up').classList.toggle('all-services__arrow-up--active');
+        document.querySelectorAll('.our-services--md .our-services__item--hide').forEach(e => {
+            if (document.querySelector('.our-services--md .all-services__arrow-down').classList.contains('all-services__arrow-down--active')) {
+                e.style.display = 'none';
+            } else {
+                e.style.display = 'block';
+            }
+        })
+    })
+}
 if (document.querySelector('.chip__right-container__show-more')) {
     document.querySelector('.chip__right-container__show-more').addEventListener('click', e => {
         e.target.style.display = 'none';
