@@ -31,10 +31,29 @@ if (document.querySelector('.chip__right-container__show-more')) {
     })
 }
 
-// document.querySelector('.header--md__nav__container').addEventListener('click', (e)=> {
-//     if (e.target.tagName === 'A') {
-//         document.querySelector('.header--md__nav__item.header--md__nav__item--active').classList.remove('header--md__nav__item--active');
-//         e.target.classList.add('header--md__nav__item--active');
-//     }
-// })
+if (document.querySelector('.blog__pages-tabs')) {
+    let index = 0;
+    const tabs = document.querySelectorAll('.blog__tab');
 
+    document.querySelector('.blog__pages-tabs').addEventListener('click', e => {
+        if (e.target.tagName === 'LI') {
+            document.querySelector('.blog__tab.blog__tab--active').classList.remove('blog__tab--active');
+            e.target.classList.add('blog__tab--active');
+            index = e.target.innerText - 1;
+        }
+        if (e.target.closest('.blog__tab--prew')) { 
+            document.querySelector('.blog__tab.blog__tab--active').classList.remove('blog__tab--active');
+            if (index > 0) {
+                index -= 1;
+            }
+            tabs[index].classList.add('blog__tab--active');
+        }
+        if (e.target.closest('.blog__tab--next')) { 
+            document.querySelector('.blog__tab.blog__tab--active').classList.remove('blog__tab--active');
+            if (index < tabs.length - 1) {
+                index += 1;
+            }
+            tabs[index].classList.add('blog__tab--active');
+        }
+    })
+}

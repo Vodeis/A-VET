@@ -64,6 +64,9 @@
 .appointment-footer__title {
   font-size: 22px;
 }
+.blog__title {
+  font-size: 25px;
+}
 
 @media (min-width: 1200px) {
   .page-about-us__path,
@@ -130,7 +133,8 @@
   .contacts__title,
   .page-about-us__title,
   .fs--title,
-  .appointment-footer__title {
+  .appointment-footer__title,
+  .blog__title {
     font-size: 50px;
   }
 }
