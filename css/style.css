@@ -143,7 +143,7 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .header__nav__container--active {
@@ -215,6 +215,7 @@ header {
 
 .header--md__top {
   justify-content: space-between;
+  align-items: center;
 }
 
 .header--md__nav__container {
@@ -293,6 +294,8 @@ header {
 .header--md__input-container input {
   border: none;
   border-radius: 5px;
+  width: 165px;
+  height: 35px;
 }
 
 .header--md__input-container input:focus {
@@ -304,7 +307,7 @@ header {
 .header--md__input-container > button {
   position: absolute;
   right: 0;
-  bottom: 3px;
+  bottom: 7px;
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -349,6 +352,9 @@ header {
 /* carousel */
 .carousel-indicators {
   bottom: -38px;
+}
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -474,335 +480,383 @@ header {
   }
 }
 /* section our-services */
-@media (max-width:1199px) {
-.our-services {
-  margin-top: 41px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.our-services__title {
-  text-align: center;
-  margin-bottom: 41px;
-}
-
-.our-services__container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.our-services__item {
-  position: relative;
-}
-
-.our-services__item.col-6 {
-  width: calc(50% - 10px);
-}
-
-.our-services__item--hide {
-  display: none;
-}
-
-.our-services__item a:first-child {
-  display: block;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 119.3%;
-  color: #ffffff;
-  padding: 14px 9px 90px 14px;
-}
-
-.our-services__item__details {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 138.8%;
-  color: #ffffff;
-  padding: 6px 20px;
-  background: #5db53b;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
-  display: none;
-}
-
-.btn__all-services {
-  display: flex;
-  background: #5db53b;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 5px 4px 15px;
-  margin-top: 39px;
-  margin-bottom: 33px;
-}
-
-.all-services__arrow-up,
-.all-services__arrow-down {
-  display: none;
-}
-
-.all-services__arrow-down--active,
-.all-services__arrow-up--active {
-  display: block;
-}
-
-.all-services__text {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 117.9%;
-  letter-spacing: 0.035em;
-  color: #ffffff;
-}
-
-.btn__all-services:hover {
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .our-services__container {
-    gap: 30px;
-    width: 100%;
+@media (max-width: 1199px) {
+  .our-services {
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
   .our-services__title {
-    text-align: left;
-    align-self: flex-start;
-    margin-bottom: 93px;
+    text-align: center;
+    margin-bottom: 41px;
   }
-  .our-services__item a:first-child {
-    font-size: 27px;
-    line-height: 138.8%;
-    padding: 63px 30px 203px 30px;
-  }
-  .our-services__item.col-md-3 {
-    width: calc(25% - 30px);
-  }
-  .our-services__item.col-md-4 {
-    width: calc(33.33333333% - 15px);
-  }
-  .our-services__item.col-md-5 {
-    width: calc(41.66666667% - 15px);
-  }
-  .our-services__item.col-md-6 {
-    width: calc(50% - 15px);
-  }
-  .our-services__item.col-md-8 {
-    width: calc(66.66666667% - 15px);
-  }
-  .our-services__item.col-md-3--gap {
-    width: calc(25% - 15px);
-  }
-  .our-services__item.col-md-4--gap {
-    width: calc(33.33333333% - 30px);
-  }
-  .btn__all-services {
-    margin-top: 80px;
-    margin-bottom: 213px;
-  }
-}
-/* our-services bg */
-@media (max-width: 346px) {
-  .consultation a {
-    padding-bottom: 75px;
-  }
-}
-.consultation {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/consultation.png);
-}
 
-.reproductology {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/reproductology.png);
-}
+  .our-services__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-.ophthalmology {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/ophthalmology.png);
-}
+  .our-services__item {
+    position: relative;
+  }
 
-.x-ray {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/x-ray.png);
-}
+  .our-services__item.col-6 {
+    width: calc(50% - 10px);
+  }
 
-.laboratory {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/laboratory.png);
-}
-
-.dentistry {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/dentistry.png);
-}
-
-.oncology {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/oncology.png);
-}
-
-.hospital {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/hospital.png);
-}
-
-.grooming {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/grooming.png);
-}
-
-.neurosurgery {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/neurosurgery.png);
-}
-
-.therapy {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/therapy.png);
-}
-
-.hotel {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/hotel.png);
-}
-
-.chipping {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/chipping.png);
-}
-
-.surgery {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/surgery.png);
-}
-
-.ultrasound {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/ultrasound.png);
-}
-
-.vaccination {
-  background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-    url(../img/our-services-sz/vaccination.png);
-}
-
-@media (min-width: 768px) {
-  .consultation {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/consultation.png);
-  }
-  .reproductology {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/reproductology.png);
-  }
-  .ophthalmology {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/ophthalmology.png);
-  }
-  .x-ray {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/x-ray.png);
-  }
-  .laboratory {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/laboratory.png);
-  }
-  .dentistry {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/dentistry.png);
-  }
-  .oncology {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/oncology.png);
-  }
-  .hospital {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/hospital.png);
-  }
-  .grooming {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/grooming.png);
-  }
-  .neurosurgery {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/neurosurgery.png);
-  }
-  .therapy {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/therapy.png);
-  }
-  .hotel {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/hotel.png);
-  }
-  .chipping {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/chipping.png);
-  }
-  .surgery {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/surgery.png);
-  }
-  .ultrasound {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/ultrasound.png);
-  }
-  .vaccination {
-    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
-      url(../img/our-services--fz/vaccination.png);
-  }
-  /* our-services hover */
-  .our-services__item:hover a:first-child {
+  .our-services__item--hide {
     display: none;
   }
-  .our-services__item:hover .our-services__item__details {
+
+  .our-services__item a:first-child {
+    display: block;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 119.3%;
+    color: #ffffff;
+    padding: 14px 9px 90px 14px;
+  }
+
+  .our-services__item__details {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 138.8%;
+    color: #ffffff;
+    padding: 6px 20px;
+    background: #5db53b;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    display: none;
+  }
+
+  .btn__all-services {
+    display: flex;
+    background: #5db53b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 5px 4px 15px;
+    margin-top: 39px;
+    margin-bottom: 33px;
+  }
+
+  .all-services__arrow-up,
+  .all-services__arrow-down {
+    display: none;
+  }
+
+  .all-services__arrow-down--active,
+  .all-services__arrow-up--active {
     display: block;
   }
-  .our-services__item__details:hover {
+
+  .all-services__text {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 117.9%;
+    letter-spacing: 0.035em;
     color: #ffffff;
   }
-  .our-services__item:hover {
-    /* scale: 1.2; */
-    background-size: 120%;
+
+  .btn__all-services:hover {
+    cursor: pointer;
   }
-  .our-services__item.neurosurgery:hover {
-    background-size: 200%;
+
+  @media (min-width: 768px) {
+    .our-services__container {
+      gap: 30px;
+      width: 100%;
+    }
+    .our-services__title {
+      text-align: left;
+      align-self: flex-start;
+      margin-bottom: 93px;
+    }
+    .our-services__item a:first-child {
+      font-size: 27px;
+      line-height: 138.8%;
+      padding: 63px 30px 203px 30px;
+    }
+    .our-services__item.col-md-3 {
+      width: calc(25% - 30px);
+    }
+    .our-services__item.col-md-4 {
+      width: calc(33.33333333% - 15px);
+    }
+    .our-services__item.col-md-5 {
+      width: calc(41.66666667% - 15px);
+    }
+    .our-services__item.col-md-6 {
+      width: calc(50% - 15px);
+    }
+    .our-services__item.col-md-8 {
+      width: calc(66.66666667% - 15px);
+    }
+    .our-services__item.col-md-3--gap {
+      width: calc(25% - 15px);
+    }
+    .our-services__item.col-md-4--gap {
+      width: calc(33.33333333% - 30px);
+    }
+    .btn__all-services {
+      margin-top: 80px;
+      margin-bottom: 213px;
+    }
   }
-  .our-services__item.hotel:hover {
-    background-size: 150%;
+  /* our-services bg */
+  @media (max-width: 346px) {
+    .consultation a {
+      padding-bottom: 75px;
+    }
   }
-}
-.consultation,
-.reproductology,
-.ophthalmology,
-.x-ray,
-.laboratory,
-.dentistry,
-.oncology,
-.hospital,
-.grooming,
-.neurosurgery,
-.therapy,
-.hotel,
-.chipping,
-.surgery,
-.ultrasound,
-.vaccination {
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-}
+  .consultation {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/consultation.webp);
+  }
+
+  .reproductology {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/reproductology.webp);
+  }
+
+  .ophthalmology {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/ophthalmology.webp);
+  }
+
+  .x-ray {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/x-ray.webp);
+  }
+
+  .laboratory {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/laboratory.webp);
+  }
+
+  .dentistry {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/dentistry.webp);
+  }
+
+  .oncology {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/oncology.webp);
+  }
+
+  .hospital {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/hospital.webp);
+  }
+
+  .grooming {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/grooming.webp);
+  }
+
+  .neurosurgery {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/neurosurgery.webp);
+  }
+
+  .therapy {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/therapy.webp);
+  }
+
+  .hotel {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/hotel.webp);
+  }
+
+  .chipping {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/chipping.webp);
+  }
+
+  .surgery {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/surgery.webp);
+  }
+
+  .ultrasound {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/ultrasound.webp);
+  }
+
+  .vaccination {
+    background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
+      url(../img/our-services-sz/vaccination.webp);
+  }
+
+  @media (min-width: 768px) {
+    .consultation {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/consultation.webp);
+    }
+    .reproductology {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/reproductology.webp);
+    }
+    .ophthalmology {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/ophthalmology.webp);
+    }
+    .x-ray {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/x-ray.webp);
+    }
+    .laboratory {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/laboratory.webp);
+    }
+    .dentistry {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/dentistry.webp);
+    }
+    .oncology {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/oncology.webp);
+    }
+    .hospital {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/hospital.webp);
+    }
+    .grooming {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/grooming.webp);
+    }
+    .neurosurgery {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/neurosurgery.webp);
+    }
+    .therapy {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/therapy.webp);
+    }
+    .hotel {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/hotel.webp);
+    }
+    .chipping {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/chipping.webp);
+    }
+    .surgery {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/surgery.webp);
+    }
+    .ultrasound {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/ultrasound.webp);
+    }
+    .vaccination {
+      background: linear-gradient(
+          rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)
+        ),
+        url(../img/our-services--fz/vaccination.webp);
+    }
+    /* our-services hover */
+    .our-services__item:hover a:first-child {
+      display: none;
+    }
+    .our-services__item:hover .our-services__item__details {
+      display: block;
+    }
+    .our-services__item__details:hover {
+      color: #ffffff;
+    }
+    .our-services__item:hover {
+      /* scale: 1.2; */
+      background-size: 120%;
+    }
+    .our-services__item.neurosurgery:hover {
+      background-size: 200%;
+    }
+    .our-services__item.hotel:hover {
+      background-size: 150%;
+    }
+  }
+  .consultation,
+  .reproductology,
+  .ophthalmology,
+  .x-ray,
+  .laboratory,
+  .dentistry,
+  .oncology,
+  .hospital,
+  .grooming,
+  .neurosurgery,
+  .therapy,
+  .hotel,
+  .chipping,
+  .surgery,
+  .ultrasound,
+  .vaccination {
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
 }
 /* section vetclinik */
 .vetclinik__img {
@@ -938,7 +992,7 @@ header {
   width: 45%;
 }
 .our-team .carousel-control-prev {
-  left: -23px;
+  left: -27px;
 }
 .our-team .carousel-control-next {
   right: -27px;
@@ -949,26 +1003,33 @@ header {
   }
 }
 .carousel-caption {
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -100px;
 }
 
 .our-team .carousel-indicators {
-  bottom: -130px;
+  bottom: -150px;
 }
 
 .our-team .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='green'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  width: 12px;
 }
 
 .our-team .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='green'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  width: 12px;
 }
 @media (min-width: 768px) {
   .our-team .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M24 16L16 24L24 32' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M32 24H16' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  width: 100%;
   }
   .our-team .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4Z' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M24 32L32 24L24 16' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M16 24L32 24' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+    width: 100%;
   }
   .our-team .carousel-control-prev,
   .our-team .carousel-control-next {
@@ -1016,7 +1077,7 @@ header {
 .appointment-footer {
   padding-top: 30px;
   padding-bottom: 42px;
-  margin-top: 150px;
+  margin-top: 181px;
   background-color: #4a5f74;
   position: relative;
 }
@@ -1145,7 +1206,11 @@ header {
     padding-bottom: 64px;
   }
   .btn_submit input {
-    padding: 20px 29px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117.9%;
+    letter-spacing: 0.035em;
+    padding: 20px 26px 19px 26px;
   }
 }
 /* section contacts */
@@ -1355,13 +1420,11 @@ header {
   margin-top: 40px;
 }
 .footer__services {
-
   display: none;
 }
 @media (min-width: 768px) {
   .footer__nav-item {
     margin: 11px 0;
-
   }
   .footer__nav {
     align-self: flex-start;
@@ -1372,6 +1435,25 @@ header {
     margin-top: 20px;
     display: block;
   }
+  .footer__nav-item a,
+  .footer__services__item a {
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .footer__adress {
+    margin-top: 12px;
+    margin-bottom: 32px;
+    font-weight: 600;
+  }
+  .footer__social-link svg,
+  .footer__social-link img {
+    width: 38px;
+    height: 38px;
+    position: static;
+  }
+  /* .footer__social-link img {
+    max-width: 100%;
+  } */
 }
 .footer__copyright {
   font-family: "Gilroy";
@@ -1455,9 +1537,13 @@ header {
   overflow: hidden;
   background-color: #eff7ff;
 }
-.page-about-us__path,
+
 .page-contacts__path,
-.page-about-us__path a {
+.page-contacts__path a,
+.page-contacts__path p,
+.page-about-us__path,
+.page-about-us__path a,
+.page-about-us__path p {
   font-weight: 500;
   font-size: 15px;
   line-height: 117.9%;
@@ -1466,8 +1552,14 @@ header {
 }
 .page-about-us__path span,
 .page-contacts__path span {
-  margin: 0 3px;
+  margin: 0 9px 0 12px;
   color: #2e3a50;
+}
+b,
+strong {
+  font-weight: 600;
+  color: #2e3a50;
+  font-size: 15px;
 }
 .page-about-us__title {
   margin-bottom: 11px;
@@ -1542,7 +1634,7 @@ header {
 }
 
 .page-about-us__farmacy {
-  background: url(../img/page_about-us/farmacy.png);
+  background: url(../img/page_about-us/farmacy.webp);
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 51px;
@@ -1741,7 +1833,7 @@ header {
     width: 846px;
   }
   .page-about-us__farmacy-container p {
-    background: url(../img/page_about-us/farmacy.png) no-repeat;
+    background: url(../img/page_about-us/farmacy.webp) no-repeat;
     background-size: cover;
     padding: 61px 30.52px 103px 439px;
     font-weight: 700;
@@ -2013,7 +2105,7 @@ header {
   background: #f3f7fc;
 }
 .chipping--top {
-  background: url(../img/page_services/chiping--sz.png) no-repeat;
+  background: url(../img/page_services/chiping--sz.webp) no-repeat;
   background-size: cover;
   margin-top: 11px;
   margin-bottom: 30px;
@@ -2100,7 +2192,7 @@ header {
 }
 .page-services__price-section {
   background: linear-gradient(rgba(12, 23, 41, 0.54), rgba(12, 23, 41, 0.54)),
-    url(../img/page_services/amount--sz.png) no-repeat;
+    url(../img/page_services/amount--sz.webp) no-repeat;
   background-size: cover;
   padding-bottom: 70px;
   padding-top: 50px;
@@ -2367,7 +2459,7 @@ header {
   }
   .page-services__price-section {
     background: linear-gradient(rgba(12, 23, 41, 0.54), rgba(12, 23, 41, 0.54)),
-      url(../img/page_services/amount.png) no-repeat;
+      url(../img/page_services/amount.webp) no-repeat;
     background-size: cover;
   }
   .price-section__title {
@@ -2378,9 +2470,18 @@ header {
     font-size: 25px;
   }
   .price-section__table tr:first-child td:first-child {
+    font-weight: 500;
+font-size: 25px;
+line-height: 138.8%;
+color: #4A5F74;
     padding: 7px 28px;
   }
   .price-section__table tr:first-child td:last-child {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 138.8%;
+    color: #4A5F74;
+    
     padding: 7px 30px;
   }
   .price-section__table tr:not(tr:first-child) td {
@@ -2734,7 +2835,7 @@ header {
 }
 .blog__tab {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 138.8%;
   color: #5c7691;
   margin-right: 8.5px;
@@ -2789,7 +2890,7 @@ header {
   }
   .blog__tab {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 17px;
     margin-right: 12px;
     margin-left: 12px;
   }
@@ -2802,7 +2903,7 @@ header {
     margin-top: 51px;
     margin-bottom: 79px;
   }
-  
+
   .blog__item:hover .blod__item-details {
     display: block;
   }
@@ -2822,21 +2923,11 @@ header {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 .our-services--md {
   display: none;
 }
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .our-services {
     display: none;
   }
@@ -2845,131 +2936,131 @@ header {
   }
 
   .our-services--md *,
-.our-services--md a {
-  font-family: "Gilroy";
-  font-style: normal;
-}
-.our-services--md {
-  overflow: hidden;
-  max-width: 1170px;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .our-services--md a {
+    font-family: "Gilroy";
+    font-style: normal;
+  }
+  .our-services--md {
+    overflow: hidden;
+    max-width: 1170px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.our-services__title {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 138.8%;
-  color: #2e3a50;
-  margin-bottom: 92px;
-}
-.our-services__items-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.our-services__item--hide {
+  .our-services__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 138.8%;
+    color: #2e3a50;
+    margin-bottom: 92px;
+  }
+  .our-services__items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .our-services__item--hide {
     display: none;
   }
-.our-services__item__img-container {
-  position: relative;
-  overflow: hidden;
-}
-.our-services__item__img {
-  max-width: 100%;
-  display: block;
-  transition: 0.5s;
-}
-.our-services__item__img-bg {
-  background: rgba(31, 43, 66, 0.66);
-  border-radius: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.our-services__item__dots {
-  position: absolute;
-  bottom: 15px;
-  right: 25px;
-}
-.our-services__item__details {
-  display: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 138.8%;
-  background: #5db53b;
-  border-radius: 10px;
-  color: #ffffff;
-  padding: 6px 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.our-services__item {
-  position: relative;
-}
-.our-services__item__description {
-  font-weight: 500;
-  font-size: 27px;
-  line-height: 138.8%;
-  color: #fdfeff;
-  position: absolute;
-  top: 63px;
-  left: 30px;
-}
-.btn__all-services__container {
-  display: flex;
-  justify-content: center;
-}
-.btn__all-services {
-  display: flex;
-  background: #5db53b;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 26px;
-  margin-top: 80px;
-  margin-bottom: 213px;
-}
+  .our-services__item__img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .our-services__item__img {
+    max-width: 100%;
+    display: block;
+    transition: 0.5s;
+  }
+  .our-services__item__img-bg {
+    background: rgba(31, 43, 66, 0.66);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .our-services__item__dots {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+  }
+  .our-services__item__details {
+    display: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 138.8%;
+    background: #5db53b;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 6px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .our-services__item {
+    position: relative;
+  }
+  .our-services__item__description {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 138.8%;
+    color: #fdfeff;
+    position: absolute;
+    top: 63px;
+    left: 30px;
+  }
+  .btn__all-services__container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn__all-services {
+    display: flex;
+    background: #5db53b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 26px;
+    margin-top: 80px;
+    margin-bottom: 213px;
+  }
 
-.all-services__arrow-up,
-.all-services__arrow-down {
-  display: none;
-}
+  .all-services__arrow-up,
+  .all-services__arrow-down {
+    display: none;
+  }
 
-.all-services__arrow-down--active,
-.all-services__arrow-up--active {
-  display: block;
-}
+  .all-services__arrow-down--active,
+  .all-services__arrow-up--active {
+    display: block;
+  }
 
-.btn__all-services:hover {
-  cursor: pointer;
-}
-.all-services__text {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 117.9%;
-  letter-spacing: 0.035em;
-  color: #ffffff;
-}
-.our-services__item:hover .our-services__item__img-bg {
-  background: rgba(46, 58, 80, 0.42);
-}
-.our-services__item:hover .our-services__item__dots {
-  display: none;
-}
-.our-services__item:hover .our-services__item__details {
-  display: block;
-}
-.our-services__item:hover .our-services__item__img {
-  scale: 1.2;
-}
-.our-services__item:hover .our-services__item__description {
-  display: none;
-}
+  .btn__all-services:hover {
+    cursor: pointer;
+  }
+  .all-services__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 117.9%;
+    letter-spacing: 0.035em;
+    color: #ffffff;
+  }
+  .our-services__item:hover .our-services__item__img-bg {
+    background: rgba(46, 58, 80, 0.42);
+  }
+  .our-services__item:hover .our-services__item__dots {
+    display: none;
+  }
+  .our-services__item:hover .our-services__item__details {
+    display: block;
+  }
+  .our-services__item:hover .our-services__item__img {
+    scale: 1.2;
+  }
+  .our-services__item:hover .our-services__item__description {
+    display: none;
+  }
 }
