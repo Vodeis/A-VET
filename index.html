@@ -1,798 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/fonts.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/fonts.css">
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      defer
-    ></script>
-    <script src="js/main.js" defer></script>
-    <title>А-ВЕТ</title>
-  </head>
-  <body>
-    <div class="body-container">
-      <header>
-        <div class="header--sd">
-          <h1 class="header__title">Працюємо 24/7</h1>
-          <div class="header__bg">
-            <div class="container header__container">
-              <a class="header__logo col-3" href="index.html">
-                <img src="img/logo-bs.webp" alt="A-BET" />
-              </a>
-              <address class="header__adress col-6">
-                <p>м.Київ, пр. Героїв Сталінграду 8, к. 8.</p>
-                <a href="tel:+380965371000">+38 (096) 537-10-00</a>
-              </address>
-              <div class="header__burger-menu col-3">
-                <div class="burger-line"></div>
-                <div class="burger-line--s"></div>
-                <div class="burger-line"></div>
-                <div class="burger-line--s"></div>
-              </div>
-            </div>
-          </div>
-          <nav>
-            <ul class="header__nav__container">
-              <li>
-                <a
-                  href="index.html"
-                  class="header__nav__item header__nav__item--active"
-                  >Головна</a
-                >
-              </li>
-              <li>
-                <a href="html/about_us.html" class="header__nav__item"
-                  >Про нас</a
-                >
-              </li>
-              <li>
-                <a href="html/services.html" class="header__nav__item"
-                  >Послуги</a
-                >
-              </li>
-              <li>
-                <a href="html/prices.html" class="header__nav__item">Ціни</a>
-              </li>
-              <li>
-                <a href="html/sales.html" class="header__nav__item">Акції</a>
-              </li>
-              <li>
-                <a href="html/blog.html" class="header__nav__item">Блог</a>
-              </li>
-              <li>
-                <a href="html/contacts.html" class="header__nav__item"
-                  >Контакти</a
-                >
-              </li>
-              <li class="languages">
-                <a href="index.html" class="header__nav__item lang--active"
-                  >UA</a
-                >
-                <a href="#" class="header__nav__item">RU</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header--md">
-          <div class="header--md__container container">
-            <div class="header--md__logo col-2">
-              <img src="img/logo-bs.webp" alt="logo" />
-            </div>
-            <div class="header--md__right-container col-10">
-              <div class="header--md__top">
-                <p class="header--md__hours">Працюємо 24/7</p>
-                <p class="header--md__adress">
-                  м.Київ, пр. Героїв Сталінграду 8, к. 8.
-                </p>
-                <a class="header--md__phone" href="tel:+380965371000"
-                  >+38 (096) 537-10-00</a
-                >
-                <form class="header--md__input-container">
-                  <input type="text" /><button type="submit">
-                    <svg
-                      class="header--md__loop"
-                      width="19"
-                      height="19"
-                      viewBox="0 0 19 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.70833 15.0417C12.2061 15.0417 15.0417 12.2061 15.0417 8.70833C15.0417 5.21053 12.2061 2.375 8.70833 2.375C5.21053 2.375 2.375 5.21053 2.375 8.70833C2.375 12.2061 5.21053 15.0417 8.70833 15.0417Z"
-                        stroke="#00B700"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16.6234 16.6234L13.1797 13.1797"
-                        stroke="#00B700"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </form>
-              </div>
-              <nav>
-                <ul class="header--md__nav__container">
-                  <li>
-                    <a
-                      href="index.html"
-                      class="header--md__nav__item header--md__nav__item--active"
-                      >Головна</a
-                    >
-                  </li>
-                  <li>
-                    <a href="html/about_us.html" class="header--md__nav__item"
-                      >Про нас</a
-                    >
-                  </li>
-                  <li>
-                    <a href="html/services.html" class="header--md__nav__item"
-                      >Послуги</a
-                    >
-                  </li>
-                  <li>
-                    <a href="html/prices.html" class="header--md__nav__item"
-                      >Ціни</a
-                    >
-                  </li>
-                  <li>
-                    <a href="html/sales.html" class="header--md__nav__item"
-                      >Акції</a
-                    >
-                  </li>
-                  <li>
-                    <a href="html/blog.html" class="header--md__nav__item"
-                      >Блог</a
-                    >
-                  </li>
-                  <li>
-                    <a href="html/contacts.html" class="header--md__nav__item"
-                      >Контакти</a
-                    >
-                  </li>
-                  <li class="header--md__languages">
-                    <a
-                      href="index.html"
-                      class="header--md__nav__item lang--active"
-                      >UA
-                      <svg
-                        width="9"
-                        height="5"
-                        viewBox="0 0 9 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z"
-                          fill="#5DB53B"
-                        />
-                      </svg>
-                    </a>
-                    <a href="#" class="header--md__nav__item"
-                      >RU
-                      <svg
-                        width="9"
-                        height="5"
-                        viewBox="0 0 9 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z"
-                          fill="#5DB53B"
-                        /></svg></a>
-                  </li>
-                </ul>
-              </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/fonts.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <title>А-ВЕТ</title>
+</head>
+
+<body>
+  <div class="body-container">
+    <header>
+      <div class="header--sd">
+        <h1 class="header__title">Працюємо 24/7</h1>
+        <div class="header__bg">
+          <div class="container header__container">
+            <a class="header__logo col-3" href="index.html">
+              <img src="img/logo-bs.webp" alt="A-BET" />
+            </a>
+            <address class="header__adress col-6">
+              <p>м.Київ, пр. Героїв Сталінграду 8, к. 8.</p>
+              <a href="tel:+380965371000">+38 (096) 537-10-00</a>
+            </address>
+            <div class="header__burger-menu col-3">
+              <div class="burger-line"></div>
+              <div class="burger-line--s"></div>
+              <div class="burger-line"></div>
+              <div class="burger-line--s"></div>
             </div>
           </div>
         </div>
-      </header>
-      <main>
-        <section class="section__top-slider">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <a href="#" class="carousel-item active">
-                <img
-                  src="img/promotion/promotion--sz.webp"
-                  class="d-block w-100 promotion-sz"
-                  alt="promotion"
-                />
-                <img
-                  src="img/promotion/promotion.webp"
-                  class="d-block w-100 promotion--lz"
-                  alt="promotion"
-                />
-              </a>
-              <a href="#" class="carousel-item">
-                <img
-                  src="img/promotion/promotion2--sz.webp"
-                  class="d-block w-100 promotion-sz"
-                  alt="promotion"
-                />
-                <img
-                  src="img/promotion/promotion2.webp"
-                  class="d-block w-100 promotion--lz"
-                  alt="promotion"
-                />
-              </a>
-              <a href="#" class="carousel-item">
-                <img
-                  src="img/promotion/promotion3--sz.webp"
-                  class="d-block w-100 promotion-sz"
-                  alt="promotion"
-                />
-                <img
-                  src="img/promotion/promotion3.webp"
-                  class="d-block w-100 promotion--lz"
-                  alt="promotion"
-                />
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="appointment container">
-          <h1 class="appointment__title">Записатись на прийом</h1>
-          <div class="appointment-container">
-            <div class="appointment__img-container col-5 col-md-4">
-              <img
-                src="img/appointment.webp"
-                alt="appointment"
-                class="appointment__img"
-              />
-            </div>
-            <form
-              class="cl_form col-7 col-md-8"
-              action="/ajax/feedback/"
-              method="POST"
-              data-target="contact"
-            >
-              <div class="cl_contact_form">
-                <div class="col-5">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="full_name"
-                    placeholder="ПІП"
-                    required=""
-                  />
-                </div>
-                <div class="col-5">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="phone"
-                    placeholder="Ваш телефон"
-                    required=""
-                  />
-                </div>
-                <div class="btn_submit">
-                  <input type="submit" value="Записатись" />
-                </div>
-              </div>
-            </form>
-          </div>
-        </section>
-        <section class="our-services container">
-          <h1 class="our-services__title">Наші послуги</h1>
-          <ul class="our-services__container">
-            <li class="our-services__item consultation col-6 col-md-6">
-              <a href="#">Консультація лікаря</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
+        <nav>
+          <ul class="header__nav__container">
+            <li>
+              <a href="index.html" class="header__nav__item header__nav__item--active">Головна</a>
             </li>
-            <li class="our-services__item reproductology col-6 col-md-6">
-              <a href="#">Репродуктологія</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
+            <li>
+              <a href="html/about_us.html" class="header__nav__item">Про нас</a>
             </li>
-            <li class="our-services__item ophthalmology col-6 col-md-5">
-              <a href="#">Офтальмологія</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
+            <li>
+              <a href="html/services.html" class="header__nav__item">Послуги</a>
             </li>
-            <li class="our-services__item x-ray col-6 col-md-3">
-              <a href="#">Ренген</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
+            <li>
+              <a href="html/prices.html" class="header__nav__item">Ціни</a>
             </li>
-            <li class="our-services__item laboratory col-12 col-md-4">
-              <a href="#">Лабораторія</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
+            <li>
+              <a href="html/sales.html" class="header__nav__item">Акції</a>
             </li>
-            <li
-              class="our-services__item our-services__item--hide dentistry col-6 col-md-8"
-            >
-              <a href="#">Стоматологія</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
+            <li>
+              <a href="html/blog.html" class="header__nav__item">Блог</a>
             </li>
-            <li
-              class="our-services__item our-services__item--hide oncology col-6 col-md-4"
-            >
-              <a href="#">Онкологія</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
+            <li>
+              <a href="html/contacts.html" class="header__nav__item">Контакти</a>
             </li>
-            <li
-              class="our-services__item our-services__item--hide hospital col-6 col-md-4"
-            >
-              <a href="#">Стаціонар</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
-            </li>
-            <li
-              class="our-services__item our-services__item--hide grooming col-6 col-md-5"
-            >
-              <a href="#">Грумінг</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
-            </li>
-            <li
-              class="our-services__item our-services__item--hide neurosurgery col-12 col-md-3"
-            >
-              <a href="#">Нейрохірургія</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
-            </li>
-            <li
-              class="our-services__item our-services__item--hide therapy col-6 col-md-3"
-            >
-              <a href="#">Терапія</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
-            </li>
-            <li
-              class="our-services__item our-services__item--hide hotel col-6 col-md-3--gap"
-            >
-              <a href="#">Готель</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
-            </li>
-            <li
-              class="our-services__item our-services__item--hide chipping col-12 col-md-6"
-            >
-              <a href="#">Чіпування</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
-            </li>
-            <li
-              class="our-services__item our-services__item--hide surgery col-6 col-md-4"
-            >
-              <a href="#">Хірургія</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
-            </li>
-            <li
-              class="our-services__item our-services__item--hide ultrasound col-6 col-md-4--gap"
-            >
-              <a href="#">УЗД</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
-            </li>
-            <li
-              class="our-services__item our-services__item--hide vaccination col-12 col-md-4"
-            >
-              <a href="#">Вакцинація</a>
-              <a href="#" class="our-services__item__details">Детальніше</a>
+            <li class="languages">
+              <a href="index.html" class="header__nav__item lang--active">UA</a>
+              <a href="#" class="header__nav__item">RU</a>
             </li>
           </ul>
-          <div class="btn__all-services">
-            <p class="all-services__text">Усі послуги</p>
-            <svg
-              class="all-services__arrow-down all-services__arrow-down--active"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.667 15.9987L16.0003 21.332L21.3337 15.9987"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 10.6654L16 21.332"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <svg
-              class="all-services__arrow-up"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21.333 16.0013L15.9997 10.668L10.6663 16.0013"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 21.3346L16 10.668"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+        </nav>
+      </div>
+      <div class="header--md">
+        <div class="header--md__container container">
+          <div class="header--md__logo col-2">
+            <img src="img/logo-bs.webp" alt="logo" />
           </div>
-        </section>
-        <section class="our-services--md container">
+          <div class="header--md__right-container col-10">
+            <div class="header--md__top">
+              <p class="header--md__hours">Працюємо 24/7</p>
+              <p class="header--md__adress">
+                м.Київ, пр. Героїв Сталінграду 8, к. 8.
+              </p>
+              <a class="header--md__phone" href="tel:+380965371000">+38 (096) 537-10-00</a>
+              <form class="header--md__input-container">
+                <input type="text" /><button type="submit">
+                  <svg class="header--md__loop" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.70833 15.0417C12.2061 15.0417 15.0417 12.2061 15.0417 8.70833C15.0417 5.21053 12.2061 2.375 8.70833 2.375C5.21053 2.375 2.375 5.21053 2.375 8.70833C2.375 12.2061 5.21053 15.0417 8.70833 15.0417Z"
+                      stroke="#00B700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.6234 16.6234L13.1797 13.1797" stroke="#00B700" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <nav>
+              <ul class="header--md__nav__container">
+                <li>
+                  <a href="index.html" class="header--md__nav__item header--md__nav__item--active">Головна</a>
+                </li>
+                <li>
+                  <a href="html/about_us.html" class="header--md__nav__item">Про нас</a>
+                </li>
+                <li>
+                  <a href="html/services.html" class="header--md__nav__item">Послуги</a>
+                </li>
+                <li>
+                  <a href="html/prices.html" class="header--md__nav__item">Ціни</a>
+                </li>
+                <li>
+                  <a href="html/sales.html" class="header--md__nav__item">Акції</a>
+                </li>
+                <li>
+                  <a href="html/blog.html" class="header--md__nav__item">Блог</a>
+                </li>
+                <li>
+                  <a href="html/contacts.html" class="header--md__nav__item">Контакти</a>
+                </li>
+                <li class="header--md__languages">
+                  <div class="language-to-show">
+                    <p class="language-text">ua</p>
+                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z" fill="#5DB53B" />
+                    </svg>
+
+                  </div>
+                  <div class="languages__container">
+                    <a href="index.html" class="header--md__nav__item lang--active">UA
+                    </a>
+                    <a href="#" class="header--md__nav__item">RU
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="index__bg--dotted">
+      <section class="section__top-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <a href="#" class="carousel-item active">
+              <img src="img/promotion/promotion--sz.webp" class="d-block w-100 promotion-sz" alt="promotion" />
+              <img src="img/promotion/promotion.webp" class="d-block w-100 promotion--lz" alt="promotion" />
+            </a>
+            <a href="#" class="carousel-item">
+              <img src="img/promotion/promotion2--sz.webp" class="d-block w-100 promotion-sz" alt="promotion" />
+              <img src="img/promotion/promotion2.webp" class="d-block w-100 promotion--lz" alt="promotion" />
+            </a>
+            <a href="#" class="carousel-item">
+              <img src="img/promotion/promotion3--sz.webp" class="d-block w-100 promotion-sz" alt="promotion" />
+              <img src="img/promotion/promotion3.webp" class="d-block w-100 promotion--lz" alt="promotion" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="appointment container">
+        <h1 class="appointment__title">Записатись на прийом</h1>
+        <div class="appointment-container">
+          <div class="appointment__img-container col-5 col-md-4">
+            <img src="img/appointment.webp" alt="appointment" class="appointment__img" />
+          </div>
+          <form class="cl_form col-7 col-md-8" action="/ajax/feedback/" method="POST" data-target="contact">
+            <div class="cl_contact_form">
+              <div class="col-md-5">
+                <input type="text" class="form-control" name="full_name" placeholder="ПІП" required="" />
+              </div>
+              <div class="col-md-5">
+                <input type="text" class="form-control" name="phone" placeholder="Ваш телефон" required="" />
+              </div>
+              <div class="btn_submit">
+                <input type="submit" value="Записатись" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="our-services container">
+        <h1 class="our-services__title">Наші послуги</h1>
+        <ul class="our-services__container">
+          <li class="our-services__item consultation col-6 col-md-6">
+            <a href="#">Консультація лікаря</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item reproductology col-6 col-md-6">
+            <a href="#">Репродуктологія</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item ophthalmology col-6 col-md-5">
+            <a href="#">Офтальмологія</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item x-ray col-6 col-md-3">
+            <a href="#">Ренген</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item laboratory col-12 col-md-4">
+            <a href="#">Лабораторія</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide dentistry col-6 col-md-8">
+            <a href="#">Стоматологія</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide oncology col-6 col-md-4">
+            <a href="#">Онкологія</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide hospital col-6 col-md-4">
+            <a href="#">Стаціонар</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide grooming col-6 col-md-5">
+            <a href="#">Грумінг</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide neurosurgery col-12 col-md-3">
+            <a href="#">Нейрохірургія</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide therapy col-6 col-md-3">
+            <a href="#">Терапія</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide hotel col-6 col-md-3--gap">
+            <a href="#">Готель</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide chipping col-12 col-md-6">
+            <a href="#">Чіпування</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide surgery col-6 col-md-4">
+            <a href="#">Хірургія</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide ultrasound col-6 col-md-4--gap">
+            <a href="#">УЗД</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+          <li class="our-services__item our-services__item--hide vaccination col-12 col-md-4">
+            <a href="#">Вакцинація</a>
+            <a href="#" class="our-services__item__details">Детальніше</a>
+          </li>
+        </ul>
+        <div class="btn__all-services">
+          <p class="all-services__text">Усі послуги</p>
+          <svg class="all-services__arrow-down all-services__arrow-down--active" width="32" height="32"
+            viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.667 15.9987L16.0003 21.332L21.3337 15.9987" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16 10.6654L16 21.332" stroke="white" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <svg class="all-services__arrow-up" width="32" height="32" viewBox="0 0 32 32" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.333 16.0013L15.9997 10.668L10.6663 16.0013" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16 21.3346L16 10.668" stroke="white" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+      </section>
+      <section class="our-services--md__bg">
+        <div class="our-services--md container">
           <h1 class="our-services__title">Наші послуги</h1>
           <ul class="our-services__items-container">
             <li class="our-services__item">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/consultation.webp" alt="img" class="our-services__item__img" />
-                  <div class="our-services__item__img-bg"></div>   
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <div class="our-services__item__img-bg"></div>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Консультація лікаря</p>
               </a>
             </li>
-    
+
             <li class="our-services__item">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/reproductology.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Репродуктологія</p>
               </a>
             </li>
-    
+
             <li class="our-services__item">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/ophthalmology.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Офтальмологія</p>
               </a>
             </li>
-    
+
             <li class="our-services__item">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/x-ray.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Ренген</p>
               </a>
             </li>
-    
+
             <li class="our-services__item">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/laboratory.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Лабораторія</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/dentistry.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Стоматологія</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/oncology.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Онкологія</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/hospital.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Стаціонар</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/neurosurgery.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Нейрохірургія</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/ultrasound.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">УЗД</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/grooming.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Грумінг</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/therapy.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Терапія</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/chipping.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Чіпування</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/hotel.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Готель</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/surgery.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Хірургія</p>
               </a>
             </li>
-    
+
             <li class="our-services__item our-services__item--hide">
               <a href="#">
                 <div class="our-services__item__img-container">
                   <img src="img/our-services--fz/vaccination.webp" alt="img" class="our-services__item__img" />
                   <div class="our-services__item__img-bg"></div>
-                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z" fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <svg class="our-services__item__dots" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.5 21.125C20.3975 21.125 21.125 20.3975 21.125 19.5C21.125 18.6025 20.3975 17.875 19.5 17.875C18.6025 17.875 17.875 18.6025 17.875 19.5C17.875 20.3975 18.6025 21.125 19.5 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M30.875 21.125C31.7725 21.125 32.5 20.3975 32.5 19.5C32.5 18.6025 31.7725 17.875 30.875 17.875C29.9775 17.875 29.25 18.6025 29.25 19.5C29.25 20.3975 29.9775 21.125 30.875 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.125 21.125C9.02246 21.125 9.75 20.3975 9.75 19.5C9.75 18.6025 9.02246 17.875 8.125 17.875C7.22754 17.875 6.5 18.6025 6.5 19.5C6.5 20.3975 7.22754 21.125 8.125 21.125Z"
+                      fill="#5DB53B" stroke="#5DB53B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="our-services__item__details">Детальніше</p>
                 </div>
                 <p class="our-services__item__description">Вакцинація</p>
               </a>
             </li>
-          </ul><div class="btn__all-services__container">
-          <div class="btn__all-services">
-            <p class="all-services__text">Усі послуги</p>
-            <svg
-              class="all-services__arrow-down all-services__arrow-down--active"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.667 15.9987L16.0003 21.332L21.3337 15.9987"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 10.6654L16 21.332"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <svg
-              class="all-services__arrow-up"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21.333 16.0013L15.9997 10.668L10.6663 16.0013"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 21.3346L16 10.668"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+          </ul>
+          <div class="btn__all-services__container">
+            <div class="btn__all-services">
+              <p class="all-services__text">Усі послуги</p>
+              <svg class="all-services__arrow-down all-services__arrow-down--active" width="32" height="32"
+                viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.667 15.9987L16.0003 21.332L21.3337 15.9987" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 10.6654L16 21.332" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <svg class="all-services__arrow-up" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.333 16.0013L15.9997 10.668L10.6663 16.0013" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 21.3346L16 10.668" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
           </div>
         </div>
-        </section>
-    
-        <section class="vetclinik container">
-          <div class="vetclinik__img col-md-6">
-            <img src="img/vetclinik/vetclinik.webp" alt="vetclinik" />
-          </div>
-          <div class="vetclinik__container col-md-6">
-            <h1 class="vetclinik__title">Ветклініка А-ВЕТ</h1>
-            <p class="vetclinik__text">
-              Ми щиро бажаємо їм здоров'я та довголіття, а отже, надамо
-              максимально правильне та компетентне лікування. У нас
-              кваліфіковані лікарі (ми зібрали одну з найкращих команд у Києві)
-              та адекватні ціни. Стрес для тварин є дуже небезпечним, тому ми
-              створили для ваших улюбленців максимально комфортні умови
-              перебування в нашій клініці.
-            </p>
-            <a class="vetclinik__link" href="html/about_us.html"
-              >Дізнатися більше</a
-            >
-          </div>
-        </section>
-        <section class="container">
+      </section>
+
+      <section class="vetclinik container">
+        <div class="vetclinik__img col-md-6">
+          <img src="img/vetclinik/vetclinik.webp" alt="vetclinik" />
+        </div>
+        <div class="vetclinik__container col-md-6">
+          <h1 class="vetclinik__title">Ветклініка А-ВЕТ</h1>
+          <p class="vetclinik__text">
+            Ми щиро бажаємо їм здоров'я та довголіття, а отже, надамо
+            максимально правильне та компетентне лікування. У нас
+            кваліфіковані лікарі (ми зібрали одну з найкращих команд у Києві)
+            та адекватні ціни. Стрес для тварин є дуже небезпечним, тому ми
+            створили для ваших улюбленців максимально комфортні умови
+            перебування в нашій клініці.
+          </p>
+          <a class="vetclinik__link" href="html/about_us.html">Дізнатися більше</a>
+        </div>
+      </section>
+      <section class="vetclinik__main-areas__bg">
+        <div class="container">
           <h1 class="vetclinik__sub-title">Основні напрямки</h1>
           <ul class="vetclinik__main-areas">
             <li class="vetclinik__main-areas__item">
               <a href="#">
-                <img
-                  src="img/vetclinik/1.webp"
-                  alt="1"
-                  class="vetclinik__main-areas__img"
-                />
+                <img src="img/vetclinik/1.webp" alt="1" class="vetclinik__main-areas__img" />
                 <h3 class="vetclinik__main-areas__item__title">
                   Інтенсивна терапія
                 </h3>
@@ -803,11 +698,7 @@
             </li>
             <li class="vetclinik__main-areas__item">
               <a href="#">
-                <img
-                  src="img/vetclinik/2.webp"
-                  alt="1"
-                  class="vetclinik__main-areas__img"
-                />
+                <img src="img/vetclinik/2.webp" alt="1" class="vetclinik__main-areas__img" />
                 <h3 class="vetclinik__main-areas__item__title">Діагностика</h3>
                 <p class="vetclinik__main-areas__item__text">
                   Ульразвукаво діагностика вашого улюбленьця
@@ -816,11 +707,7 @@
             </li>
             <li class="vetclinik__main-areas__item">
               <a href="#">
-                <img
-                  src="img/vetclinik/3.webp"
-                  alt="1"
-                  class="vetclinik__main-areas__img"
-                />
+                <img src="img/vetclinik/3.webp" alt="1" class="vetclinik__main-areas__img" />
                 <h3 class="vetclinik__main-areas__item__title">Лабораторія</h3>
                 <p class="vetclinik__main-areas__item__text">
                   Всі необхідні лабораторні аналізи
@@ -829,11 +716,7 @@
             </li>
             <li class="vetclinik__main-areas__item">
               <a href="#">
-                <img
-                  src="img/vetclinik/1.webp"
-                  alt="4"
-                  class="vetclinik__main-areas__img"
-                />
+                <img src="img/vetclinik/1.webp" alt="4" class="vetclinik__main-areas__img" />
                 <h3 class="vetclinik__main-areas__item__title">Хірургія</h3>
                 <p class="vetclinik__main-areas__item__text">
                   Рентгенографічна діагностика вашого вихованця
@@ -842,11 +725,7 @@
             </li>
             <li class="vetclinik__main-areas__item">
               <a href="#">
-                <img
-                  src="img/vetclinik/1.webp"
-                  alt="5"
-                  class="vetclinik__main-areas__img"
-                />
+                <img src="img/vetclinik/1.webp" alt="5" class="vetclinik__main-areas__img" />
                 <h3 class="vetclinik__main-areas__item__title">Стаціонар</h3>
                 <p class="vetclinik__main-areas__item__text">
                   Електронний паспорт для вашого улюбленця
@@ -855,11 +734,7 @@
             </li>
             <li class="vetclinik__main-areas__item">
               <a href="#">
-                <img
-                  src="img/vetclinik/1.webp"
-                  alt="6"
-                  class="vetclinik__main-areas__img"
-                />
+                <img src="img/vetclinik/1.webp" alt="6" class="vetclinik__main-areas__img" />
                 <h3 class="vetclinik__main-areas__item__title">Грумінг</h3>
                 <p class="vetclinik__main-areas__item__text">
                   Рентгенографічна діагностика вашого вихованця
@@ -870,484 +745,314 @@
           <div class="vetclinik__img--bottom">
             <img src="img/vetclinik/dog.webp" alt="img" />
           </div>
-        </section>
-        <section class="our-team container">
-          <h2 class="our-team__title">Наша команда</h2>
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            data-bs-ride="false"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
+        </div>
+      </section>
+      <section class="our-team container">
+        <h2 class="our-team__title">Наша команда</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="item-inner-wrapper">
+                <div class="item">
+                  <img src="img/our-team/doctor_1.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5 id="qwe">Головний хірург</h5>
+                    <p>Кирило</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/our-team/doctor_2.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
+                  </div>
+                </div>
+                <div class="item item--hide">
+                  <img src="img/our-team/doctor_3.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
+                  </div>
+                </div>
+                <div class="item item--hide">
+                  <img src="img/our-team/doctor_4.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="item-inner-wrapper">
-                  <div class="item">
-                    <img
-                      src="img/our-team/doctor_1.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5 id="qwe">Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
+            <div class="carousel-item">
+              <div class="item-inner-wrapper">
+                <div class="item">
+                  <img src="img/our-team/doctor_1.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5 id="qwe">Головний хірург</h5>
+                    <p>Кирило</p>
                   </div>
-                  <div class="item">
-                    <img
-                      src="img/our-team/doctor_2.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
+                </div>
+                <div class="item">
+                  <img src="img/our-team/doctor_2.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
                   </div>
-                  <div class="item item--hide">
-                    <img
-                      src="img/our-team/doctor_3.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
+                </div>
+                <div class="item item--hide">
+                  <img src="img/our-team/doctor_3.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
                   </div>
-                  <div class="item item--hide">
-                    <img
-                      src="img/our-team/doctor_4.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
+                </div>
+                <div class="item item--hide">
+                  <img src="img/our-team/doctor_4.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="item-inner-wrapper">
-                  <div class="item">
-                    <img
-                      src="img/our-team/doctor_1.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5 id="qwe">Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img
-                      src="img/our-team/doctor_2.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
-                  </div>
-                  <div class="item item--hide">
-                    <img
-                      src="img/our-team/doctor_3.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
-                  </div>
-                  <div class="item item--hide">
-                    <img
-                      src="img/our-team/doctor_4.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
 
-              <div class="carousel-item">
-                <div class="item-inner-wrapper">
-                  <div class="item">
-                    <img
-                      src="img/our-team/doctor_1.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5 id="qwe">Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img
-                      src="img/our-team/doctor_2.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
-                  </div>
-                  <div class="item item--hide">
-                    <img
-                      src="img/our-team/doctor_3.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
-                  </div>
-                  <div class="item item--hide">
-                    <img
-                      src="img/our-team/doctor_4.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
+            <div class="carousel-item">
+              <div class="item-inner-wrapper">
+                <div class="item">
+                  <img src="img/our-team/doctor_1.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5 id="qwe">Головний хірург</h5>
+                    <p>Кирило</p>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="item-inner-wrapper">
-                  <div class="item">
-                    <img
-                      src="img/our-team/doctor_1.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5 id="qwe">Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
+                <div class="item">
+                  <img src="img/our-team/doctor_2.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
                   </div>
-                  <div class="item">
-                    <img
-                      src="img/our-team/doctor_2.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
+                </div>
+                <div class="item item--hide">
+                  <img src="img/our-team/doctor_3.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
                   </div>
-                  <div class="item item--hide">
-                    <img
-                      src="img/our-team/doctor_3.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
-                  </div>
-                  <div class="item item--hide">
-                    <img
-                      src="img/our-team/doctor_4.webp"
-                      class="d-block w-100"
-                      alt="doctor"
-                    />
-                    <div class="carousel-caption d-block">
-                      <h5>Головний хірург</h5>
-                      <p>Кирило</p>
-                    </div>
+                </div>
+                <div class="item item--hide">
+                  <img src="img/our-team/doctor_4.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
                   </div>
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </section>
-        <section class="appointment-footer">
-          <div class="appointment-footer--md container">
-            <h1 class="appointment-footer__title">
-              Ми любимо тварин так само, як і Ви!
-            </h1>
-            <form
-              class="cl_form"
-              action="/ajax/feedback/"
-              method="POST"
-              data-target="contact"
-            >
-              <p class="appointment-footer__sub-title">Записатись на прийом</p>
-              <div class="cl_contact_form">
-                <div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="full_name"
-                    placeholder="ПІП"
-                    required=""
-                  />
+            <div class="carousel-item">
+              <div class="item-inner-wrapper">
+                <div class="item">
+                  <img src="img/our-team/doctor_1.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5 id="qwe">Головний хірург</h5>
+                    <p>Кирило</p>
+                  </div>
                 </div>
-                <div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="phone"
-                    placeholder="Ваш телефон"
-                    required=""
-                  />
+                <div class="item">
+                  <img src="img/our-team/doctor_2.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
+                  </div>
                 </div>
-                <div class="btn_submit">
-                  <input type="submit" value="Записатись" />
+                <div class="item item--hide">
+                  <img src="img/our-team/doctor_3.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
+                  </div>
+                </div>
+                <div class="item item--hide">
+                  <img src="img/our-team/doctor_4.webp" class="d-block w-100" alt="doctor" />
+                  <div class="carousel-caption d-block">
+                    <h5>Головний хірург</h5>
+                    <p>Кирило</p>
+                  </div>
                 </div>
               </div>
-            </form>
-            <img
-              src="img/footer-appointment.webp"
-              alt="cat"
-              class="appointment-footer__img col-6"
-            />
+            </div>
           </div>
-        </section>
-        <section class="contacts">
-          <div class="contacts__map container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.9860873712123!2d30.516432415267097!3d50.49721669187583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d202972a4e83%3A0x77fa466d22705863!2z0L_RgNC-0YHQv9C10LrRgiDQk9C10YDQvtGX0LIg0KHRgtCw0LvRltC90LPRgNCw0LTQsCwgOCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1666036136439!5m2!1suk!2sua"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <h1 class="contacts__title container">Ми знаходимося за адресою:</h1>
-          <div class="contacts__adress">
-            <p class="container">м. Київ, пр. Героїв Сталінграду 8, корпус 8</p>
-            <a href="tel:+380965371000">+38(096) 537-10-00</a>
-            <p class="contacts__hours-of-work w-100">
-              Клініка працює цілодобово та без вихідних
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="appointment-footer">
+        <div class="appointment-footer--md container">
+          <h1 class="appointment-footer__title">
+            Ми любимо тварин так само, як і Ви!
+          </h1>
+          <form class="cl_form" action="/ajax/feedback/" method="POST" data-target="contact">
+            <p class="appointment-footer__sub-title">Записатись на прийом</p>
+            <div class="cl_contact_form">
+              <div>
+                <input type="text" class="form-control" name="full_name" placeholder="ПІП" required="" />
+              </div>
+              <div>
+                <input type="text" class="form-control" name="phone" placeholder="Ваш телефон" required="" />
+              </div>
+              <div class="btn_submit">
+                <input type="submit" value="Записатись" />
+              </div>
+            </div>
+          </form>
+          <img src="img/footer-appointment.webp" alt="cat" class="appointment-footer__img col-6" />
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__map container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.9860873712123!2d30.516432415267097!3d50.49721669187583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d202972a4e83%3A0x77fa466d22705863!2z0L_RgNC-0YHQv9C10LrRgiDQk9C10YDQvtGX0LIg0KHRgtCw0LvRltC90LPRgNCw0LTQsCwgOCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1666036136439!5m2!1suk!2sua"
+            style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h1 class="contacts__title container">Ми знаходимося за адресою:</h1>
+        <div class="contacts__adress container">
+          <p>м. Київ, пр. Героїв Сталінграду 8, корпус 8</p>
+          <a href="tel:+380965371000">+38(096) 537-10-00</a>
+          <p class="contacts__hours-of-work my-container">
+            Клініка працює цілодобово та без вихідних
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-bg">
+        <div class="footer container">
+          <div class="footer__container col-9 col-md-4">
+            <a class="footer__logo" href="index.html">
+              <img src="img/logo-bs.webp" alt="A-BET" />
+            </a>
+            <a href="tel:+380965371000" class="footer__number">+38(096) 537-10-00</a>
+            <p class="footer__adress">
+              м. Київ, пр. Героїв Сталінграду 8,<br> корпус 8
             </p>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="footer-bg">
-          <div class="footer container">
-            <div class="footer__container col-9 col-md-4">
-              <a class="footer__logo" href="index.html">
-                <img src="img/logo-bs.webp" alt="A-BET" />
-              </a>
-              <a href="tel:+380965371000" class="footer__number"
-                >+38(096) 537-10-00</a
-              >
-              <p class="footer__adress">
-                м. Київ, пр. Героїв Сталінграду 8,<br> корпус 8
-              </p>
-              <ul class="footer__social">
-                <li class="footer__social-link">
-                  <a href="#"
-                    ><svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="12" cy="12" r="12" fill="#5DB53B" />
+            <ul class="footer__social">
+              <li class="footer__social-link">
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#5DB53B" />
+                    <path
+                      d="M15.1583 6H13.2636C12.426 6 11.6228 6.30985 11.0306 6.86139C10.4384 7.41293 10.1057 8.16097 10.1057 8.94097V10.7055H8.21094V13.0583H10.1057V17.7639H12.632V13.0583H14.5267L15.1583 10.7055H12.632V8.94097C12.632 8.78497 12.6985 8.63536 12.817 8.52505C12.9354 8.41474 13.0961 8.35277 13.2636 8.35277H15.1583V6Z"
+                      stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-link">
+                <a href="#"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.4209" cy="12" r="12" fill="#5DB53B" />
+                    <g clip-path="url(#clip0_401_3772)">
                       <path
-                        d="M15.1583 6H13.2636C12.426 6 11.6228 6.30985 11.0306 6.86139C10.4384 7.41293 10.1057 8.16097 10.1057 8.94097V10.7055H8.21094V13.0583H10.1057V17.7639H12.632V13.0583H14.5267L15.1583 10.7055H12.632V8.94097C12.632 8.78497 12.6985 8.63536 12.817 8.52505C12.9354 8.41474 13.0961 8.35277 13.2636 8.35277H15.1583V6Z"
-                        stroke="white"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer__social-link">
-                  <a href="#"
-                    ><svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="12.4209" cy="12" r="12" fill="#5DB53B" />
-                      <g clip-path="url(#clip0_401_3772)">
-                        <path
-                          d="M15.317 6.21094H9.52755C7.92883 6.21094 6.63281 7.50696 6.63281 9.10567V14.8951C6.63281 16.4939 7.92883 17.7899 9.52755 17.7899H15.317C16.9157 17.7899 18.2118 16.4939 18.2118 14.8951V9.10567C18.2118 7.50696 16.9157 6.21094 15.317 6.21094Z"
-                          stroke="white"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M14.7354 11.6324C14.8069 12.1142 14.7246 12.6063 14.5002 13.0386C14.2759 13.471 13.9209 13.8216 13.4859 14.0406C13.0508 14.2596 12.5577 14.3358 12.0768 14.2584C11.5959 14.181 11.1516 13.954 10.8072 13.6096C10.4628 13.2651 10.2357 12.8209 10.1583 12.34C10.0809 11.859 10.1572 11.366 10.3762 10.9309C10.5951 10.4958 10.9458 10.1408 11.3781 9.91649C11.8105 9.69215 12.3026 9.60985 12.7844 9.6813C13.2759 9.75418 13.7309 9.9832 14.0822 10.3345C14.4335 10.6859 14.6626 11.1409 14.7354 11.6324Z"
-                          stroke="white"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M15.6035 8.8125H15.6098"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_401_3772">
-                          <rect
-                            width="13.8947"
-                            height="13.8947"
-                            fill="white"
-                            transform="translate(5.47363 5.05078)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer__social-link">
-                  <a href="#"><img src="img/viber.webp" alt="viber" /> </a>
-                </li>
-              </ul>
-            </div>
-            <nav class="footer__nav col-3 col-md-3">
-              <p>Меню:</p>
-              <ul class="footer__nav-menu">
-                <li class="footer__nav-item">
-                  <a href="html/about_us.html">Про нас</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="html/services.html">Послуги</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="html/sales.html">Акції</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="html/blog.html">Блог</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="html/contacts.html">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-            <ul class="footer__services col-md-3">
-              <li class="footer__services__item--title">
-                <a href="html/services.html">Послуги:</a>
+                        d="M15.317 6.21094H9.52755C7.92883 6.21094 6.63281 7.50696 6.63281 9.10567V14.8951C6.63281 16.4939 7.92883 17.7899 9.52755 17.7899H15.317C16.9157 17.7899 18.2118 16.4939 18.2118 14.8951V9.10567C18.2118 7.50696 16.9157 6.21094 15.317 6.21094Z"
+                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M14.7354 11.6324C14.8069 12.1142 14.7246 12.6063 14.5002 13.0386C14.2759 13.471 13.9209 13.8216 13.4859 14.0406C13.0508 14.2596 12.5577 14.3358 12.0768 14.2584C11.5959 14.181 11.1516 13.954 10.8072 13.6096C10.4628 13.2651 10.2357 12.8209 10.1583 12.34C10.0809 11.859 10.1572 11.366 10.3762 10.9309C10.5951 10.4958 10.9458 10.1408 11.3781 9.91649C11.8105 9.69215 12.3026 9.60985 12.7844 9.6813C13.2759 9.75418 13.7309 9.9832 14.0822 10.3345C14.4335 10.6859 14.6626 11.1409 14.7354 11.6324Z"
+                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M15.6035 8.8125H15.6098" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_401_3772">
+                        <rect width="13.8947" height="13.8947" fill="white" transform="translate(5.47363 5.05078)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__services__item">
-                <a href="#">Консультація</a>
+              <li class="footer__social-link">
+                <a href="#"><img src="img/viber.webp" alt="viber" /> </a>
               </li>
-              <li class="footer__services__item"><a href="#">Аналізи</a></li>
-              <li class="footer__services__item"><a href="#">УЗД</a></li>
-              <li class="footer__services__item"><a href="#">Ренген</a></li>
-              <li class="footer__services__item"><a href="#">Чіпування</a></li>
-              <li class="footer__services__item"><a href="#">Вакцинація</a></li>
             </ul>
-            <div class="footer__dog">
-              <img src="img/footer-dog.webp" alt="dog" />
-            </div>
+          </div>
+          <nav class="footer__nav col-3 col-md-3">
+            <p>Меню:</p>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item">
+                <a href="html/about_us.html">Про нас</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="html/services.html">Послуги</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="html/sales.html">Акції</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="html/blog.html">Блог</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="html/contacts.html">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer__services col-md-3">
+            <li class="footer__services__item--title">
+              <a href="html/services.html">Послуги:</a>
+            </li>
+            <li class="footer__services__item">
+              <a href="#">Консультація</a>
+            </li>
+            <li class="footer__services__item"><a href="#">Аналізи</a></li>
+            <li class="footer__services__item"><a href="#">УЗД</a></li>
+            <li class="footer__services__item"><a href="#">Ренген</a></li>
+            <li class="footer__services__item"><a href="#">Чіпування</a></li>
+            <li class="footer__services__item"><a href="#">Вакцинація</a></li>
+          </ul>
+          <div class="footer__dog">
+            <img src="img/footer-dog.webp" alt="dog" />
           </div>
         </div>
-        <div class="footer__copyright-bg">
-          <p class="footer__copyright container">
-            All Right Reserved
-            <svg
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#95ACC7" />
-              <path
-                d="M4.861 8.182C3.88167 8.182 3.06267 7.85267 2.404 7.194C1.754 6.53533 1.429 5.72067 1.429 4.75C1.429 3.77933 1.754 2.96467 2.404 2.306C3.06267 1.64733 3.88167 1.318 4.861 1.318C5.49367 1.318 6.07 1.46967 6.59 1.773C7.11 2.07633 7.50433 2.48367 7.773 2.995L6.33 3.84C6.2 3.57133 6.00067 3.359 5.732 3.203C5.472 3.047 5.17733 2.969 4.848 2.969C4.34533 2.969 3.92933 3.138 3.6 3.476C3.27067 3.80533 3.106 4.23 3.106 4.75C3.106 5.26133 3.27067 5.686 3.6 6.024C3.92933 6.35333 4.34533 6.518 4.848 6.518C5.186 6.518 5.485 6.44433 5.745 6.297C6.01367 6.141 6.213 5.92867 6.343 5.66L7.799 6.492C7.513 7.00333 7.11 7.415 6.59 7.727C6.07 8.03033 5.49367 8.182 4.861 8.182Z"
-                fill="#2E3A50"
-              />
-            </svg>
-            2015-2022
-          </p>
-          <p class="footer__copyright-md">
-            Ветеринарна клініка
-            <svg
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4A5F74" />
-              <path
-                d="M4.939 8.156C3.95967 8.156 3.145 7.831 2.495 7.181C1.845 6.52233 1.52 5.712 1.52 4.75C1.52 3.788 1.845 2.982 2.495 2.332C3.145 1.67333 3.95967 1.344 4.939 1.344C5.58033 1.344 6.15667 1.5 6.668 1.812C7.17933 2.11533 7.552 2.527 7.786 3.047L7.084 3.45C6.91067 3.06 6.629 2.75233 6.239 2.527C5.85767 2.293 5.42433 2.176 4.939 2.176C4.21967 2.176 3.613 2.42733 3.119 2.93C2.625 3.424 2.378 4.03067 2.378 4.75C2.378 5.46933 2.625 6.08033 3.119 6.583C3.613 7.077 4.21967 7.324 4.939 7.324C5.42433 7.324 5.85767 7.21133 6.239 6.986C6.62033 6.752 6.91933 6.44 7.136 6.05L7.851 6.466C7.58233 6.986 7.188 7.39767 6.668 7.701C6.148 8.00433 5.57167 8.156 4.939 8.156Z"
-                fill="white"
-              />
-            </svg>
-            <span>2015-2022</span>
-            All Right Reserved
-          </p>
-        </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+      <div class="footer__copyright-bg">
+        <p class="footer__copyright container">
+          All Right Reserved
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5" cy="5" r="5" fill="#95ACC7" />
+            <path
+              d="M4.861 8.182C3.88167 8.182 3.06267 7.85267 2.404 7.194C1.754 6.53533 1.429 5.72067 1.429 4.75C1.429 3.77933 1.754 2.96467 2.404 2.306C3.06267 1.64733 3.88167 1.318 4.861 1.318C5.49367 1.318 6.07 1.46967 6.59 1.773C7.11 2.07633 7.50433 2.48367 7.773 2.995L6.33 3.84C6.2 3.57133 6.00067 3.359 5.732 3.203C5.472 3.047 5.17733 2.969 4.848 2.969C4.34533 2.969 3.92933 3.138 3.6 3.476C3.27067 3.80533 3.106 4.23 3.106 4.75C3.106 5.26133 3.27067 5.686 3.6 6.024C3.92933 6.35333 4.34533 6.518 4.848 6.518C5.186 6.518 5.485 6.44433 5.745 6.297C6.01367 6.141 6.213 5.92867 6.343 5.66L7.799 6.492C7.513 7.00333 7.11 7.415 6.59 7.727C6.07 8.03033 5.49367 8.182 4.861 8.182Z"
+              fill="#2E3A50" />
+          </svg>
+          2015-2022
+        </p>
+        <p class="footer__copyright-md">
+          Ветеринарна клініка
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5" cy="5" r="5" fill="#4A5F74" />
+            <path
+              d="M4.939 8.156C3.95967 8.156 3.145 7.831 2.495 7.181C1.845 6.52233 1.52 5.712 1.52 4.75C1.52 3.788 1.845 2.982 2.495 2.332C3.145 1.67333 3.95967 1.344 4.939 1.344C5.58033 1.344 6.15667 1.5 6.668 1.812C7.17933 2.11533 7.552 2.527 7.786 3.047L7.084 3.45C6.91067 3.06 6.629 2.75233 6.239 2.527C5.85767 2.293 5.42433 2.176 4.939 2.176C4.21967 2.176 3.613 2.42733 3.119 2.93C2.625 3.424 2.378 4.03067 2.378 4.75C2.378 5.46933 2.625 6.08033 3.119 6.583C3.613 7.077 4.21967 7.324 4.939 7.324C5.42433 7.324 5.85767 7.21133 6.239 6.986C6.62033 6.752 6.91933 6.44 7.136 6.05L7.851 6.466C7.58233 6.986 7.188 7.39767 6.668 7.701C6.148 8.00433 5.57167 8.156 4.939 8.156Z"
+              fill="white" />
+          </svg>
+          <span>2015-2022</span>
+          All Right Reserved
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

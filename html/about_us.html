@@ -21,7 +21,7 @@
     <title>Про нас</title>
   </head>
   <body>
-    <div class="page-about-us__container">
+    <div class="page-about-us__container--all">
       <header>
         <div class="header--sd">
           <h1 class="header__title">Працюємо 24/7</h1>
@@ -156,37 +156,20 @@
                     >
                   </li>
                   <li class="header--md__languages">
-                    <a
-                      href="../index.html"
-                      class="header--md__nav__item lang--active"
-                      >UA
-                      <svg
-                        width="9"
-                        height="5"
-                        viewBox="0 0 9 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z"
-                          fill="#5DB53B"
-                        />
+                    <div class="language-to-show">
+                      <p class="language-text">ua</p>
+                      <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z" fill="#5DB53B" />
                       </svg>
-                    </a>
-                    <a href="#" class="header--md__nav__item"
-                      >RU
-                      <svg
-                        width="9"
-                        height="5"
-                        viewBox="0 0 9 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4.5 5L0.602887 0.499999L8.39711 0.5L4.5 5Z"
-                          fill="#5DB53B"
-                        /></svg                    ></a>
-                  </li>
+  
+                    </div>
+                    <div class="languages__container">
+                      <a href="index.html" class="header--md__nav__item lang--active">UA
+                      </a>
+                      <a href="#" class="header--md__nav__item">RU
+                      </a>
+                    </div>
+                    </li>
                 </ul>
               </nav>
             </div>
@@ -194,14 +177,14 @@
         </div>
       </header>
 
-      <main>
+      <main class="about-us__bg-dotted">
         <div class="page-about-us__path container">
           <p><a href="../index.html">Головна</a><span>/</span><strong>Про нас</strong></p>
         </div>
-        <section class="page-about-us container">
+        <section class="page-about-us">
           <div class="page-about-us__container">
-            <div class="page-about-us__content-container">
-              <!-- <div class="page-about-us__top-container"> -->
+            <div class="about-us__top-bg--dashed">
+              <div class="page-about-us__content-container container">
                 <div class="page-about-us__titles col-5 col-md-12">
                   <h1 class="page-about-us__title">Про нас</h1>
                   <h2 class="fs--title page-about-us__subtitle">
@@ -218,20 +201,20 @@
                     src="../img/page_about-us/dearFriends_photo.webp"
                     alt="photo"
                   />
-                <!-- </div> -->
+                </div>
+                <p class="page-about-us__text">
+                  <span
+                    >Наша ветеринарна клініка надає цілодобову ветеринарну
+                    допомогу.</span
+                  ><br />
+                  Наші проффесіонали Авет нададуть допомогу в будь-який час доби,
+                  навіть вночі, і навіть якщо біда з вашим улюбленцем трапилася у
+                  вихідні дні або святкові.
+                </p>
               </div>
-              <p class="page-about-us__text">
-                <span
-                  >Наша ветеринарна клініка надає цілодобову ветеринарну
-                  допомогу.</span
-                ><br />
-                Наші проффесіонали Авет нададуть допомогу в будь-який час доби,
-                навіть вночі, і навіть якщо біда з вашим улюбленцем трапилася у
-                вихідні дні або святкові.
-              </p>
             </div>
 
-            <div class="page-about-us__content-container page-about-us__content-container--reverse">
+            <div class="page-about-us__content-container page-about-us__content-container--reverse container">
               <h2 class="page-about-us__subtitle col-7 col-md-10">
                 Наша ветеринарна клініка представлена ​​лікарями різних
                 спеціалізацій.
@@ -259,20 +242,21 @@
                 >
               </p>
             </div>
-
-            <div class="page-about-us__content-container">
-              <h2 class="page-about-us__subtitle col-6 col-md-12">
-                Лабораторна діагностика представлена ​​широким спектром
-                досліджень.
-              </h2>
-              <div class="page-about-us__img col-7 page-about-us__img--absolute--bottom col-md-12">
-                <img src="../img/page_about-us/laboratories.webp" alt="logo" />
+            <div class="about-us__middle-bg--dashed">
+              <div class="page-about-us__content-container container">
+                <h2 class="page-about-us__subtitle col-6 col-md-12">
+                  Лабораторна діагностика представлена ​​широким спектром
+                  досліджень.
+                </h2>
+                <div class="page-about-us__img col-7 page-about-us__img--absolute--bottom col-md-12">
+                  <img src="../img/page_about-us/laboratories.webp" alt="logo" />
+                </div>
+                <p class="page-about-us__text">
+                  Вакцинація тварин здійснюється із застосуванням вакцин
+                  імпортного та вітчизняного виробництва з обов'язковою
+                  реєстрацією.
+                </p>
               </div>
-              <p class="page-about-us__text">
-                Вакцинація тварин здійснюється із застосуванням вакцин
-                імпортного та вітчизняного виробництва з обов'язковою
-                реєстрацією.
-              </p>
             </div>
           </div>
         </section>
@@ -284,7 +268,8 @@
             </p>
           </div>
         </section>
-        <section class="our-team container">
+        <section class="about-us__bottom-bg--dashed">
+          <div  class="our-team container">
           <h2 class="our-team__title">Наша команда</h2>
           <div
             id="carouselExampleCaptions"
@@ -539,6 +524,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </div>
         </section>
         <section class="appointment container">
           <h1 class="appointment__title">Записатись на прийом</h1>
@@ -589,7 +575,7 @@
               та безтурботного довголіття та робимо все, щоб надати правильну та
               своєчасну допомогу.
             </h2>
-            <div>
+            <div class='page-about-us__wishes__img-container'>
               <img src="../img/page_about-us/wishes.webp" alt="wishes" />
 
             </div>

@@ -59,7 +59,6 @@
 .vetclinik__title,
 .vetclinik__sub-title,
 .our-team__title,
-.contacts__title,
 .page-about-us__title,
 .appointment-footer__title {
   font-size: 22px;
@@ -67,7 +66,22 @@
 .blog__title {
   font-size: 25px;
 }
-
+@media (min-width: 768px) {
+  .page-about-us__path {
+    font-size: 13px;
+  }
+  .page-about-us__content-container h2 {
+    font-size: 25px;
+  }
+  .appointment__title,
+  .our-services__title,
+  .vetclinik__title,
+  .vetclinik__sub-title,
+  .our-team__title,
+  .page-about-us__title {
+    font-size: 35px;
+  }
+}
 @media (min-width: 1200px) {
   .page-about-us__path,
   .page-about-us__path a {
@@ -121,7 +135,7 @@
     font-size: 32px;
   }
   .appointment-footer__sub-title,
-  .page-about-us__container .appointment__title,
+  .page-about-us__container--all .appointment__title,
   .chip__left-container__chip-number {
     font-size: 35px;
   }
@@ -130,7 +144,6 @@
   .vetclinik__title,
   .vetclinik__sub-title,
   .our-team__title,
-  .contacts__title,
   .page-about-us__title,
   .fs--title,
   .appointment-footer__title,
@@ -139,20 +152,4 @@
   }
 }
 
-@media (min-width: 768px) {
-  .page-about-us__path {
-    font-size: 13px;
-  }
-  .page-about-us__content-container h2 {
-    font-size: 25px;
-  }
-  .appointment__title,
-  .our-services__title,
-  .vetclinik__title,
-  .vetclinik__sub-title,
-  .our-team__title,
-  .contacts__title,
-  .page-about-us__title {
-    font-size: 35px;
-  }
-}
+

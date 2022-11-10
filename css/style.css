@@ -2,8 +2,9 @@
   font-family: "Gilroy";
   src: url(../fonts/Gilroy-Regular.ttf);
 }
+
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
 }
 
 /* titles */
@@ -18,13 +19,14 @@
 .page-sales__promotion__title {
   font-family: "Gilroy";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 22px;
   line-height: 117.9%;
   color: #2e3a50;
 }
 
 @media (min-width: 1200px) {
+
   .appointment__title,
   .our-services__title,
   .vetclinik__title,
@@ -38,11 +40,13 @@
     font-size: 50px;
   }
 }
+
 .body-container {
   min-width: 320px;
   overflow: hidden;
   background: #eff7ff;
 }
+
 .header__title {
   font-family: "Gilroy";
   font-style: normal;
@@ -66,7 +70,7 @@
   align-items: center;
 }
 
-.header__adress > p {
+.header__adress>p {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
@@ -81,7 +85,7 @@
   transform: translateX(-50%);
 }
 
-.header__adress > a {
+.header__adress>a {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
@@ -113,6 +117,7 @@
 .header__logo img {
   max-width: 100%;
 }
+
 .burger-line,
 .burger-line--s {
   height: 2px;
@@ -189,7 +194,7 @@ header {
 /* header--md */
 .header--md {
   background: #2e3a50;
-  padding: 30px 0 18px 0;
+  padding: 30px 0 23px 0;
   display: none;
 }
 
@@ -199,7 +204,8 @@ header {
 }
 
 .header--md__logo img {
-  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 
 .header--md__right-container,
@@ -266,8 +272,8 @@ header {
   justify-content: center;
 }
 
-.header--md__languages
-  .header--md__nav__item:not(.header--md__nav__item.lang--active) {
+/*
+.header--md__languages .header--md__nav__item:not(.header--md__nav__item.lang--active) {
   position: absolute;
   top: 20px;
   display: none;
@@ -276,15 +282,57 @@ header {
 .header--md__languages .header--md__nav__item svg {
   margin-left: 9px;
 }
+*/
+.languages__container .header--md__nav__item:not(.lang--active) {
+  color: #bad7f9;
+}
 
-.header--md__nav__item.lang--active {
-  display: block;
+.language-to-show {
+  display: flex;
+  align-items: center;
+
+}
+
+/* .header--md__languages {
+  position: relative;
+  border-bottom: none;
+}
+
+*/
+.header--md__languages:hover {
+  cursor: pointer;
+}
+
+.header--md__languages:hover .languages__container {
+  display: flex;
+}
+
+.languages__container {
+  display: none;
+  position: absolute;
+  bottom: -48px;
+  left: -28px;
+  flex-direction: row;
+  gap: 20px;
+  padding: 15px;
+  background: #2e3a50;
+}
+
+.language-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 117.9%;
+  text-transform: uppercase;
+  color: #5db53b;
+  margin-right: 9px;
 }
 
 .header--md__nav__item--active {
   color: #5db53b;
   padding-bottom: 11px;
-  border-bottom: 1px solid #5db53b;
+  border-bottom: 2px solid #5db53b;
 }
 
 .header--md__input-container {
@@ -304,7 +352,7 @@ header {
   outline: none;
 }
 
-.header--md__input-container > button {
+.header--md__input-container>button {
   position: absolute;
   right: 0;
   bottom: 7px;
@@ -318,23 +366,24 @@ header {
   .header--sd {
     display: none;
   }
+
   .header--md {
     display: block;
   }
+
   .header__nav__item:hover,
   .header__nav__item:active,
-  .header--md__nav__item:hover:not(.header--md__languages
-      .header--md__nav__item) {
+  .header--md__nav__item:hover:not(.header--md__languages .header--md__nav__item) {
     padding-bottom: 11px;
   }
 }
+
 /* header hovers */
 .header__nav__item:hover,
 .header__nav__item:active,
-.header--md__nav__item:hover:not(.header--md__languages
-    .header--md__nav__item) {
+.header--md__nav__item:hover:not(.header--md__languages .header--md__nav__item) {
   color: #5db53b;
-  border-bottom: 1px solid #5db53b;
+  border-bottom: 2px solid #5db53b;
 }
 
 .header--md__languages .header--md__nav__item,
@@ -353,7 +402,9 @@ header {
 .carousel-indicators {
   bottom: -38px;
 }
-.carousel-control-next, .carousel-control-prev {
+
+.carousel-control-next,
+.carousel-control-prev {
   opacity: 1;
 }
 
@@ -381,6 +432,7 @@ header {
   .promotion-sz {
     display: none !important;
   }
+
   .promotion--lz {
     display: block !important;
   }
@@ -456,15 +508,18 @@ header {
   .body-container .appointment {
     position: relative;
   }
+
   .body-container .appointment__title {
     position: absolute;
-    top: 0;
+    top: 15%;
     left: 33.33333333%;
   }
+
   .body-container .appointment .cl_form {
     align-items: center;
     display: flex;
   }
+
   .body-container .appointment .cl_contact_form {
     display: flex;
     gap: 92px;
@@ -472,6 +527,7 @@ header {
     position: relative;
     width: 100%;
   }
+
   .body-container .appointment .btn_submit {
     position: absolute;
     margin-top: 35px;
@@ -479,6 +535,7 @@ header {
     right: 20px;
   }
 }
+
 /* section our-services */
 @media (max-width: 1199px) {
   .our-services {
@@ -548,7 +605,7 @@ header {
     justify-content: center;
     padding: 4px 5px 4px 15px;
     margin-top: 39px;
-    margin-bottom: 33px;
+    margin-bottom: 68px;
   }
 
   .all-services__arrow-up,
@@ -580,48 +637,60 @@ header {
       gap: 30px;
       width: 100%;
     }
+
     .our-services__title {
       text-align: left;
       align-self: flex-start;
       margin-bottom: 93px;
     }
+
     .our-services__item a:first-child {
       font-size: 27px;
       line-height: 138.8%;
       padding: 63px 30px 203px 30px;
     }
+
     .our-services__item.col-md-3 {
       width: calc(25% - 30px);
     }
+
     .our-services__item.col-md-4 {
       width: calc(33.33333333% - 15px);
     }
+
     .our-services__item.col-md-5 {
       width: calc(41.66666667% - 15px);
     }
+
     .our-services__item.col-md-6 {
       width: calc(50% - 15px);
     }
+
     .our-services__item.col-md-8 {
       width: calc(66.66666667% - 15px);
     }
+
     .our-services__item.col-md-3--gap {
       width: calc(25% - 15px);
     }
+
     .our-services__item.col-md-4--gap {
       width: calc(33.33333333% - 30px);
     }
+
     .btn__all-services {
       margin-top: 80px;
       margin-bottom: 213px;
     }
   }
+
   /* our-services bg */
   @media (max-width: 346px) {
     .consultation a {
       padding-bottom: 75px;
     }
   }
+
   .consultation {
     background: linear-gradient(rgba(31, 43, 66, 0.66), rgba(31, 43, 66, 0.66)),
       url(../img/our-services-sz/consultation.webp);
@@ -704,138 +773,128 @@ header {
 
   @media (min-width: 768px) {
     .consultation {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/consultation.webp);
     }
+
     .reproductology {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/reproductology.webp);
     }
+
     .ophthalmology {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/ophthalmology.webp);
     }
+
     .x-ray {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/x-ray.webp);
     }
+
     .laboratory {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/laboratory.webp);
     }
+
     .dentistry {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/dentistry.webp);
     }
+
     .oncology {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/oncology.webp);
     }
+
     .hospital {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/hospital.webp);
     }
+
     .grooming {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/grooming.webp);
     }
+
     .neurosurgery {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/neurosurgery.webp);
     }
+
     .therapy {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/therapy.webp);
     }
+
     .hotel {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/hotel.webp);
     }
+
     .chipping {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/chipping.webp);
     }
+
     .surgery {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/surgery.webp);
     }
+
     .ultrasound {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/ultrasound.webp);
     }
+
     .vaccination {
-      background: linear-gradient(
-          rgba(31, 43, 66, 0.66),
-          rgba(31, 43, 66, 0.66)
-        ),
+      background: linear-gradient(rgba(31, 43, 66, 0.66),
+          rgba(31, 43, 66, 0.66)),
         url(../img/our-services--fz/vaccination.webp);
     }
+
     /* our-services hover */
     .our-services__item:hover a:first-child {
       display: none;
     }
+
     .our-services__item:hover .our-services__item__details {
       display: block;
     }
+
     .our-services__item__details:hover {
       color: #ffffff;
     }
+
     .our-services__item:hover {
       /* scale: 1.2; */
       background-size: 120%;
     }
+
     .our-services__item.neurosurgery:hover {
       background-size: 200%;
     }
+
     .our-services__item.hotel:hover {
       background-size: 150%;
     }
   }
+
   .consultation,
   .reproductology,
   .ophthalmology,
@@ -858,6 +917,7 @@ header {
     background-position: center;
   }
 }
+
 /* section vetclinik */
 .vetclinik__img {
   margin-bottom: 6px;
@@ -930,47 +990,72 @@ header {
 .vetclinik__img--bottom img {
   width: 100%;
 }
+
 /* main-areas hover */
 
 .vetclinik__main-areas__item:hover {
   background: #bad7f9;
 }
+
 .vetclinik__main-areas__item:hover * {
   color: #2e3a50;
 }
+
 @media (min-width: 768px) {
+  .vetclinik__sub-title {
+    margin-top: 0;
+    margin-bottom: 93px;
+  }
+
+  .vetclinik__main-areas__bg {
+    padding-top: 52px;
+    margin-bottom: 38px;
+    margin-top: 102px;
+    background: url(../img/bg-dashed/1200/main__bottom.webp) no-repeat;
+    background-size: 95%;
+    background-position-x: right;
+  }
+
   .vetclinik__main-areas {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
+
   .vetclinik__main-areas__item {
     width: calc(50% - 15px);
     margin-bottom: 0;
     padding: 31px 29px 50px 29px;
   }
+
   .vetclinik__img--bottom img {
     max-width: 45%;
   }
+
   .vetclinik {
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
     gap: 105px;
   }
+
   .vetclinik .col-md-6 {
     width: calc(50% - 52.5px);
   }
+
   .vetclinik__text,
   .vetclinik__link,
   .vetclinik__main-areas__item__text {
     font-size: 18px;
   }
 }
+
 @media (min-width: 1200px) {
   .vetclinik__main-areas__item {
     width: calc(33.333333% - 20px);
   }
 }
+
 /* section our-team */
 .our-team__title {
   text-align: center;
@@ -987,21 +1072,26 @@ header {
   align-items: center;
   gap: 15px;
 }
+
 .item-inner-wrapper .item {
   position: relative;
   width: 45%;
 }
+
 .our-team .carousel-control-prev {
   left: -27px;
 }
+
 .our-team .carousel-control-next {
   right: -27px;
 }
+
 @media (max-width: 768px) {
   .item-inner-wrapper .item--hide {
     display: none;
   }
 }
+
 .carousel-caption {
   width: max-content;
   left: 50%;
@@ -1022,29 +1112,37 @@ header {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='green'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   width: 12px;
 }
+
 @media (min-width: 768px) {
   .our-team .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M24 16L16 24L24 32' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M32 24H16' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
-  width: 100%;
+    width: 40px;
+    height: 40px;
   }
+
   .our-team .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4Z' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M24 32L32 24L24 16' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M16 24L32 24' stroke='%235DB53B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
-    width: 100%;
+    width: 40px;
+    height: 40px;
   }
+
   .our-team .carousel-control-prev,
   .our-team .carousel-control-next {
-    top: -82px;
+    top: -102px;
     align-items: flex-start;
-    height: 32px;
-    width: 32px;
+    height: 40px;
+    width: 40px;
   }
+
   .our-team .carousel-control-prev {
     left: 90%;
   }
+
   .our-team .carousel-control-next {
     left: 94%;
   }
 }
+
 .our-team .carousel-caption h5 {
   font-family: "Gilroy";
   font-style: normal;
@@ -1101,10 +1199,11 @@ header {
   line-height: 117.9%;
   color: #ffffff;
   margin-bottom: 7px;
+  text-align: center;
 }
 
 .appointment-footer form {
-  padding: 0 52px 0 33px;
+  padding: 0 34px 0 24px;
 }
 
 .appointment-footer .form-control::-moz-placeholder {
@@ -1146,15 +1245,22 @@ header {
 }
 
 @media (min-width: 768px) {
+  .page-about-us__wishes__img-container {
+    display: flex;
+    align-items: center;
+  }
+
   .appointment-footer {
     background: transparent;
   }
+
   .appointment-footer--md {
     display: grid;
     grid-template-rows: 0.2fr 0.8fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "appointment-footer__title cl_form" "appointment-footer__img cl_form";
   }
+
   .appointment-footer__title {
     grid-area: appointment-footer__title;
     color: #4a5f74;
@@ -1164,47 +1270,58 @@ header {
     position: relative;
     top: -17px;
   }
+
   .appointment-footer--md .cl_form {
     grid-area: cl_form;
   }
+
   .appointment-footer form {
     padding-left: 100px;
   }
+
   .appointment-footer__img {
     grid-area: appointment-footer__img;
     position: static;
     margin-left: 68px;
     width: 75%;
   }
+
   .appointment-footer__sub-title {
     color: #2e3a50;
     font-weight: 600;
     line-height: 130.3%;
     margin-bottom: 42px;
   }
+
   .form-control {
     padding: 17px 0;
   }
+
   .appointment-footer .form-control {
     background-color: transparent;
     color: #4a5f74;
     border-color: #4a5f74;
     margin-bottom: 29px;
   }
+
   .appointment-footer .form-control::-moz-placeholder {
     color: #4a5f74;
   }
+
   .appointment-footer .form-control:-ms-input-placeholder {
     color: #4a5f74;
   }
+
   .appointment-footer .form-control::placeholder {
     color: #4a5f74;
   }
+
   .appointment-footer .btn_submit {
     justify-content: flex-end;
     margin-top: 44px;
     padding-bottom: 64px;
   }
+
   .btn_submit input {
     font-weight: 700;
     font-size: 18px;
@@ -1213,6 +1330,7 @@ header {
     padding: 20px 26px 19px 26px;
   }
 }
+
 /* section contacts */
 .contacts__map {
   margin-top: 33px;
@@ -1228,17 +1346,20 @@ header {
     height: 300px;
   }
 }
+
 @media (min-width: 768px) {
   .contacts__map iframe {
     height: 402px;
   }
 }
+
 @media (max-width: 767px) {
   .contacts__map.container {
     max-width: 100%;
     --bs-gutter-x: 0;
   }
 }
+
 .contacts__title {
   margin-top: 20px;
   margin-bottom: 21px;
@@ -1287,7 +1408,9 @@ header {
   padding-bottom: 8px;
   margin-top: 29px;
   margin-bottom: 29px;
-}
+  width: 110%;
+  padding-left: 10px;
+  padding-right: 10px;}
 
 @media (min-width: 992px) {
   .contacts__title {
@@ -1302,6 +1425,7 @@ header {
     margin-bottom: 45px;
     margin-top: 47px;
   }
+
   .contacts__adress {
     flex-direction: row;
     display: grid;
@@ -1311,16 +1435,19 @@ header {
     justify-content: center;
     margin-bottom: 62px;
   }
+
   .contacts__adress p:first-child {
     font-weight: 600;
     margin-bottom: 0;
     grid-area: adress;
     justify-self: flex-start;
   }
+
   .contacts__adress a {
     grid-area: tel;
     justify-self: end;
   }
+
   .contacts__hours-of-work {
     font-weight: 600;
     margin: 0;
@@ -1328,8 +1455,10 @@ header {
     background: transparent;
     text-transform: none;
     padding: 0;
+    width: 100%;
   }
 }
+
 /* footer */
 .footer-bg {
   background: #2e3a50;
@@ -1387,7 +1516,7 @@ header {
   top: 2px;
 }
 
-.footer__nav > p,
+.footer__nav>p,
 .footer__services__item--title a {
   font-family: "Gilroy";
   font-style: normal;
@@ -1419,42 +1548,51 @@ header {
   align-self: center;
   margin-top: 40px;
 }
+
 .footer__services {
   display: none;
 }
+
 @media (min-width: 768px) {
   .footer__nav-item {
     margin: 11px 0;
   }
+
   .footer__nav {
     align-self: flex-start;
     justify-self: flex-end;
     margin-top: 20px;
   }
+
   .footer__services {
     margin-top: 20px;
     display: block;
   }
+
   .footer__nav-item a,
   .footer__services__item a {
     font-weight: 600;
     font-size: 17px;
   }
+
   .footer__adress {
     margin-top: 12px;
     margin-bottom: 32px;
     font-weight: 600;
   }
+
   .footer__social-link svg,
   .footer__social-link img {
     width: 38px;
     height: 38px;
     position: static;
   }
+
   /* .footer__social-link img {
     max-width: 100%;
   } */
 }
+
 .footer__copyright {
   font-family: "Gilroy";
   font-style: normal;
@@ -1464,7 +1602,7 @@ header {
   color: #95acc7;
 }
 
-.footer__copyright > svg {
+.footer__copyright>svg {
   margin: 0 5px 0 7px;
 }
 
@@ -1518,21 +1656,24 @@ header {
   .footer__copyright {
     display: none;
   }
+
   .footer__copyright-md {
     display: block;
   }
+
   .footer__copyright-bg {
     background: #fff;
     padding-top: 32px;
     padding-bottom: 15px;
   }
+
   .footer__dog {
     display: flex;
   }
 }
 
 /* PAGE ABOUT-US STYLES */
-.page-about-us__container,
+.page-about-us__container--all,
 .page-blog__container {
   overflow: hidden;
   background-color: #eff7ff;
@@ -1550,20 +1691,24 @@ header {
   color: #4a5f74;
   margin-top: 21px;
 }
+
 .page-about-us__path span,
 .page-contacts__path span {
   margin: 0 9px 0 12px;
   color: #2e3a50;
 }
+
 b,
 strong {
   font-weight: 600;
   color: #2e3a50;
   font-size: 15px;
 }
+
 .page-about-us__title {
   margin-bottom: 11px;
 }
+
 .page-about-us__content-container h2 {
   font-family: "Gilroy";
   font-style: normal;
@@ -1572,6 +1717,7 @@ strong {
   line-height: 155.3%;
   color: #2e3a50;
 }
+
 .page-about-us__text {
   font-family: "Gilroy";
   font-style: normal;
@@ -1581,6 +1727,7 @@ strong {
   color: #4a5f74;
   margin-top: 16px;
 }
+
 .page-about-us__text span {
   font-weight: 600;
   font-size: 16px;
@@ -1588,6 +1735,7 @@ strong {
   color: #5db53b;
   margin-top: 17px;
 }
+
 .page-about-us__content-container {
   display: flex;
   flex-wrap: wrap;
@@ -1595,6 +1743,7 @@ strong {
   margin-top: 17px;
   position: relative;
 }
+
 .page-about-us__img img {
   max-width: 100%;
 }
@@ -1602,35 +1751,42 @@ strong {
 .page-about-us__content-container .page-about-us__subtitle.col-6 {
   margin-top: 70px;
 }
+
 .page-about-us__subtitle {
   grid-area: page-about-us__subtitle;
 }
+
 .page-about-us__img {
   position: relative;
   display: flex;
   align-items: flex-end;
   grid-area: page-about-us__img;
 }
+
 .page-about-us__text {
   grid-area: page-about-us__text;
 }
+
 .page-about-us__img .page-about-us__img--absolute {
   position: absolute;
   bottom: 32%;
   right: 12px;
-  max-width: 45%;
+  max-width: 47%;
 }
+
 .page-about-us__img--absolute--bottom {
   position: absolute;
   right: -5%;
   top: 15px;
 }
 
-.page-about-us__container .hide-substract {
+.page-about-us__container--all .hide-substract {
   display: none;
+  max-width: 70%;
 }
-.page-about-us__container .appointment {
-  margin-top: 150px;
+
+.page-about-us__container--all .appointment {
+  margin-top: 160px;
 }
 
 .page-about-us__farmacy {
@@ -1640,6 +1796,7 @@ strong {
   margin-bottom: 51px;
   margin-top: 24px;
 }
+
 .page-about-us__farmacy-container {
   display: flex;
   justify-content: end;
@@ -1656,7 +1813,8 @@ strong {
   padding: 6% 0 12% 0;
   margin: 0;
 }
-.page-about-us__container .appointment__title {
+
+.page-about-us__container--all .appointment__title {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
@@ -1664,10 +1822,12 @@ strong {
   line-height: 117.9%;
   color: #2e3a50;
 }
-.page-about-us__container .appointment__img-container .appointment__img {
+
+.page-about-us__container--all .appointment__img-container .appointment__img {
   display: none;
 }
-.page-about-us__container .appointment__img--sz {
+
+.page-about-us__container--all .appointment__img--sz {
   width: 100%;
 }
 
@@ -1682,12 +1842,15 @@ strong {
   color: #2e3a50;
   grid-area: page-about-us__wishes-h2;
 }
-.page-about-us__wishes > div {
+
+.page-about-us__wishes>div {
   grid-area: page-about-us__wishes-img;
 }
-.page-about-us__wishes > div img {
+
+.page-about-us__wishes>div img {
   min-width: 100%;
 }
+
 .page-about-us__wishes .page-about-us__text {
   margin-top: 21px;
   margin-bottom: 41px;
@@ -1696,23 +1859,28 @@ strong {
   flex-direction: column;
   grid-area: page-about-us__wishes-page-about-us__text;
 }
+
 .page-about-us__wishes .page-about-us__text span {
   text-align: center;
   line-height: 142.3%;
 }
+
 @media (min-width: 450px) and (max-width: 768px) {
   .page-about-us__img--absolute--bottom {
     top: -10px;
     right: -10%;
   }
+
   .page-about-us__img--absolute--bottom img {
     max-width: 50%;
   }
 }
+
 @media (max-width: 768px) {
   .page-about-us__img--top {
     margin-top: 50px;
   }
+
   .page-about-us__farmacy-container p {
     position: relative;
     top: 25px;
@@ -1720,6 +1888,10 @@ strong {
 }
 
 @media (min-width: 768px) {
+  .about-us__top-bg--dashed .page-about-us__content-container {
+    justify-items: end;
+  }
+
   .page-about-us__content-container {
     display: grid;
     align-items: flex-end;
@@ -1729,12 +1901,14 @@ strong {
     grid-template-areas:
       "page-about-us__subtitle page-about-us__img"
       "page-about-us__text page-about-us__img";
-    margin-bottom: 130px;
+    padding-bottom: 130px;
   }
+
   .page-about-us__img .page-about-us__img--absolute {
     bottom: 100px;
-    right: 30px;
+    right: 45px;
   }
+
   .page-about-us__content-container--reverse {
     display: grid;
     align-items: flex-start;
@@ -1743,14 +1917,16 @@ strong {
     grid-template-areas:
       "page-about-us__img page-about-us__subtitle"
       "page-about-us__img page-about-us__text";
-    margin-bottom: 83px;
+    /* margin-bottom: 83px; */
   }
+
   .page-about-us__img .page-about-us__img--absolute--middle {
     position: absolute;
     bottom: 0;
     left: 12%;
     max-width: 80%;
   }
+
   .page-about-us__text {
     display: flex;
     flex-direction: column;
@@ -1761,77 +1937,102 @@ strong {
     color: #4a5f74;
     margin-bottom: 47px;
   }
+
   .page-about-us__content-container .fs--title {
     font-weight: 700;
     font-size: 50px;
     line-height: 113.3%;
     color: #2e3a50;
   }
-  .page-about-us__container .hide-substract {
+
+  .page-about-us__container--all .hide-substract {
     display: block;
   }
-  .page-about-us__container .our-team__title {
+
+  .our-team__title {
     text-align: left;
+    margin-bottom: 84px;
   }
+
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+  }
+
   .page-about-us__content-container h2 {
     font-size: 32px;
     font-weight: 700;
   }
+
   .page-about-us__text,
   .page-about-us__text span {
     font-size: 18px;
   }
+
   .page-about-us__wishes {
     display: grid;
-    grid-template-rows: 0.1fr 0.9fr;
+    grid-template-rows: 5% 40% 55%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
+      ". page-about-us__wishes-img"
       "page-about-us__wishes-h2 page-about-us__wishes-img"
       "page-about-us__wishes-page-about-us__text page-about-us__wishes-img";
   }
+
   .page-about-us__wishes h2 {
     margin-bottom: 0;
     font-size: 22px;
   }
+
   .page-about-us__wishes .page-about-us__text span {
     text-align: left;
   }
-  .page-about-us__container .appointment__title {
+
+  .page-about-us__container--all .appointment__title {
     font-size: 35px;
     margin-right: 50px;
     position: relative;
     top: 60px;
   }
+
   .page-about-us__text,
   .page-about-us__text span {
     font-size: 18px;
   }
-  .page-about-us__container .appointment__img--sz {
+
+  .page-about-us__container--all .appointment__img--sz {
     display: none;
   }
-  .page-about-us__container .appointment__img-container .appointment__img {
+
+  .page-about-us__container--all .appointment__img-container .appointment__img {
     display: block;
   }
-  .page-about-us__container .cl_form {
+
+  .page-about-us__container--all .cl_form {
     position: relative;
     top: 60px;
     margin-left: 90px;
   }
-  .page-about-us__container .form-control {
+
+  .page-about-us__container--all .form-control {
     margin-bottom: 30px;
   }
-  .page-about-us__container .btn_submit {
+
+  --all .btn_submit {
     margin-top: 47px;
     justify-content: flex-start;
   }
 }
+
 @media (min-width: 850px) {
   .page-about-us__farmacy {
     background: transparent;
   }
+
   .page-about-us__farmacy-container {
     width: 846px;
   }
+
   .page-about-us__farmacy-container p {
     background: url(../img/page_about-us/farmacy.webp) no-repeat;
     background-size: cover;
@@ -1840,6 +2041,7 @@ strong {
     font-size: 22px;
     line-height: 155.3%;
     margin: 0 auto;
+    text-align: left;
   }
 }
 
@@ -1848,31 +2050,39 @@ strong {
   overflow: hidden;
   background: #f3f7fc;
 }
+
 .page-contacts__title {
   margin-top: 44px;
   margin-bottom: 54px;
 }
+
 .page-contacts__img-container {
   margin-top: 41px;
   margin-bottom: 100px;
   display: none;
 }
+
 .page-contacts__img-container .item-inner-wrapper {
   display: flex;
   gap: 31px;
 }
+
 .page-contacts__img-container .carousel-indicators {
   bottom: -60px;
 }
+
 .page-contacts__img-container .item-inner-wrapper .item {
   max-width: calc(25% - 23.5px);
 }
+
 .page-contacts__img-container .item-inner-wrapper .item img {
   max-width: 100%;
 }
+
 .page-contacts__our-adress__section {
   margin-top: 25px;
 }
+
 .page-contacts__our-adress__section,
 .page-contacts__our-adress__section a {
   font-family: "Gilroy";
@@ -1883,22 +2093,26 @@ strong {
   text-align: center;
   color: #2e3a50;
 }
+
 .page-contacts__our-adress__section .adress-container__title,
 .page-contacts__our-adress__section .adress-container__phone {
   font-weight: 600;
   font-size: 17px;
 }
+
 .page-contacts__our-adress__section p {
   font-weight: 500;
   margin-top: 9px;
   margin-bottom: 4px;
 }
+
 .page-contacts__our-adress__section .adress-container__adress {
   font-weight: 500;
   font-size: 15px;
   margin-bottom: 26px;
   margin-top: 22px;
 }
+
 .page-contacts__our-adress__section .adress-container__phone-numder {
   font-weight: 700;
   font-size: 20px;
@@ -1907,15 +2121,18 @@ strong {
   margin-top: 22px;
   display: block;
 }
+
 .social-container__viber img {
   width: 38px;
   height: 38px;
 }
+
 .page-conacts__hour-of-works {
   background: #4a5f74;
   margin-bottom: 24px;
   margin-top: 24px;
 }
+
 .page-conacts__hour-of-works p {
   font-family: "Gilroy";
   font-style: normal;
@@ -1927,40 +2144,50 @@ strong {
   color: #f3f7fc;
   padding: 29px 0 30px 0;
 }
+
 .page-conacts__hour-of-works p span {
   color: #3bd300;
 }
+
 @media (min-width: 768px) {
   .page-contacts__img-container {
     display: block;
+    margin-bottom: 141px;
   }
+
   .page-contacts__our-adress__section {
     margin-top: 62px;
     display: flex;
     gap: 92px;
   }
+
   .page-contacts__our-adress__section .adress-container__title {
     font-size: 18px;
   }
+
   .page-contacts__our-adress__section .adress-container__adress {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 38px;
   }
+
   .page-contacts__our-adress__section .adress-container__phone-numder {
     font-weight: 700;
     font-size: 25px;
   }
+
   .page-contacts__our-adress__section p {
     font-weight: 600;
     font-size: 20px;
   }
+
   .page-contacts__our-adress__section,
   .page-contacts__our-adress__section a {
     text-align: left;
     font-size: 20px;
     font-weight: 600;
   }
+
   .social-container__viber,
   .social-container__facebook,
   .social-container__instagram {
@@ -1968,102 +2195,127 @@ strong {
     gap: 18px;
     margin-bottom: 26px;
   }
+
   .page-conacts__hour-of-works {
     border-radius: 10px;
     width: 60%;
     margin: 84px auto 64px auto;
   }
+
   .page-conacts__hour-of-works p {
     font-weight: 700;
     font-size: 40px;
   }
 }
+
 /* PAGE SALES */
 
 .page-sales__container {
   overflow: hidden;
   background: #f3f7fc;
 }
+
 .page-sales__promotion__title {
   margin-top: 12px;
   text-align: center;
 }
+
 .promotion--sz {
   margin-top: 25px;
   margin-bottom: 49px;
 }
+
 .promotion--md {
   margin-top: 30px;
   margin-bottom: 41px;
   display: none;
 }
+
 .promotion--sz a:not(a:last-child) {
   display: block;
   margin-bottom: 25px;
 }
+
 .promotion--sz a img {
   width: 100%;
 }
+
 .promotion--md a:not(a:last-child) {
   display: block;
   margin-bottom: 34px;
 }
+
 .promotion--md a img {
   width: 100%;
 }
+
 .page-sales__container .appointment-container {
   flex-direction: row-reverse;
 }
+
 .page-sales__container .btn_submit {
   justify-content: flex-start;
 }
+
 .page-sales__container .appointment__img-container {
   display: flex;
   justify-content: flex-end;
 }
+
 .page-sales__container .appointment__title {
   text-align: left;
 }
+
 @media (min-width: 768px) {
   .page-sales__promotion__title {
     margin-top: 52px;
     color: #4a5f74;
     text-align: left;
   }
+
   .promotion--sz {
     display: none;
   }
+
   .promotion--md {
     display: block;
   }
+
   .page-sales__container .appointment-container {
     flex-direction: row;
   }
+
   .page-sales__container .appointment__img {
     transform: scaleX(-1);
   }
 }
 
 @media (min-width: 768px) {
+
   .page-services__container .btn_submit input,
   .page-sales__container .btn_submit input {
     padding: 20px 44px;
   }
+
   .page-services__container .col-md-5,
   .page-sales__container .col-md-5 {
     width: 44%;
   }
+
   .page-sales__container .appointment__img-container img {
     width: 60%;
   }
+
   .page-services__container .appointment__img-container,
   .page-sales__container .appointment__img-container {
     justify-content: flex-start;
   }
+
   .page-services__container .appointment,
   .page-sales__container .appointment {
     position: relative;
   }
+
   .page-services__container .appointment__title,
   .page-sales__container .appointment__title {
     position: absolute;
@@ -2071,11 +2323,13 @@ strong {
     left: 25%;
     font-size: 35px;
   }
+
   .page-services__container .appointment .cl_form,
   .page-sales__container .appointment .cl_form {
     align-items: center;
     display: flex;
   }
+
   .page-services__container .appointment .cl_contact_form,
   .page-sales__container .appointment .cl_contact_form {
     display: flex;
@@ -2084,6 +2338,7 @@ strong {
     position: relative;
     width: 100%;
   }
+
   .page-services__container .appointment .btn_submit,
   .page-sales__container .appointment .btn_submit {
     position: absolute;
@@ -2100,10 +2355,12 @@ strong {
   font-family: "Gilroy";
   font-style: normal;
 }
+
 .page-services__container {
   overflow: hidden;
   background: #f3f7fc;
 }
+
 .chipping--top {
   background: url(../img/page_services/chiping--sz.webp) no-repeat;
   background-size: cover;
@@ -2112,12 +2369,14 @@ strong {
   display: flex;
   padding: 23px 0 40px 0;
 }
+
 .chipping--top__title {
   font-weight: 700;
   font-size: 22px;
   line-height: 113.3%;
   color: #2e3a50;
 }
+
 .chipping--top__text {
   font-weight: 500;
   font-size: 16px;
@@ -2127,6 +2386,7 @@ strong {
   margin-bottom: 33px;
   width: 50%;
 }
+
 .chipping--top__btn-appointment {
   font-weight: 600;
   font-size: 13px;
@@ -2137,21 +2397,26 @@ strong {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
+
 .chipping--top__img {
   display: none;
 }
+
 .chipping--top__img {
   width: 100%;
 }
+
 .chip {
   margin-bottom: 52px;
 }
+
 .chip__left-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
+
 .chip__left-container__title {
   font-weight: 600;
   font-size: 17px;
@@ -2159,6 +2424,7 @@ strong {
   text-align: center;
   color: #2e3a50;
 }
+
 .chip__left-container__chip-number {
   font-weight: 700;
   font-size: 18px;
@@ -2169,6 +2435,7 @@ strong {
   border-radius: 6px;
   margin-top: 25px;
 }
+
 .chip__right-container__title {
   font-weight: 700;
   font-size: 22px;
@@ -2176,6 +2443,7 @@ strong {
   color: #5db53b;
   margin-top: 236px;
 }
+
 .chip__right-container__text {
   font-weight: 500;
   font-size: 15px;
@@ -2183,6 +2451,7 @@ strong {
   color: #4a5f74;
   margin: 15px auto;
 }
+
 .chip__right-container__show-more {
   cursor: pointer;
   font-weight: 700;
@@ -2190,6 +2459,7 @@ strong {
   line-height: 138.8%;
   color: #5db53b;
 }
+
 .page-services__price-section {
   background: linear-gradient(rgba(12, 23, 41, 0.54), rgba(12, 23, 41, 0.54)),
     url(../img/page_services/amount--sz.webp) no-repeat;
@@ -2199,6 +2469,7 @@ strong {
   display: flex;
   flex-direction: column;
 }
+
 .price-section__title {
   font-weight: 600;
   font-size: 22px;
@@ -2207,16 +2478,19 @@ strong {
   text-align: center;
   margin-bottom: 42px;
 }
+
 .price-section__table-container {
   border: 2px solid #f4f4f4;
   border-radius: 15px 15px 0 0;
   margin: 0 auto;
   display: inline-block;
 }
+
 .price-section__table {
   border-radius: 8px 0px 0px 0px;
   border-collapse: collapse;
 }
+
 .price-section__table tr:first-child {
   font-weight: 500;
   font-size: 14px;
@@ -2224,24 +2498,29 @@ strong {
   color: #4a5f74;
   background: #eff7ff;
 }
+
 .price-section__table-container .price-section__table tr:last-child td {
   border-bottom: none;
 }
+
 .price-section__table tr:first-child td:first-child {
   padding: 10px 18px;
   border-radius: 8px 0px 0px 0px;
   border-right: 2px solid #b6b6b6;
 }
+
 .price-section__table tr:first-child td:last-child {
   padding: 10px 14px;
   border-radius: 0px 8px 0px 0px;
 }
+
 .price-section__table tr:not(tr:first-child) {
   font-weight: 600;
   font-size: 15px;
   line-height: 138.8%;
   color: #ffffff;
 }
+
 .price-section__table tr:first-child td:last-child {
   border-left: none;
 }
@@ -2250,24 +2529,31 @@ strong {
   border: 2px solid #f4f4f4;
   padding: 12px 18px;
 }
+
 .price-section__table tr:not(tr:first-child) td:first-child {
   border-left: none;
 }
+
 .price-section__table tr:not(tr:first-child) td:last-child {
   font-size: 25px;
   padding: 10px 31px;
   color: #5db53b;
   border-right: none;
+  vertical-align: middle;
 }
+
 .page-services__container .appointment__title {
   text-align: left;
 }
+
 .page-services__container .appointment-container {
   flex-direction: row-reverse;
 }
+
 .page-services__container .appointment__img--md {
   display: none;
 }
+
 .page-services__container .appointment {
   margin-top: 46px;
 }
@@ -2278,20 +2564,25 @@ strong {
   font-family: "Gilroy";
   font-style: normal;
 }
+
 .about-chip__section--hide {
   display: none;
 }
+
 .about-chip__section--hide ol,
 .about-chip__section--hide li {
   padding: revert;
   list-style-type: decimal;
 }
+
 .about-chip__section--hide li {
   margin-top: 14px;
 }
+
 .about-chip__subsection {
   margin-top: 40px;
 }
+
 .about-chip__subsection .bg--blue {
   background: #4a5f74;
   font-weight: 700;
@@ -2301,34 +2592,40 @@ strong {
   margin-bottom: 13px;
   padding: 15px 0 15px 0;
 }
+
 .about-chip__subsection--another.bg--blue {
   background: #4a5f74;
   padding-top: 32px;
   padding-bottom: 46px;
 }
+
 .about-chip__subsection--another.bg--blue li {
   font-weight: 600;
   font-size: 14px;
   line-height: 160%;
   color: #feffff;
 }
+
 .about-chip__subsection--another.bg--blue p {
   font-weight: 500;
   font-size: 15px;
   line-height: 160%;
   color: #ffffff;
 }
+
 .about-chip__section--hide .about-chip__subsection .subtitle--green {
   font-weight: 700;
   font-size: 20px;
   line-height: 113.3%;
   color: #5db53b;
 }
+
 .about-chip__subsection.about-chip__subsection--another.bg--aqua {
   background: #d3e7ff;
   padding-top: 32px;
   padding-bottom: 43px;
 }
+
 .about-chip__subsection--another.bg--aqua .subtitle--blue {
   font-weight: 700;
   font-size: 20px;
@@ -2343,15 +2640,18 @@ strong {
   line-height: 155.3%;
   color: #bad7f9;
 }
+
 .about-chip__subsection p {
   font-weight: 500;
   font-size: 15px;
   line-height: 160.3%;
   color: #4a5f74;
 }
+
 .about-chip__subsection p:not(p.container):not(div p:last-child) {
   margin-bottom: 25px;
 }
+
 .about-chip__title {
   font-weight: 700;
   font-size: 20px;
@@ -2359,22 +2659,26 @@ strong {
   color: #2e3a50;
   margin-bottom: 20px;
 }
+
 .about-chip__section--hide .about-chip__text--17px {
   font-weight: 500;
   font-size: 17px;
   line-height: 147.8%;
   color: #4a5f74;
 }
+
 .about-chip__section--hide ol li {
   font-weight: 500;
   font-size: 15px;
   line-height: 180.8%;
   color: #4a5f74;
 }
+
 .about-chip__section--hide .btn-hide {
   display: flex;
   justify-content: center;
 }
+
 .about-chip__section--hide .btn-hide__container {
   margin-top: 59px;
   margin-bottom: 47px;
@@ -2386,6 +2690,7 @@ strong {
   align-items: center;
   justify-content: center;
 }
+
 .about-chip__section--hide .btn-hide__container p {
   font-weight: 600;
   font-size: 15px;
@@ -2393,24 +2698,31 @@ strong {
   letter-spacing: 0.035em;
   color: #ffffff;
 }
+
 .mb-25px {
   margin-bottom: 25px;
 }
+
 .about-chip__section--hide .btn-hide__container:hover {
   cursor: pointer;
 }
+
 @media (min-width: 768px) {
+
   .chip {
     margin-bottom: 116px;
   }
+
   .chipping--top {
     background: transparent;
     margin-top: 9px;
     margin-bottom: 50px;
   }
+
   .chipping--top__title {
     font-size: 50px;
   }
+
   .chipping--top__text {
     font-size: 22px;
     line-height: 138.8%;
@@ -2418,151 +2730,207 @@ strong {
     margin-top: 27px;
     margin-bottom: 47px;
   }
+
   .chipping--top__img {
     display: block;
   }
+
   .chipping--top__btn-appointment {
     font-size: 17px;
     padding: 20px 23px;
   }
+
   .chip {
     display: flex;
   }
+
   .chip__left-container {
     align-items: flex-start;
     margin-right: 179px;
   }
+
   .chip__right-container {
     width: 38%;
   }
+
   .chip__left-container__title {
     text-align: left;
     font-weight: 700;
     font-size: 22px;
   }
+
   .chip__left-container__chip-number {
     font-size: 30px;
     padding: 9px 81px;
     border: 3px solid #058209;
   }
+
   .chip__right-container__title {
     margin-top: 0;
     font-size: 32px;
   }
+
   .chip__right-container__text {
     font-size: 18px;
     line-height: 147.8%;
     margin: 21px auto;
   }
+
   .chip__right-container__show-more {
     font-size: 18px;
   }
+
   .page-services__price-section {
     background: linear-gradient(rgba(12, 23, 41, 0.54), rgba(12, 23, 41, 0.54)),
       url(../img/page_services/amount.webp) no-repeat;
     background-size: cover;
   }
+
   .price-section__title {
     font-weight: 700;
     font-size: 50px;
   }
+
   .price-section__table tr {
     font-size: 25px;
   }
+
   .price-section__table tr:first-child td:first-child {
     font-weight: 500;
-font-size: 25px;
-line-height: 138.8%;
-color: #4A5F74;
+    font-size: 25px;
+    line-height: 138.8%;
+    color: #4A5F74;
     padding: 7px 28px;
   }
+
   .price-section__table tr:first-child td:last-child {
     font-weight: 500;
     font-size: 25px;
     line-height: 138.8%;
     color: #4A5F74;
-    
+
     padding: 7px 30px;
   }
+
   .price-section__table tr:not(tr:first-child) td {
     padding: 14px 57px 14px 28px;
   }
+
   .price-section__table tr:not(tr:first-child) td:last-child {
     padding: 15px 100px 15px 31px;
     font-size: 32px;
   }
+
   .page-services__container .appointment {
     margin-top: 0;
   }
+
   .page-services__container .appointment-container {
     flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 91px;
   }
 
   .page-services__container .appointment__img--sz {
     display: none;
   }
+
   .page-services__container .appointment__img--md {
     display: block;
   }
+
   .page-services__container .appointment__title {
     left: 34%;
     top: 20%;
   }
+
   .page-services__container .appointment .btn_submit {
     right: 30%;
   }
-  .about-chip__section--hide * :not(.bg--aqua),
-  .about-chip__section--hide * :not(.bg--blue) {
+
+  /* .about-chip__section--hide > * :not(.bg--aqua),
+  .about-chip__section--hide > * :not(.bg--blue),
+  .about-chip__section--hide > * :not(.chip-bg__middle-bottom) {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
+
+  /* .about-chip__section--hide :not(.about-chip__section--hide .bg--blue) {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
   .about-chip__subsection .bg--blue {
     margin-bottom: 25px;
     /* display: block; */
   }
+
   .about-chip__subsection--another .container {
     margin-left: auto;
     margin-right: auto;
   }
+
   .about-chip__subsection .bg--blue {
     background: transparent;
   }
+
   .about-chip__subsection .bg--blue p {
     font-weight: 700;
     font-size: 32px;
     background: #4a5f74;
     display: inline;
     padding: 2px 26px;
-    margin-left: 26px !important;
+    /* margin-left: 26px !important; */
+    position: relative;
+    left: -20px;
   }
+
+  .my-container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+  }
+
   .about-chip__title {
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 27px;
-    padding-left: 45px;
   }
+
   .about-chip__section--hide .about-chip__text--17px {
     font-size: 22px;
-    padding-left: 45px;
   }
-  .about-chip__subsection p {
+
+  .about-chip__subsection p,
+  .about-chip__subsection--another.bg--blue p {
     font-size: 18px;
   }
+
   .about-chip__section--hide ol li {
     font-size: 18px;
   }
+
   .about-chip__subsection--another.bg--blue li {
     font-weight: 600;
     font-size: 18px;
   }
+
   .about-chip__section--hide .about-chip__subsection .subtitle--green {
     font-size: 30px;
   }
+
   .about-chip__subsection--another.bg--aqua .subtitle--blue {
     font-size: 32px;
   }
 }
+
 /* chipping absolute section */
 
 .country p,
@@ -2580,15 +2948,19 @@ color: #4A5F74;
   border-radius: 5px;
   width: fit-content;
 }
+
 .country p {
   padding: 15px 3px;
 }
+
 .country-global p {
   padding: 15px 9px 24px 9px;
 }
+
 .region p {
   padding: 21px 7px 19px 8px;
 }
+
 .number p {
   padding: 14px 3px 25px 9px;
 }
@@ -2599,12 +2971,14 @@ color: #4A5F74;
 .number {
   position: absolute;
 }
+
 .country svg:nth-child(2),
 .country-global svg:nth-child(2),
 .region svg:nth-child(2),
 .number svg:nth-child(2) {
   display: none;
 }
+
 .country svg,
 .country-global svg,
 .region svg,
@@ -2616,30 +2990,37 @@ color: #4A5F74;
   top: 145px;
   left: 1%;
 }
+
 .country svg {
   top: -40px;
   left: 40px;
 }
+
 .country-global {
   top: 172px;
   left: 24%;
 }
+
 .country-global svg {
   top: -68px;
   left: 24px;
 }
+
 .region {
   top: 114px;
   left: 44%;
 }
+
 .region svg {
   top: -15px;
   left: 15px;
 }
+
 .number {
   top: 97px;
   left: 68%;
 }
+
 .number svg {
   top: -3px;
   left: 26px;
@@ -2650,18 +3031,22 @@ color: #4A5F74;
     top: 145px;
     left: 44%;
   }
+
   .region svg {
     top: -38px;
     left: 20px;
   }
 }
+
 @media (min-width: 768px) {
+
   .country svg:first-child,
   .country-global svg:first-child,
   .region svg:first-child,
   .number svg:first-child {
     display: none;
   }
+
   .country svg:nth-child(2),
   .country-global svg:nth-child(2),
   .region svg:nth-child(2),
@@ -2669,75 +3054,93 @@ color: #4A5F74;
     display: block;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1055px) {
   .country {
     top: 208px;
     left: 1%;
   }
+
   .country svg {
     top: -40px;
     left: 40px;
   }
+
   .country-global {
     top: 208px;
     left: 22%;
   }
+
   .country-global svg {
     top: -40px;
     left: 24px;
   }
+
   .region {
     top: 208px;
     left: 48%;
   }
+
   .region svg {
     top: -40px;
     left: 15px;
   }
+
   .number {
     top: 208px;
     left: 74%;
   }
+
   .number svg {
     top: -40px;
     left: 26px;
   }
 }
+
 @media (min-width: 1055px) {
+
   .country p,
   .country-global p,
   .region p,
   .number p {
     font-size: 14px;
   }
+
   .country {
     top: 175px;
     left: 1%;
   }
+
   .country svg {
     top: -40px;
     left: 40px;
   }
+
   .country-global {
     top: 175px;
     left: 22%;
   }
+
   .country-global svg {
     top: -40px;
     left: 24px;
   }
+
   .region {
     top: 175px;
     left: 48%;
   }
+
   .region svg {
     top: -40px;
     left: 15px;
   }
+
   .number {
     top: 175px;
     left: 74%;
   }
+
   .number svg {
     top: -40px;
     left: 26px;
@@ -2751,9 +3154,11 @@ color: #4A5F74;
   font-family: "Gilroy";
   font-style: normal;
 }
+
 .blog {
   margin-top: 16px;
 }
+
 .blog__title {
   font-weight: 700;
   font-size: 50px;
@@ -2762,23 +3167,28 @@ color: #4A5F74;
   margin-bottom: 25px;
   text-align: center;
 }
+
 .blog__items-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .blog__item {
   margin-bottom: 43px;
 }
+
 .blog__item--hide {
   display: none;
 }
+
 .blog__item-img-container {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   width: fit-content;
 }
+
 .blog__item-img-filter {
   background: rgba(31, 43, 66, 0.5);
   border-radius: 10px;
@@ -2790,11 +3200,13 @@ color: #4A5F74;
   right: 0;
   bottom: 0;
 }
+
 .blog__item-img {
   max-width: 100%;
   display: block;
   transition: 0.5s;
 }
+
 .blog__item-data {
   font-weight: 700;
   font-size: 12px;
@@ -2804,6 +3216,7 @@ color: #4A5F74;
   bottom: 20px;
   left: 20px;
 }
+
 .blod__item-details {
   font-weight: 600;
   font-size: 18px;
@@ -2818,6 +3231,7 @@ color: #4A5F74;
   transform: translate(-50%, -50%);
   display: none;
 }
+
 .blog__item-caption {
   font-weight: 600;
   font-size: 18px;
@@ -2825,14 +3239,17 @@ color: #4A5F74;
   color: #2e3a50;
   margin-top: 16px;
 }
+
 .blog__pages-tabs__container {
   display: flex;
   justify-content: center;
 }
+
 .blog__pages-tabs {
   display: flex;
   align-items: center;
 }
+
 .blog__tab {
   font-weight: 600;
   font-size: 14px;
@@ -2841,46 +3258,57 @@ color: #4A5F74;
   margin-right: 8.5px;
   margin-left: 8.5px;
 }
+
 .blog__tab--active {
   font-weight: 600;
   font-size: 18px;
   color: #2e3a50;
 }
+
 .blog__pages-tabs__container {
   margin-top: 16px;
   margin-bottom: 62px;
 }
+
 .blog__pages-tabs:hover * {
   cursor: pointer;
 }
+
 @media (min-width: 768px) {
   .blog {
     margin-top: 52px;
   }
+
   .blog__title {
     color: #4a5f74;
     font-size: 50px;
     margin-bottom: 70px;
     text-align: left;
   }
+
   .blog__items-container {
     justify-content: space-evenly;
   }
+
   .blog__item {
     margin-bottom: 90px;
   }
+
   .blog__item a {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .blog__item--hide {
     display: block;
   }
+
   .blog__item-data {
     font-weight: 400;
     font-size: 16px;
   }
+
   .blog__item-caption {
     margin-top: 27px;
     font-size: 27px;
@@ -2888,17 +3316,20 @@ color: #4A5F74;
     margin-left: auto;
     margin-right: auto;
   }
+
   .blog__tab {
     font-weight: 500;
     font-size: 17px;
     margin-right: 12px;
     margin-left: 12px;
   }
+
   .blog__tab--active {
     font-weight: 700;
     font-size: 20px;
     color: #2e3a50;
   }
+
   .blog__pages-tabs__container {
     margin-top: 51px;
     margin-bottom: 79px;
@@ -2907,15 +3338,19 @@ color: #4A5F74;
   .blog__item:hover .blod__item-details {
     display: block;
   }
+
   .blog__item:hover .blog__item-img-container .blog__item-img {
     scale: 1.2;
   }
+
   .blog__item:hover .blog__item-img-filter {
     background: rgba(46, 58, 80, 0.34);
   }
+
   .blog__item:hover .blog__item-data {
     display: none;
   }
+
   @media (min-width: 1200px) {
     .blog__items-container {
       justify-content: space-between;
@@ -2924,13 +3359,21 @@ color: #4A5F74;
 }
 
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
 .our-services--md {
   display: none;
 }
+
 @media (min-width: 1200px) {
+  .chip__w-70 {
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .our-services {
     display: none;
   }
+
   .our-services--md {
     display: block;
   }
@@ -2940,10 +3383,11 @@ color: #4A5F74;
     font-family: "Gilroy";
     font-style: normal;
   }
+
   .our-services--md {
     overflow: hidden;
     max-width: 1170px;
-    margin-top: 60px;
+    padding-top: 60px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2955,23 +3399,28 @@ color: #4A5F74;
     color: #2e3a50;
     margin-bottom: 92px;
   }
+
   .our-services__items-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
+
   .our-services__item--hide {
     display: none;
   }
+
   .our-services__item__img-container {
     position: relative;
     overflow: hidden;
   }
+
   .our-services__item__img {
     max-width: 100%;
     display: block;
     transition: 0.5s;
   }
+
   .our-services__item__img-bg {
     background: rgba(31, 43, 66, 0.66);
     border-radius: 10px;
@@ -2981,11 +3430,13 @@ color: #4A5F74;
     right: 0;
     bottom: 0;
   }
+
   .our-services__item__dots {
     position: absolute;
     bottom: 15px;
     right: 25px;
   }
+
   .our-services__item__details {
     display: none;
     font-weight: 500;
@@ -3000,9 +3451,11 @@ color: #4A5F74;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .our-services__item {
     position: relative;
   }
+
   .our-services__item__description {
     font-weight: 500;
     font-size: 27px;
@@ -3012,10 +3465,15 @@ color: #4A5F74;
     top: 63px;
     left: 30px;
   }
+
   .btn__all-services__container {
     display: flex;
     justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 115px;
+
   }
+
   .btn__all-services {
     display: flex;
     background: #5db53b;
@@ -3024,8 +3482,6 @@ color: #4A5F74;
     align-items: center;
     justify-content: center;
     padding: 15px 26px;
-    margin-top: 80px;
-    margin-bottom: 213px;
   }
 
   .all-services__arrow-up,
@@ -3041,6 +3497,7 @@ color: #4A5F74;
   .btn__all-services:hover {
     cursor: pointer;
   }
+
   .all-services__text {
     font-weight: 600;
     font-size: 18px;
@@ -3048,19 +3505,234 @@ color: #4A5F74;
     letter-spacing: 0.035em;
     color: #ffffff;
   }
+
   .our-services__item:hover .our-services__item__img-bg {
     background: rgba(46, 58, 80, 0.42);
   }
+
   .our-services__item:hover .our-services__item__dots {
     display: none;
   }
+
   .our-services__item:hover .our-services__item__details {
     display: block;
   }
+
   .our-services__item:hover .our-services__item__img {
     scale: 1.2;
   }
+
   .our-services__item:hover .our-services__item__description {
     display: none;
   }
+
+  .page-about-us__img--absolute--bottom {
+    right: -18%;
+    ;
+  }
+
+  .page-about-us__farmacy {
+    margin-bottom: 0;
+  }
+
+  .our-team {
+    padding-top: 69px;
+    padding-bottom: 250px;
+  }
+
+  .our-team .carousel-indicators {
+    bottom: -210px;
+  }
+
+  .our-team .carousel-indicators [data-bs-target] {
+    width: 8.69px;
+    height: 8.69px;
+    border: 2px solid #4A5F74;
+  }
+
+  .our-team .carousel-indicators .active {
+    border: 4px solid #2e3a50;
+    top: -3px;
+  }
+
+  .page-about-us__container--all .appointment {
+    margin-top: 0;
+  }
+
+  .appointment-footer {
+    margin-top: 0;
+  }
+}
+
+/* BG dashed */
+@media (max-width:767px) {
+  .vetclinik__sub-title {
+    text-align: center;
+  }
+
+  .page-services__appointment__bg--dotted .btn_submit {
+    justify-content: left;
+  }
+
+  .page-services__container .appointment__img--sz {
+    position: relative;
+    top: -20px;
+  }
+
+  .page-contacts__container .contacts__map iframe {
+    height: 369px;
+  }
+
+  .page-contacts__title {
+    text-align: center;
+    margin-bottom: 21px;
+    margin-top: 14px;
+  }
+
+  .social-container__viber img,
+  .social-container__instagram svg,
+  .social-container__facebook svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .page-contacts__path,
+  .page-contacts__path a,
+  .page-contacts__path p,
+  .page-about-us__path,
+  .page-about-us__path a,
+  .page-about-us__path p {
+    font-size: 11px;
+  }
+  .price-section__table tr:not(tr:first-child) td:last-child {
+    padding: 15px 13px;
+  }
+  .price-section__table tr:first-child td:last-child {
+    width: 39%;
+  }
+  .page-about-us__container--all .appointment-container {
+    align-items: flex-end;
+  }
+  
+  .index__bg--dotted {
+    background: url(../img/bg-dashed/320/main__top.webp), url(../img/bg-dashed/320/main__middle.webp), url(../img/bg-dashed/320/main__bottom.webp);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-x: right, left, left;
+    background-position-y: 555px, 1385px, 3102px;
+  }
+
+  .about-us__bg-dotted {
+    background: url(../img/bg-dashed/320/about-us__top.webp), url(../img/bg-dashed/320/about-us__middle.webp), url(../img/bg-dashed/320/about-us__bottom.webp);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-y: -59px, 526px, 1670px;
+
+  }
+
+  .about-chip__bg--dotted {
+    background: url(../img/bg-dashed/320/chipping__1.webp), url(../img/bg-dashed/320/chipping__2.webp), url(../img/bg-dashed/320/chipping__3.webp), url(../img/bg-dashed/320/chipping__4.webp), url(../img/bg-dashed/320/chipping__5.webp);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position-y: -277px, 738px, 2414px, 6285px, 8621px;
+    background-position-x: right, left, left, right, right;
+  }
+
+  .page-services__appointment__bg--dotted {
+    background: url(../img/bg-dashed/320/chipping__main.webp) no-repeat;
+    background-position-y: -88px;
+    margin-bottom: 36px;
+  }
+
+  .contacts-bg__main {
+    background: url(../img/bg-dashed/320/contacts__main.webp) no-repeat;
+    background-position-y: -40px;
+  }
+  .blog-bg__main {
+    background: url(../img/bg-dashed/320/blog__top.webp)  no-repeat;
+    background-size: contain;
+  }
+
+  /* .vetclinik__main-areas__bg {
+  } */
+}
+
+@media (min-width:768px) {
+  .our-services--md__bg {
+    background: url(../img/bg-dashed/1200/main__top.webp), url(../img/bg-dashed/1200/main__middle.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, 0;
+    background-position: top, bottom right;
+    background-position-x: center, 80px;
+  }
+
+  .vetclinik__main-areas__bg {
+    background: url(../img/bg-dashed/1200/main__bottom.webp) no-repeat;
+    background-size: 95%;
+    background-position-x: right;
+  }
+
+  .about-us__top-bg--dashed {
+    background: url(../img/bg-dashed/1200/about-us__top.webp) no-repeat;
+  }
+
+  .about-us__middle-bg--dashed {
+    background: url(../img/bg-dashed/1200/about-us__middle.webp) no-repeat;
+  }
+
+  .about-us__bottom-bg--dashed {
+    background: url(../img/bg-dashed/1200/about-us__bottom.webp) no-repeat;
+  }
+
+  .chipping-bg__bottom {
+    background: url(../img/bg-dashed/1200/chipping__4.webp) no-repeat;
+    background-position-x: 100%;
+  }
+
+  .chip-bg__middle-bottom {
+    background: url(../img/bg-dashed/1200/chpping__3.webp) no-repeat;
+    background-size: contain;
+    background-position-y: -108px;
+  }
+
+  .chip-bg__middle-top {
+    background: url(../img/bg-dashed/1200/chipping__2.webp) no-repeat;
+    background-position-y: 150px;
+    background-position-x: 150px;
+  }
+
+  .chipping-bg__top {
+    background: url(../img/bg-dashed/1200/chipping__main.webp) no-repeat;
+    background-position-x: 120px;
+  }
+
+  .contacts-bg__main {
+    background: url(../img/bg-dashed/1200/contacts.webp) no-repeat;
+  }
+
+  .blog-bg__main {
+    background: url(../img/bg-dashed/1200/blog__top.webp), url(../img/bg-dashed/1200/blog__bottom.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom right;
+  }
+
+  .our-services--md__bg,
+  .vetclinik__main-areas__bg,
+  .contacts-bg__main,
+  .blog-bg__main,
+  .about-us__top-bg--dashed,
+  .about-us__middle-bg--dashed,
+  .about-us__bottom-bg--dashed,
+  .chipping-bg__bottom {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+  }
+
+  .about-us__top-bg--dashed,
+  .about-us__middle-bg--dashed,
+  .about-us__bottom-bg--dashed,
+  .chipping-bg__bottom {
+    background-size: contain;
+    background-position-x: right;
+  }
+
+
 }
